@@ -3,7 +3,7 @@ import openai
 import Levenshtein
 
 openai.organization = "org-2wXrLf4fLEfdyawavmkAqi8z"
-openai.api_key = "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"
+openai.api_key = "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"
 
 #intro sequence:
 intro = "Nous allons te fournir un certificat de mariage, un document ayant toujours la même mise en forme.Tu vas devoir procéder à l’extraction de certaines données sur plusieurs certificats ensuite. Voici le premier certificat, je précise qu’il est extrait d’un document au format Json et que tu auras toutes les réponses fournies à la fin, cela te permettra de mieux reconnaître ce qu’il te faut obtenir dans les contrats suivants. "
@@ -232,7 +232,7 @@ if __name__ == "__main__":
     for key in ref.keys():
         distance = Levenshtein.distance(labels[key], ref[key])
         if distance > 0:
-            print(key, distance, labels[key], ref[key])
+            print(key, distance, labels[key] if labels[key] != '' else 'VIDE', ref[key] if ref[key] != '' else 'VIDE')
         distances += distance
 
     print(distances)
