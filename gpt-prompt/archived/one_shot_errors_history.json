@@ -1,0 +1,780 @@
+{
+    "archives_AD075EC_01M1940_0003-right.png-2": {
+        "1": {
+            "question": "Profession-mere-mari",
+            "distance": 20,
+            "one_shot_tags": "",
+            "reference": "employ\u00e9s de commerce"
+        },
+        "2": {
+            "question": "Pays-residence-mere-mari",
+            "distance": 9,
+            "one_shot_tags": "",
+            "reference": "Allemagne"
+        }
+    },
+    "archives_AD075EC_04M298B_0042-right.png-0": {
+        "1": {
+            "question": "Ville-naissance-mariee",
+            "distance": 28,
+            "one_shot_tags": "Paris",
+            "reference": "Paris, quatorzi\u00e8me arrondissement"
+        },
+        "2": {
+            "question": "Numero-rue-residence-mere-mariee",
+            "distance": 2,
+            "one_shot_tags": "",
+            "reference": "12"
+        },
+        "3": {
+            "question": "Type-rue-residence-mere-mariee",
+            "distance": 3,
+            "one_shot_tags": "",
+            "reference": "rue"
+        },
+        "4": {
+            "question": "Nom-rue-residence-mere-mariee",
+            "distance": 20,
+            "one_shot_tags": "",
+            "reference": "Deutsch de la Marthe"
+        },
+        "5": {
+            "question": "Numero-rue-residence-temoin-0",
+            "distance": 1,
+            "one_shot_tags": "",
+            "reference": "7"
+        },
+        "6": {
+            "question": "Type-rue-residence-temoin-0",
+            "distance": 3,
+            "one_shot_tags": "",
+            "reference": "rue"
+        },
+        "7": {
+            "question": "Nom-rue-residence-temoin-0",
+            "distance": 7,
+            "one_shot_tags": "7, rue Bailly",
+            "reference": "Bailly"
+        },
+        "8": {
+            "question": "Numero-rue-residence-temoin-1",
+            "distance": 1,
+            "one_shot_tags": "",
+            "reference": "7"
+        },
+        "9": {
+            "question": "Type-rue-residence-temoin-1",
+            "distance": 3,
+            "one_shot_tags": "",
+            "reference": "rue"
+        },
+        "10": {
+            "question": "Nom-rue-residence-temoin-1",
+            "distance": 7,
+            "one_shot_tags": "7, rue Bailly",
+            "reference": "Bailly"
+        }
+    },
+    "archives_AD075EC_04M298B_0042-right.png-1": {
+        "1": {
+            "question": "Ville-naissance-mari",
+            "distance": 28,
+            "one_shot_tags": "Paris",
+            "reference": "Paris, quatorzi\u00e8me arrondissement"
+        },
+        "2": {
+            "question": "Ville-residence-mariee",
+            "distance": 13,
+            "one_shot_tags": "Choisy-le-Roi",
+            "reference": ""
+        },
+        "3": {
+            "question": "Profession-mere-mariee",
+            "distance": 15,
+            "one_shot_tags": "",
+            "reference": "sans profession"
+        },
+        "4": {
+            "question": "Ville-residence-temoin-0",
+            "distance": 13,
+            "one_shot_tags": "",
+            "reference": "Choisy-le-Roi"
+        },
+        "5": {
+            "question": "Departement-residence-temoin-0",
+            "distance": 5,
+            "one_shot_tags": "",
+            "reference": "Seine"
+        },
+        "6": {
+            "question": "Ville-residence-temoin-1",
+            "distance": 13,
+            "one_shot_tags": "",
+            "reference": "Choisy-le-Roi"
+        },
+        "7": {
+            "question": "Departement-residence-temoin-1",
+            "distance": 5,
+            "one_shot_tags": "",
+            "reference": "Seine"
+        },
+        "8": {
+            "question": "Prenom-ex-epouse",
+            "distance": 16,
+            "one_shot_tags": "BRETHES",
+            "reference": "Elisabeth Simonne"
+        },
+        "9": {
+            "question": "Nom-ex-epouse",
+            "distance": 16,
+            "one_shot_tags": "Elisabeth Simonne",
+            "reference": "BRETHES"
+        }
+    },
+    "archives_AD075EC_04M298B_0042-right.png-2": {
+        "1": {
+            "question": "Ville-naissance-mari",
+            "distance": 11,
+            "one_shot_tags": "Teteringen (Hollande)",
+            "reference": "Teteringen"
+        },
+        "2": {
+            "question": "Profession-pere-mari",
+            "distance": 6,
+            "one_shot_tags": "d\u00e9c\u00e9d\u00e9",
+            "reference": ""
+        },
+        "3": {
+            "question": "Profession-mere-mari",
+            "distance": 14,
+            "one_shot_tags": "veuve",
+            "reference": "sans profession"
+        },
+        "4": {
+            "question": "Ville-residence-mere-mari",
+            "distance": 12,
+            "one_shot_tags": "Haarlem (Hollande)",
+            "reference": "Harleem"
+        },
+        "5": {
+            "question": "Ville-naissance-mariee",
+            "distance": 9,
+            "one_shot_tags": "Verel-de-Montbel (Savoie)",
+            "reference": "Verel-de-Montbel"
+        },
+        "6": {
+            "question": "Departement-naissance-mariee",
+            "distance": 6,
+            "one_shot_tags": "",
+            "reference": "Savoie"
+        },
+        "7": {
+            "question": "Profession-mere-mariee",
+            "distance": 13,
+            "one_shot_tags": "\u00e9poux d\u00e9c\u00e9d\u00e9s",
+            "reference": ""
+        }
+    },
+    "archives_AD075EC_01M1930_0007-left.png-0": {
+        "1": {
+            "question": "Prenom-adjoint-maire",
+            "distance": 14,
+            "one_shot_tags": "Andr\u00e9 Daniel GIGAULT de la",
+            "reference": "Andr\u00e9 Daniel"
+        },
+        "2": {
+            "question": "Nom-adjoint-maire",
+            "distance": 14,
+            "one_shot_tags": "BEDOLLIERE",
+            "reference": "GIGAULT de la BEDOLLIERE"
+        },
+        "3": {
+            "question": "Profession-mari",
+            "distance": 65,
+            "one_shot_tags": "machiniste",
+            "reference": "machiniste, \u00e0 la compagnie des Transports en commun de la R\u00e9gion Parisienne"
+        },
+        "4": {
+            "question": "Numero-rue-residence-mere-mari",
+            "distance": 1,
+            "one_shot_tags": "",
+            "reference": "4"
+        },
+        "5": {
+            "question": "Type-rue-residence-mere-mari",
+            "distance": 3,
+            "one_shot_tags": "",
+            "reference": "rue"
+        },
+        "6": {
+            "question": "Nom-rue-residence-mere-mari",
+            "distance": 14,
+            "one_shot_tags": "",
+            "reference": "de la Terrasse"
+        }
+    },
+    "archives_AD075EC_01M1940_0021-left.png-0": {
+        "1": {
+            "question": "Ville-naissance-mari",
+            "distance": 10,
+            "one_shot_tags": "Dijon C\u00f4te d'Or",
+            "reference": "Dijon"
+        },
+        "2": {
+            "question": "Departement-naissance-mari",
+            "distance": 9,
+            "one_shot_tags": "",
+            "reference": "C\u00f4te d'Or"
+        },
+        "3": {
+            "question": "Profession-pere-mariee",
+            "distance": 21,
+            "one_shot_tags": "",
+            "reference": "marchands de bestiaux"
+        },
+        "4": {
+            "question": "Ville-residence-pere-mariee",
+            "distance": 16,
+            "one_shot_tags": "",
+            "reference": "Vailly sur Sa\u00f4ne"
+        },
+        "5": {
+            "question": "Departement-residence-pere-mariee",
+            "distance": 4,
+            "one_shot_tags": "",
+            "reference": "Cher"
+        }
+    },
+    "archives_AD075EC_01M1940_0021-left.png-1": {
+        "1": {
+            "question": "Ville-naissance-mari",
+            "distance": 24,
+            "one_shot_tags": "Paris",
+            "reference": "Paris, dixi\u00e8me arrondissement"
+        },
+        "2": {
+            "question": "Nom-pere-mari",
+            "distance": 6,
+            "one_shot_tags": "POCARD",
+            "reference": ""
+        },
+        "3": {
+            "question": "Ville-naissance-mariee",
+            "distance": 24,
+            "one_shot_tags": "Paris",
+            "reference": "Paris, onzi\u00e8me arrondissement"
+        },
+        "4": {
+            "question": "Profession-pere-mariee",
+            "distance": 15,
+            "one_shot_tags": "",
+            "reference": "sans profession"
+        }
+    },
+    "archives_AD075EC_01M1940_0021-left.png-2": {
+        "1": {
+            "question": "Departement-naissance-mari",
+            "distance": 6,
+            "one_shot_tags": "",
+            "reference": "Tonkin"
+        },
+        "2": {
+            "question": "Pays-naissance-mari",
+            "distance": 6,
+            "one_shot_tags": "Tonkin",
+            "reference": ""
+        },
+        "3": {
+            "question": "Departement-residence-pere-mari",
+            "distance": 16,
+            "one_shot_tags": "",
+            "reference": "Bouches du Rh\u00f4ne"
+        },
+        "4": {
+            "question": "Profession-mere-mariee",
+            "distance": 9,
+            "one_shot_tags": "",
+            "reference": "horlogers"
+        },
+        "5": {
+            "question": "Ville-residence-mere-mariee",
+            "distance": 6,
+            "one_shot_tags": "",
+            "reference": "Maiche"
+        },
+        "6": {
+            "question": "Departement-residence-mere-mariee",
+            "distance": 5,
+            "one_shot_tags": "",
+            "reference": "Doubs"
+        }
+    },
+    "archives_AD075EC_01M1940_0021-right.png-0": {
+        "1": {
+            "question": "Ville-residence-temoin-0",
+            "distance": 9,
+            "one_shot_tags": "",
+            "reference": "Marseille"
+        },
+        "2": {
+            "question": "Departement-residence-temoin-0",
+            "distance": 16,
+            "one_shot_tags": "",
+            "reference": "Bouches du Rh\u00f4ne"
+        },
+        "3": {
+            "question": "Profession-temoin-1",
+            "distance": 32,
+            "one_shot_tags": "agent de fabrique Officier de la L\u00e9gion d'Honneur",
+            "reference": "agent de fabrique"
+        }
+    },
+    "archives_AD075EC_01M1940_0021-right.png-1": {
+        "1": {
+            "question": "Departement-residence-mariee",
+            "distance": 13,
+            "one_shot_tags": "",
+            "reference": "Seine et Oise"
+        },
+        "2": {
+            "question": "Ville-residence-temoin-0",
+            "distance": 7,
+            "one_shot_tags": "",
+            "reference": "Bobigny"
+        },
+        "3": {
+            "question": "Departement-residence-temoin-0",
+            "distance": 5,
+            "one_shot_tags": "",
+            "reference": "Seine"
+        },
+        "4": {
+            "question": "Nom-rue-residence-temoin-1",
+            "distance": 15,
+            "one_shot_tags": "Vieiille Eglise",
+            "reference": ""
+        },
+        "5": {
+            "question": "Departement-residence-temoin-1",
+            "distance": 13,
+            "one_shot_tags": "",
+            "reference": "Seine et Oise"
+        }
+    },
+    "archives_AD075EC_01M1930_0005-left.png-0": {
+        "1": {
+            "question": "Departement-residence-pere-mariee",
+            "distance": 14,
+            "one_shot_tags": "",
+            "reference": "Sa\u00f4ne-et-Loire"
+        },
+        "2": {
+            "question": "Departement-residence-mere-mariee",
+            "distance": 14,
+            "one_shot_tags": "",
+            "reference": "Sa\u00f4ne-et-Loire"
+        }
+    },
+    "archives_AD075EC_01M1930_0005-left.png-1": {
+        "1": {
+            "question": "Profession-pere-mari",
+            "distance": 6,
+            "one_shot_tags": "d\u00e9c\u00e9d\u00e9",
+            "reference": ""
+        },
+        "2": {
+            "question": "Profession-mere-mari",
+            "distance": 6,
+            "one_shot_tags": "veuve sans profession",
+            "reference": "sans profession"
+        },
+        "3": {
+            "question": "Numero-residence-pere-mariee",
+            "distance": 2,
+            "one_shot_tags": "",
+            "reference": "19"
+        },
+        "4": {
+            "question": "Type-rue-residence-pere-mariee",
+            "distance": 3,
+            "one_shot_tags": "",
+            "reference": "rue"
+        },
+        "5": {
+            "question": "Nom-rue-residence-pere-mariee",
+            "distance": 10,
+            "one_shot_tags": "",
+            "reference": "des Halles"
+        },
+        "6": {
+            "question": "Numero-rue-residence-mere-mariee",
+            "distance": 2,
+            "one_shot_tags": "",
+            "reference": "19"
+        },
+        "7": {
+            "question": "Type-rue-residence-mere-mariee",
+            "distance": 3,
+            "one_shot_tags": "",
+            "reference": "rue"
+        },
+        "8": {
+            "question": "Nom-rue-residence-mere-mariee",
+            "distance": 10,
+            "one_shot_tags": "",
+            "reference": "des Halles"
+        },
+        "9": {
+            "question": "Type-rue-residence-temoin-0",
+            "distance": 3,
+            "one_shot_tags": "",
+            "reference": "rue"
+        },
+        "10": {
+            "question": "Nom-rue-residence-temoin-0",
+            "distance": 13,
+            "one_shot_tags": "",
+            "reference": "Saint Georges"
+        },
+        "11": {
+            "question": "Ville-residence-temoin-0",
+            "distance": 4,
+            "one_shot_tags": "",
+            "reference": "Roye"
+        },
+        "12": {
+            "question": "Departement-residence-temoin-0",
+            "distance": 5,
+            "one_shot_tags": "",
+            "reference": "Somme"
+        }
+    },
+    "archives_AD075EC_01M1930_0005-left.png-2": {
+        "1": {
+            "question": "Profession-mere-mari",
+            "distance": 15,
+            "one_shot_tags": "",
+            "reference": "sans profession"
+        },
+        "2": {
+            "question": "Prenom-mere-mariee",
+            "distance": 8,
+            "one_shot_tags": "Juliette",
+            "reference": ""
+        },
+        "3": {
+            "question": "Nom-mere-mariee",
+            "distance": 10,
+            "one_shot_tags": "RISBOURQUE",
+            "reference": "Juliette"
+        },
+        "4": {
+            "question": "Profession-mere-mariee",
+            "distance": 10,
+            "one_shot_tags": "",
+            "reference": "RISBOURQUE"
+        },
+        "5": {
+            "question": "Numero-rue-residence-temoin-0",
+            "distance": 2,
+            "one_shot_tags": "",
+            "reference": "51"
+        },
+        "6": {
+            "question": "Type-rue-residence-temoin-0",
+            "distance": 3,
+            "one_shot_tags": "",
+            "reference": "rue"
+        },
+        "7": {
+            "question": "Nom-rue-residence-temoin-0",
+            "distance": 12,
+            "one_shot_tags": "\u00e0 Asni\u00e8res",
+            "reference": "de Chateaudun"
+        },
+        "8": {
+            "question": "Ville-residence-temoin-0",
+            "distance": 8,
+            "one_shot_tags": "",
+            "reference": "Asni\u00e8res"
+        },
+        "9": {
+            "question": "Departement-residence-temoin-0",
+            "distance": 5,
+            "one_shot_tags": "",
+            "reference": "Seine"
+        },
+        "10": {
+            "question": "Ville-residence-temoin-1",
+            "distance": 10,
+            "one_shot_tags": "",
+            "reference": "Courbevoie"
+        },
+        "11": {
+            "question": "Departement-residence-temoin-1",
+            "distance": 5,
+            "one_shot_tags": "",
+            "reference": "Seine"
+        },
+        "12": {
+            "question": "Prenom-adjoint-maire",
+            "distance": 25,
+            "one_shot_tags": "Andr\u00e9 Daniel GIGAULT de la BEDOLLIERE",
+            "reference": "Andr\u00e9 Daniel"
+        },
+        "13": {
+            "question": "Nom-adjoint-maire",
+            "distance": 24,
+            "one_shot_tags": "",
+            "reference": "GIGAULT de la BEDOLLIERE"
+        }
+    },
+    "archives_AD075EC_01M1930_0005-right.png-1": {
+        "1": {
+            "question": "Ville-naissance-mari",
+            "distance": 10,
+            "one_shot_tags": "Alcira (Espagne)",
+            "reference": "Alcira"
+        },
+        "2": {
+            "question": "Ville-residence-pere-mari",
+            "distance": 10,
+            "one_shot_tags": "Alcira (Espagne)",
+            "reference": "Alcira"
+        },
+        "3": {
+            "question": "Ville-residence-mere-mari",
+            "distance": 10,
+            "one_shot_tags": "Alcira (Espagne)",
+            "reference": "Alcira"
+        },
+        "4": {
+            "question": "Pays-residence-mere-mari",
+            "distance": 7,
+            "one_shot_tags": "",
+            "reference": "Espagne"
+        },
+        "5": {
+            "question": "Ville-naissance-mariee",
+            "distance": 8,
+            "one_shot_tags": "Reims (Marne)",
+            "reference": "Reims"
+        },
+        "6": {
+            "question": "Ville-residence-mere-mariee",
+            "distance": 7,
+            "one_shot_tags": "Masni\u00e8res (Nord)",
+            "reference": "Masni\u00e8res"
+        }
+    },
+    "archives_AD075EC_01M1930_0005-right.png-2": {
+        "1": {
+            "question": "Ville-naissance-mariee",
+            "distance": 29,
+            "one_shot_tags": "Paris",
+            "reference": "Paris, dix-huiti\u00e8me arrondissement"
+        },
+        "2": {
+            "question": "Departement-naissance-mariee",
+            "distance": 27,
+            "one_shot_tags": "dix-huiti\u00e8me arrondissement",
+            "reference": ""
+        },
+        "3": {
+            "question": "Ville-residence-temoin-0",
+            "distance": 7,
+            "one_shot_tags": "",
+            "reference": "Puteaux"
+        },
+        "4": {
+            "question": "Departement-residence-temoin-0",
+            "distance": 5,
+            "one_shot_tags": "",
+            "reference": "Seine"
+        }
+    },
+    "archives_AD075EC_01M1940_0018-left.png-1": {
+        "1": {
+            "question": "Prenom-ex-epouse",
+            "distance": 17,
+            "one_shot_tags": "FARBACQUE",
+            "reference": "Clotilde Germaine"
+        },
+        "2": {
+            "question": "Nom-ex-epouse",
+            "distance": 17,
+            "one_shot_tags": "Clotilde Germaine",
+            "reference": "FARBACQUE"
+        },
+        "3": {
+            "question": "Nom-ex-epoux",
+            "distance": 9,
+            "one_shot_tags": "FARBACQUE",
+            "reference": ""
+        }
+    },
+    "archives_AD075EC_01M1940_0018-left.png-2": {
+        "1": {
+            "question": "Age-mari",
+            "distance": 15,
+            "one_shot_tags": "vingt-sept ans",
+            "reference": "vingt-sept ans vingt-sept ans"
+        },
+        "2": {
+            "question": "Profession-pere-mariee",
+            "distance": 7,
+            "one_shot_tags": "disparu",
+            "reference": ""
+        },
+        "3": {
+            "question": "Numero-rue-residence-temoin-0",
+            "distance": 1,
+            "one_shot_tags": "",
+            "reference": "7"
+        }
+    },
+    "archives_AD075EC_01M1940_0018-right.png-0": {
+        "1": {
+            "question": "Departement-residence-pere-mari",
+            "distance": 13,
+            "one_shot_tags": "",
+            "reference": "Seine et Oise"
+        },
+        "2": {
+            "question": "Profession-mere-mari",
+            "distance": 15,
+            "one_shot_tags": "",
+            "reference": "sans profession"
+        },
+        "3": {
+            "question": "Departement-residence-mere-mari",
+            "distance": 13,
+            "one_shot_tags": "",
+            "reference": "Seine et Oise"
+        },
+        "4": {
+            "question": "Ville-naissance-mariee",
+            "distance": 26,
+            "one_shot_tags": "Paris",
+            "reference": "Paris, cinqui\u00e8me arrondissement"
+        },
+        "5": {
+            "question": "Departement-naissance-mariee",
+            "distance": 24,
+            "one_shot_tags": "cinqui\u00e8me arrondissement",
+            "reference": ""
+        },
+        "6": {
+            "question": "Profession-pere-mariee",
+            "distance": 15,
+            "one_shot_tags": "",
+            "reference": "sans profession"
+        },
+        "7": {
+            "question": "Numero-residence-pere-mariee",
+            "distance": 2,
+            "one_shot_tags": "",
+            "reference": "70"
+        },
+        "8": {
+            "question": "Type-rue-residence-pere-mariee",
+            "distance": 3,
+            "one_shot_tags": "",
+            "reference": "rue"
+        },
+        "9": {
+            "question": "Nom-rue-residence-pere-mariee",
+            "distance": 12,
+            "one_shot_tags": "",
+            "reference": "Saint Honor\u00e9"
+        },
+        "10": {
+            "question": "Profession-mere-mariee",
+            "distance": 15,
+            "one_shot_tags": "",
+            "reference": "sans profession"
+        },
+        "11": {
+            "question": "Ville-residence-temoin-0",
+            "distance": 7,
+            "one_shot_tags": "",
+            "reference": "Crosnes"
+        }
+    },
+    "archives_AD075EC_01M1940_0018-right.png-1": {
+        "1": {
+            "question": "Profession-mari",
+            "distance": 29,
+            "one_shot_tags": "m\u00e9nuisier \u00e9b\u00e9niste",
+            "reference": "m\u00e9nuisier \u00e9b\u00e9niste, actuellement sapeur-Pompier"
+        },
+        "2": {
+            "question": "Ville-residence-mari",
+            "distance": 6,
+            "one_shot_tags": "Thenon",
+            "reference": "Paris"
+        },
+        "3": {
+            "question": "Departement-residence-mari",
+            "distance": 8,
+            "one_shot_tags": "Dordogne",
+            "reference": ""
+        },
+        "4": {
+            "question": "Ville-naissance-mariee",
+            "distance": 28,
+            "one_shot_tags": "Paris",
+            "reference": "Paris, quatorzi\u00e8me arrondissement"
+        },
+        "5": {
+            "question": "Departement-naissance-mariee",
+            "distance": 26,
+            "one_shot_tags": "quatorzi\u00e8me arrondissement",
+            "reference": ""
+        },
+        "6": {
+            "question": "Ville-residence-temoin-0",
+            "distance": 10,
+            "one_shot_tags": "",
+            "reference": "Courbevoie"
+        },
+        "7": {
+            "question": "Departement-residence-temoin-0",
+            "distance": 5,
+            "one_shot_tags": "",
+            "reference": "Seine"
+        }
+    },
+    "archives_AD075EC_01M1940_0018-right.png-2": {
+        "1": {
+            "question": "Numero-rue-residence-temoin-0",
+            "distance": 3,
+            "one_shot_tags": "",
+            "reference": "226"
+        },
+        "2": {
+            "question": "Type-rue-residence-temoin-0",
+            "distance": 3,
+            "one_shot_tags": "",
+            "reference": "rue"
+        },
+        "3": {
+            "question": "Nom-rue-residence-temoin-0",
+            "distance": 9,
+            "one_shot_tags": "226, rue de Rivoli",
+            "reference": "de Rivoli"
+        },
+        "4": {
+            "question": "Ville-residence-temoin-1",
+            "distance": 5,
+            "one_shot_tags": "",
+            "reference": "S\u00e8vre"
+        },
+        "5": {
+            "question": "Departement-residence-temoin-1",
+            "distance": 13,
+            "one_shot_tags": "",
+            "reference": "Seine et Oise"
+        }
+    }
+}
