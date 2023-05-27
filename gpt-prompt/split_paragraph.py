@@ -3,7 +3,7 @@ import openai
 from time import sleep
 
 openai.organization = "org-2wXrLf4fLEfdyawavmkAqi8z"
-openai.api_key = "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"
+openai.api_key = "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"
 
 file = open("splitting_examples.json", "r")
 data = json.load(file)

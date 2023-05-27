@@ -1152,5 +1152,127 @@
             "one_shot_tags": "des Margottes",
             "reference": "des Margottes Montreuil sous Bois"
         }
+    },
+    "archives_AD075EC_01M1940_0019-left.png-1": {
+        "1": {
+            "question": "Ville-mariage",
+            "distance": 31,
+            "one_shot_tags": "",
+            "reference": "premier arrondissement de Paris"
+        },
+        "2": {
+            "question": "Ville-residence-mariee",
+            "distance": 17,
+            "one_shot_tags": "",
+            "reference": "Romilly sur Seine"
+        },
+        "3": {
+            "question": "Departement-residence-pere-mariee",
+            "distance": 4,
+            "one_shot_tags": "Aube",
+            "reference": ""
+        },
+        "4": {
+            "question": "Departement-residence-mere-mariee",
+            "distance": 4,
+            "one_shot_tags": "Aube",
+            "reference": ""
+        },
+        "5": {
+            "question": "Prenom-temoin-0",
+            "distance": 4,
+            "one_shot_tags": "",
+            "reference": "Paul"
+        },
+        "6": {
+            "question": "Nom-temoin-0",
+            "distance": 9,
+            "one_shot_tags": "",
+            "reference": "LEVASSEUR"
+        },
+        "7": {
+            "question": "Profession-temoin-0",
+            "distance": 24,
+            "one_shot_tags": "",
+            "reference": "employ\u00e9 de chemin de fer"
+        },
+        "8": {
+            "question": "Numero-rue-residence-temoin-0",
+            "distance": 2,
+            "one_shot_tags": "",
+            "reference": "90"
+        },
+        "9": {
+            "question": "Type-rue-residence-temoin-0",
+            "distance": 3,
+            "one_shot_tags": "",
+            "reference": "rue"
+        },
+        "10": {
+            "question": "Nom-rue-residence-temoin-0",
+            "distance": 13,
+            "one_shot_tags": "",
+            "reference": "Gornet Boivin"
+        },
+        "11": {
+            "question": "Ville-residence-temoin-0",
+            "distance": 17,
+            "one_shot_tags": "",
+            "reference": "Romilly sur Seine"
+        },
+        "12": {
+            "question": "Departement-residence-temoin-0",
+            "distance": 4,
+            "one_shot_tags": "",
+            "reference": "Aube"
+        },
+        "13": {
+            "question": "Prenom-temoin-1",
+            "distance": 6,
+            "one_shot_tags": "",
+            "reference": "Marcel"
+        },
+        "14": {
+            "question": "Nom-temoin-1",
+            "distance": 9,
+            "one_shot_tags": "",
+            "reference": "LEVASSEUR"
+        },
+        "15": {
+            "question": "Profession-temoin-1",
+            "distance": 14,
+            "one_shot_tags": "",
+            "reference": "gar\u00e7on de caf\u00e9"
+        },
+        "16": {
+            "question": "Numero-rue-residence-temoin-1",
+            "distance": 1,
+            "one_shot_tags": "",
+            "reference": "2"
+        },
+        "17": {
+            "question": "Type-rue-residence-temoin-1",
+            "distance": 3,
+            "one_shot_tags": "",
+            "reference": "rue"
+        },
+        "18": {
+            "question": "Nom-rue-residence-temoin-1",
+            "distance": 9,
+            "one_shot_tags": "",
+            "reference": "du Chalet"
+        },
+        "19": {
+            "question": "Ville-residence-temoin-1",
+            "distance": 9,
+            "one_shot_tags": "",
+            "reference": "Courneuve"
+        },
+        "20": {
+            "question": "Departement-residence-temoin-1",
+            "distance": 5,
+            "one_shot_tags": "",
+            "reference": "Seine"
+        }
     }
 }

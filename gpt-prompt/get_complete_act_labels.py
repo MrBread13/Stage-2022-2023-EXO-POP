@@ -3,7 +3,7 @@ import openai
 import Levenshtein
 
 openai.organization = "org-2wXrLf4fLEfdyawavmkAqi8z"
-openai.api_key = "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"
+openai.api_key = "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"
 
 #intro sequence:
 intro = "Nous allons te fournir un certificat de mariage, un document ayant toujours la même mise en forme.Tu vas devoir procéder à l’extraction de certaines données sur plusieurs certificats ensuite. Voici le premier certificat, je précise qu’il est extrait d’un document au format Json et que tu auras toutes les réponses fournies à la fin, cela te permettra de mieux reconnaître ce qu’il te faut obtenir dans les contrats suivants. "
@@ -115,7 +115,7 @@ def labels_from_act(act_text : str) -> dict :
     output: dictionnaire des label
     """
     prompt= intro + act_example + question + act_text
-
+    print('prompt made')
     completion = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         temperature=0.8,
@@ -123,6 +123,7 @@ def labels_from_act(act_text : str) -> dict :
             {"role": "user", "content": prompt,},
     ]
     )
+    print(completion)
     answer = completion.choices[0].message['content']
     answer = answer.replace('\n', '').replace('.','')
     #remove quote around comma
@@ -156,11 +157,11 @@ def labels_from_act(act_text : str) -> dict :
 if __name__ == "__main__":
     import doctest
     doctest.testmod()
-
+    print('begin')
     act_text = """ neuf avril mil neuf cent quarante * onze heures vingt minutes ****\ndevant Nous ont comparu publiquement en la maison commune: Antoine POCARD, porteur aux halles, né à\nParis, dixième arrondissement, le cinq février mil neuf cent un, trente-neuf ans, domicilié à Paris\n56, rue Saint Honoré; actuellement mobilisé- fils de Jeanne Marie POCARD- Veuf de Juliette **\nAlbertine GAYRARD, d'une part ,/- ET Adrienne Jeanne ALBRIEUX, journalière, née à Paris, onzième\narrondissement, le onze septembre mil neuf cent deux, trente-sept ans; domiciliée à Paris, 56, rue\nSaint Honoré; fille de Marie Charles ALBRIEUX, sans profession, domicilié à Aulnay sous Bois * Sein\net Oise * et de Marguerite TERLES, décédée, d'autre part ;- Les futurs époux déclarent qu'il n'a\npas été fait de contrat de mariage .- Antoine POCARD et Adrienne Jeanne ALBRIEUX ont déclaré l'un\naprès l'autre vouloir se prendre pour époux et Nous avons prononcé au nom de la loi qu'ils sont\nunis par le mariage .- En présence de: Fernande PASTEAU, concierge, 13, rue Dussoubs, et de\nAmélie MASSONIE, ménagère, 10 rue Volta, témoins majeurs, qui, lecture farte ont signé avec\nles époux et Nous, Charles Louis TOURY, Officier de l'état-civil du premier arrondissement de\nParis, Chevalier de la Légion d'Honneur ./"""
 
     labels = labels_from_act(act_text)
-    #print(labels)
+    print('end')
 
     # On vérifie que les labels extraits sont bien les mêmes que ceux de l'acte de mariage:
 
