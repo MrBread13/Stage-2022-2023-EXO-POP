@@ -1,9 +1,10 @@
 import json
 import openai
 import Levenshtein
+from time import sleep
 
 openai.organization = "org-2wXrLf4fLEfdyawavmkAqi8z"
-openai.api_key = "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"
+openai.api_key = "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"
 
 #intro sequence:
 intro = "Nous allons te fournir un certificat de mariage, un document ayant toujours la même mise en forme.Tu vas devoir procéder à l’extraction de certaines données sur plusieurs certificats ensuite. Voici le premier certificat, je précise qu’il est extrait d’un document au format Json et que tu auras toutes les réponses fournies à la fin, cela te permettra de mieux reconnaître ce qu’il te faut obtenir dans les contrats suivants. "
@@ -115,15 +116,26 @@ def labels_from_act(act_text : str) -> dict :
     output: dictionnaire des label
     """
     prompt= intro + act_example + question + act_text
-    print('prompt made')
-    completion = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        temperature=0.8,
-        messages=[
-            {"role": "user", "content": prompt,},
-    ]
-    )
-    print(completion)
+    #try to get an answer and catch the error if the model doesn't answer or answer with an error. Retry 3 times
+    for i in range(3):
+        try:
+            completion = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo",
+            temperature=0.8,
+            messages=[
+                {"role": "user", "content": prompt,},
+            ]
+            )
+            break
+        except:
+            completion = None
+            print("Error while getting answer. Retry in 5 seconds")
+            sleep(5)
+            continue
+
+    if completion is None:
+        print("Error while getting answer. Returning...")
+        return None
     answer = completion.choices[0].message['content']
     answer = answer.replace('\n', '').replace('.','')
     #remove quote around comma
@@ -142,16 +154,17 @@ def labels_from_act(act_text : str) -> dict :
     answer = answer.replace('-\\n', '')
     answer = answer.replace('\\n', ' ')
     #replace Prenom-du-maire with Prenom-adjoint-maire
-    answer = answer.replace('Prenom-maire', 'Prenom-adjoint-maire')
+    #answer = answer.replace('Prenom-maire', 'Prenom-adjoint-maire')
     #replace Nom-du-maire with Nom-adjoint-maire
-    answer = answer.replace('Nom-maire', 'Nom-adjoint-maire')
+    #answer = answer.replace('Nom-maire', 'Nom-adjoint-maire')
     #remplacer les apostrophes par des guillemets
     answer = answer.replace("\\'", "\'")
-    answer = answer.replace('sa veuve, sans profession', 'sans profession')
     #print(answer)
     answer = answer[answer.index('{'):]
     #print(f'answer : {answer}')
     answer = json.loads(answer)
+
+
     return answer
 
 if __name__ == "__main__":
