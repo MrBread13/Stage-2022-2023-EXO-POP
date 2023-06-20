@@ -3,8 +3,8 @@ import openai
 import Levenshtein
 import itertools
 from time import sleep
-import get_paragraphs_labels as pgc
-import split_paragraph as sp
+import get_paragraph_labels_16k as pgc
+import split_paragraph_16k as sp
 import get_complete_act_labels as gett
 from fix_labels import sanitize_labels
 
@@ -25,39 +25,6 @@ def get_labels(text):
     return labels
 
 
-# Calculate F1 scores for sub-categories
-# PER_tagger = ['Nom-','Prenom-','Age-']
-# LOC_tagger = ['Ville-','Pays-','-rue-','Departement-']
-# DATE_tagger = ['Jour-','Mois-','Annee-','Minute-','Heure-']
-# JOB_tagger = ['Profession-']
-
-# PER_score, LOC_score, DATE_score, JOB_score = 0, 0, 0, 0
-# PER_count, LOC_count, DATE_count, JOB_count = 0, 0, 0, 0
-
-# PER_recall, LOC_recall, DATE_recall, JOB_recall = 0, 0, 0, 0
-# PER_precision, LOC_precision, DATE_precision, JOB_precision = 0, 0, 0, 0
-
-# def f1_score_category(precision, recall):
-#     return 2 * (precision * recall) / (precision + recall)
-
-# def update_lists(labels, reference, key):
-#     global PER_score, LOC_score, DATE_score, JOB_score
-#     global PER_count, LOC_count, DATE_count, JOB_count
-#     global PER_recall, LOC_recall, DATE_recall, JOB_recall
-#     global PER_precision, LOC_precision, DATE_precision, JOB_precision
-
-#     state = ''
-#     distance = Levenshtein.distance(labels[key], reference[key])
-#     if distance > 5 or (labels[key] == '' and reference[key] != '') or (labels[key] != '' and reference[key] == ''):
-#         if (labels[key] == '' and reference[key] != ''):
-#             state = 'fn'
-#         elif (labels[key] != '' and reference[key] == ''):
-#             state = 'fp'
-#     if labels[key] == '' and reference[key] == '':
-#         state = 'tn'
-#     if distance <= 5 and labels[key] != '' and reference[key] != '':
-#         state = 'tp'
-
 
 one_shot_levenshtein_history = []
 few_shot_levenshtein_history = []
@@ -70,7 +37,7 @@ iter = 0
 
 already_done = []
 labels_history = {}
-with open('donnees-test-labels-gpt35.json', 'r') as f:
+with open('donnees-test-labels-gpt35-paragraph-16k.json', 'r') as f:
     labels_history = json.load(f)
 for i in labels_history.keys():
     already_done.append(i)
@@ -94,11 +61,24 @@ for i, name in enumerate(data):
     # #print('one_shot_tags : ', one_shot_tags)
     # distances = 0
     # errors = 0
+    # # for key in reference.keys():
+    # #     reference[key] = reference[key].replace('-\n', '').replace('\n', ' ')
     # for key in reference.keys():
-    #     reference[key] = reference[key].replace('-\n', '').replace('\n', ' ')
-    # for key in reference.keys():
+    #     ####Patch for Boolean, temporary
+    #     if isinstance(reference[key], bool):
+    #         continue
+    #     ################################
     #     if key not in one_shot_tags.keys():
     #         one_shot_tags[key] = ''
+    # key_to_remove = []
+    # for key in one_shot_tags.keys():
+    #     if key not in reference.keys():
+    #         key_to_remove.append(key)
+    # for key in key_to_remove:
+    #     one_shot_tags.pop(key, None)
+
+    # labels = one_shot_tags
+
     #     distance = Levenshtein.distance(one_shot_tags[key], reference[key])
     #     if distance > 5 or (one_shot_tags[key] == '' and reference[key] != ''):
     #         #print(key, distance, one_shot_tags[key] if one_shot_tags[key] != '' else 'VIDE', reference[key] if reference[key] != '' else 'VIDE')
@@ -121,6 +101,7 @@ for i, name in enumerate(data):
     splitted = split_text(text)
     # print('splitted : ', splitted)
     labels = get_labels(splitted)
+    print('labels : ', labels)
     # extract labels into a list
     dic = {}
     for key in labels.keys():
@@ -147,12 +128,12 @@ for i, name in enumerate(data):
             labels[key] = ''
 
     labels = sanitize_labels(labels)
-    print(labels)
-    # print('labels : ', labels['Jour-mariage'])
+    #print(labels)
+    #print('labels : ', labels['Jour-mariage'])
 
     labels_history[name] = labels
     # store labels_history in json file
-    with open('donnees-test-labels-gpt35.json', 'w') as outfile:
+    with open('donnees-test-labels-gpt35-paragraph-16k.json', 'w') as outfile:
         json.dump(labels_history, outfile, indent=4)
 
     # distances = 0

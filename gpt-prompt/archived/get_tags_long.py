@@ -1,9 +1,10 @@
 import json
 import openai
 import Levenshtein
+import os
 
-openai.organization = "org-2wXrLf4fLEfdyawavmkAqi8z"
-openai.api_key = "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"
+openai.organization = os.environ["OPENAI_ORG_KEY"]
+openai.api_key = os.environ["OPENAI_API_KEY"]
 
 #intro sequence:
 intro = "Nous allons te fournir un certificat de mariage, un document ayant toujours la même mise en forme.Tu vas devoir procéder à l’extraction de certaines données sur plusieurs certificats ensuite. Voici le premier certificat, je précise qu’il est extrait d’un document au format Json et que tu auras toutes les réponses fournies à la fin, cela te permettra de mieux reconnaître ce qu’il te faut obtenir dans les contrats suivants. "

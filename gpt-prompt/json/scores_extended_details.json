@@ -1,0 +1,128 @@
+{
+    "PERE_MARIEE": {
+        "DATE": {
+            "count": 0
+        },
+        "JOB": {
+            "count": 20
+        },
+        "PER": {
+            "count": 75
+        },
+        "LOC": {
+            "count": 49
+        }
+    },
+    "ADMIN": {
+        "DATE": {
+            "count": 167
+        },
+        "JOB": {
+            "count": 0
+        },
+        "PER": {
+            "count": 68
+        },
+        "LOC": {
+            "count": 34
+        }
+    },
+    "MERE_MARIEE": {
+        "DATE": {
+            "count": 0
+        },
+        "JOB": {
+            "count": 24
+        },
+        "PER": {
+            "count": 81
+        },
+        "LOC": {
+            "count": 55
+        }
+    },
+    "PERE_MARI": {
+        "DATE": {
+            "count": 0
+        },
+        "JOB": {
+            "count": 15
+        },
+        "PER": {
+            "count": 70
+        },
+        "LOC": {
+            "count": 27
+        }
+    },
+    "MARI": {
+        "DATE": {
+            "count": 102
+        },
+        "JOB": {
+            "count": 34
+        },
+        "PER": {
+            "count": 134
+        },
+        "LOC": {
+            "count": 158
+        }
+    },
+    "MERE_MARI": {
+        "DATE": {
+            "count": 0
+        },
+        "JOB": {
+            "count": 19
+        },
+        "PER": {
+            "count": 78
+        },
+        "LOC": {
+            "count": 40
+        }
+    },
+    "MARIEE": {
+        "DATE": {
+            "count": 102
+        },
+        "JOB": {
+            "count": 34
+        },
+        "PER": {
+            "count": 134
+        },
+        "LOC": {
+            "count": 143
+        }
+    },
+    "TEMOIN": {
+        "DATE": {
+            "count": 0
+        },
+        "JOB": {
+            "count": 70
+        },
+        "PER": {
+            "count": 213
+        },
+        "LOC": {
+            "count": 172
+        }
+    },
+    "EX_EPOUX": {
+        "DATE": {
+            "count": 0
+        },
+        "JOB": {
+            "count": 0
+        },
+        "PER": {
+            "count": 14
+        },
+        "LOC": {
+            "count": 0
+        }
+    }
+}

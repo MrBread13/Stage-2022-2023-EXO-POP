@@ -3,8 +3,10 @@ import openai
 import Levenshtein
 import itertools
 from time import sleep
-openai.organization = "org-2wXrLf4fLEfdyawavmkAqi8z"
-openai.api_key = "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"
+import os
+
+openai.organization = os.environ["OPENAI_ORG_KEY"]
+openai.api_key = os.environ["OPENAI_API_KEY"]
 
 def read_json(filename):
     with open(filename, "r") as f:

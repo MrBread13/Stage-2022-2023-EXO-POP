@@ -1,0 +1,1230 @@
+{
+    "archives_AD075EC_01M1930_0023-left.png-0": {
+        "Departement-residence-pere-mariee": {
+            "reference": "",
+            "gpt": "Seine"
+        },
+        "Departement-residence-mere-mariee": {
+            "reference": "",
+            "gpt": "Seine"
+        },
+        "Ville-residence-temoin-0": {
+            "reference": "\u00e0 Choisy-le-Roi",
+            "gpt": ""
+        },
+        "Departement-residence-temoin-0": {
+            "reference": "Seine",
+            "gpt": ""
+        },
+        "Ville-residence-temoin-1": {
+            "reference": "",
+            "gpt": "Choisy-le-Roi"
+        },
+        "Departement-residence-temoin-1": {
+            "reference": "",
+            "gpt": "Seine"
+        }
+    },
+    "archives_AD075EC_01M1930_0023-left.png-1": {},
+    "archives_AD075EC_01M1930_0023-left.png-2": {
+        "Ville-residence-mari": {
+            "reference": "Saint Leu",
+            "gpt": "Paris"
+        },
+        "Numero-rue-residence-mari": {
+            "reference": "",
+            "gpt": "32"
+        },
+        "Type-rue-residence-mari": {
+            "reference": "",
+            "gpt": "rue"
+        },
+        "Nom-rue-residence-mari": {
+            "reference": "",
+            "gpt": "Tiquetonne"
+        },
+        "Ville-residence-pere-mari": {
+            "reference": "Saint Leu",
+            "gpt": ""
+        },
+        "Ville-residence-mere-mari": {
+            "reference": "Saint Leu",
+            "gpt": "Saint Leu, commune de Cesson"
+        },
+        "Departement-residence-mere-mari": {
+            "reference": "",
+            "gpt": "Seine-et-Marne"
+        },
+        "Ville-residence-mariee": {
+            "reference": "Saint Leu",
+            "gpt": "Saint Leu, commune de Cesson r\u00e9sidant \u00e0 Paris"
+        },
+        "Numero-rue-residence-mariee": {
+            "reference": "",
+            "gpt": "4"
+        },
+        "Type-rue-residence-mariee": {
+            "reference": "",
+            "gpt": "rue"
+        },
+        "Nom-rue-residence-mariee": {
+            "reference": "",
+            "gpt": "Montmartre"
+        },
+        "Ville-residence-pere-mariee": {
+            "reference": "Saint Leu",
+            "gpt": "Saint Leu, commune de Cesson"
+        },
+        "Departement-residence-pere-mariee": {
+            "reference": "",
+            "gpt": "Seine-et-Marne"
+        },
+        "Ville-residence-mere-mariee": {
+            "reference": "Saint Leu",
+            "gpt": "Saint Leu, commune de Cesson"
+        },
+        "Departement-residence-mere-mariee": {
+            "reference": "",
+            "gpt": "Seine-et-Marne"
+        },
+        "Numero-rue-residence-temoin-0": {
+            "reference": "1",
+            "gpt": ""
+        },
+        "Type-rue-residence-temoin-0": {
+            "reference": "Place",
+            "gpt": ""
+        },
+        "Nom-rue-residence-temoin-0": {
+            "reference": "des Deux Ecus",
+            "gpt": ""
+        },
+        "Numero-rue-residence-temoin-1": {
+            "reference": "",
+            "gpt": "1"
+        },
+        "Type-rue-residence-temoin-1": {
+            "reference": "",
+            "gpt": "Place"
+        },
+        "Nom-rue-residence-temoin-1": {
+            "reference": "",
+            "gpt": "des Deux Ecus"
+        }
+    },
+    "archives_AD075EC_01M1930_0023-right.png-0": {
+        "Profession-pere-mariee": {
+            "reference": "",
+            "gpt": "MORT POUR LA FRANCE"
+        }
+    },
+    "archives_AD075EC_01M1930_0023-right.png-1": {},
+    "archives_AD075EC_01M1930_0023-right.png-2": {
+        "Ville-residence-mere-mari": {
+            "reference": "",
+            "gpt": "Paris"
+        }
+    },
+    "archives_AD075EC_01M1940_0020-left.png-0": {
+        "Ville-mariage": {
+            "reference": "premier arrondissement",
+            "gpt": "premier arrondissement de Paris"
+        },
+        "Departement-residence-mariee": {
+            "reference": "Seine",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_01M1940_0020-left.png-3": {
+        "Profession-pere-mariee": {
+            "reference": "",
+            "gpt": "cultivateurs"
+        },
+        "Ville-residence-pere-mariee": {
+            "reference": "",
+            "gpt": "Encourtiech"
+        },
+        "Departement-residence-pere-mariee": {
+            "reference": "",
+            "gpt": "Ari\u00e8ge"
+        },
+        "Ville-residence-mere-mariee": {
+            "reference": "",
+            "gpt": "Encourtiech"
+        },
+        "Departement-residence-mere-mariee": {
+            "reference": "",
+            "gpt": "Ari\u00e8ge"
+        }
+    },
+    "archives_AD075EC_01M1940_0020-right.png-0": {
+        "Ville-mariage": {
+            "reference": "premier arrondissement de\nParis",
+            "gpt": ""
+        },
+        "Prenom-temoin-0": {
+            "reference": "Louis",
+            "gpt": ""
+        },
+        "Nom-temoin-0": {
+            "reference": "BISSONIER",
+            "gpt": ""
+        },
+        "Profession-temoin-0": {
+            "reference": "chauffeur de taxi",
+            "gpt": ""
+        },
+        "Numero-rue-residence-temoin-0": {
+            "reference": "96",
+            "gpt": ""
+        },
+        "Type-rue-residence-temoin-0": {
+            "reference": "rue",
+            "gpt": ""
+        },
+        "Nom-rue-residence-temoin-0": {
+            "reference": "Saint Denis",
+            "gpt": ""
+        },
+        "Prenom-temoin-1": {
+            "reference": "Rosa",
+            "gpt": ""
+        },
+        "Nom-temoin-1": {
+            "reference": "DEJOuET",
+            "gpt": ""
+        },
+        "Profession-temoin-1": {
+            "reference": "marchande de quatre\nsaisons",
+            "gpt": ""
+        },
+        "Numero-rue-residence-temoin-1": {
+            "reference": "6",
+            "gpt": ""
+        },
+        "Type-rue-residence-temoin-1": {
+            "reference": "rue",
+            "gpt": ""
+        },
+        "Nom-rue-residence-temoin-1": {
+            "reference": "de Jarente",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_01M1940_0020-right.png-1": {
+        "Annee-mariage": {
+            "reference": "mil neuf centt",
+            "gpt": "mil neuf cent quarante"
+        },
+        "Prenom-adjoint-maire": {
+            "reference": "",
+            "gpt": "Charles Victor L\u00e9opold Ernest"
+        },
+        "Nom-adjoint-maire": {
+            "reference": "",
+            "gpt": "Ch\u00e9deville"
+        },
+        "Ville-residence-pere-mariee": {
+            "reference": "",
+            "gpt": "Paris"
+        },
+        "Numero-rue-residence-pere-mariee": {
+            "reference": "",
+            "gpt": "17"
+        },
+        "Type-rue-residence-pere-mariee": {
+            "reference": "",
+            "gpt": "rue"
+        },
+        "Nom-rue-residence-pere-mariee": {
+            "reference": "",
+            "gpt": "des Halles"
+        }
+    },
+    "archives_AD075EC_01M1940_0020-right.png-2": {
+        "Prenom-adjoint-maire": {
+            "reference": "",
+            "gpt": "Charles Victor L\u00e9opold Ernest"
+        },
+        "Nom-adjoint-maire": {
+            "reference": "",
+            "gpt": "Ch\u00e9deville"
+        },
+        "Departement-naissance-mari": {
+            "reference": "",
+            "gpt": "Commune de Trente"
+        },
+        "Ville-residence-temoin-0": {
+            "reference": "Fontenay sous Bois",
+            "gpt": ""
+        },
+        "Departement-residence-temoin-0": {
+            "reference": "Seine",
+            "gpt": ""
+        },
+        "Ville-residence-temoin-1": {
+            "reference": "",
+            "gpt": "Fontenay sous Bois"
+        },
+        "Departement-residence-temoin-1": {
+            "reference": "",
+            "gpt": "Seine"
+        }
+    },
+    "archives_AD075EC_01M1940_0011-left.png-0": {},
+    "archives_AD075EC_01M1940_0011-left.png-1": {
+        "Departement-residence-mariee": {
+            "reference": "Basses-Pyr\u00e9n\u00e9es",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_01M1940_0011-left.png-2": {},
+    "archives_AD075EC_01M1940_0011-right.png-0": {
+        "Ville-residence-pere-mari": {
+            "reference": "Paris",
+            "gpt": ""
+        },
+        "Numero-rue-residence-pere-mari": {
+            "reference": "11",
+            "gpt": ""
+        },
+        "Type-rue-residence-pere-mari": {
+            "reference": "rue",
+            "gpt": ""
+        },
+        "Nom-rue-residence-pere-mari": {
+            "reference": "du March\u00e9 Saint Honor\u00e9",
+            "gpt": ""
+        },
+        "Ville-residence-pere-mariee": {
+            "reference": "",
+            "gpt": "Recloses"
+        },
+        "Departement-residence-pere-mariee": {
+            "reference": "",
+            "gpt": "Seine et Marne"
+        },
+        "Departement-residence-mere-mariee": {
+            "reference": "",
+            "gpt": "Seine et Marne"
+        }
+    },
+    "archives_AD075EC_01M1940_0011-right.png-2": {
+        "Ville-residence-temoin-1": {
+            "reference": "",
+            "gpt": "Enghien les Bains"
+        },
+        "Departement-residence-temoin-0": {
+            "reference": "Seine et Oise",
+            "gpt": ""
+        },
+        "Nom-rue-residence-temoin-1": {
+            "reference": "Gounod\nEnghien les Bains",
+            "gpt": "Gounod"
+        },
+        "Departement-residence-temoin-1": {
+            "reference": "",
+            "gpt": "Seine et Oise"
+        }
+    },
+    "archives_AD075EC_11M549_0094-left.png-0": {
+        "Profession-temoin-0": {
+            "reference": "ON",
+            "gpt": "directeur d'usine"
+        },
+        "Nom-temoin-1": {
+            "reference": "ON",
+            "gpt": "CAILLE"
+        },
+        "Profession-temoin-1": {
+            "reference": "directeur d'usine",
+            "gpt": "employ\u00e9 des Postes"
+        }
+    },
+    "archives_AD075EC_11M549_0094-left.png-1": {
+        "Profession-mari": {
+            "reference": "employ\u00e9 de",
+            "gpt": "employ\u00e9 de chemin de fer"
+        },
+        "Type-rue-residence-mari": {
+            "reference": "chemin",
+            "gpt": "faubourg"
+        },
+        "Nom-rue-residence-mari": {
+            "reference": "de fer",
+            "gpt": "Saint Antoine"
+        },
+        "Profession-mere-mari": {
+            "reference": "",
+            "gpt": "epouse d\u00e9cd\u00e9e"
+        },
+        "Nom-mariee": {
+            "reference": "B\u00dbRCKB\u00dbCKLER",
+            "gpt": "B\u00dbrckb\u00fckler"
+        },
+        "Prenom-ex-epoux": {
+            "reference": "",
+            "gpt": "Edouard Emile"
+        },
+        "Nom-ex-epoux": {
+            "reference": "",
+            "gpt": "MOY"
+        },
+        "Departement-residence-temoin-0": {
+            "reference": "Seine",
+            "gpt": ""
+        },
+        "Departement-residence-temoin-1": {
+            "reference": "",
+            "gpt": "Seine"
+        }
+    },
+    "archives_AD075EC_11M549_0094-left.png-2": {
+        "Ville-mariage": {
+            "reference": "",
+            "gpt": "XI \u00b0 arrondissement de Paris"
+        },
+        "Prenom-mari": {
+            "reference": "ontcomparu",
+            "gpt": "Jean Baptiste Fran\u00e7ois"
+        },
+        "Nom-mari": {
+            "reference": "publiquement",
+            "gpt": "ALLIONE"
+        },
+        "Prenom-mere-mari": {
+            "reference": "ontcomparu",
+            "gpt": "Marie"
+        },
+        "Nom-mere-mari": {
+            "reference": "publiquement",
+            "gpt": "PIAMOTTON"
+        },
+        "Numero-rue-residence-pere-mariee": {
+            "reference": "",
+            "gpt": "11"
+        },
+        "Type-rue-residence-pere-mariee": {
+            "reference": "",
+            "gpt": "passage"
+        },
+        "Nom-rue-residence-pere-mariee": {
+            "reference": "",
+            "gpt": "Maurice"
+        },
+        "Profession-temoin-1": {
+            "reference": "11",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_11M549_0094-right.png-0": {
+        "Ville-residence-mari": {
+            "reference": "Saint Aubin",
+            "gpt": ""
+        },
+        "Departement-residence-mari": {
+            "reference": "Eure et Loir)",
+            "gpt": ""
+        },
+        "Prenom-pere-mari": {
+            "reference": "jean marie",
+            "gpt": "Jean Marie Joseph"
+        },
+        "Ville-residence-mere-mari": {
+            "reference": "Saint Aubin",
+            "gpt": "Saint Aubin (Eure et Loir)"
+        },
+        "Departement-residence-mere-mari": {
+            "reference": "Eure et Loir)",
+            "gpt": ""
+        },
+        "Profession-temoin-0": {
+            "reference": "employ\u00e9e \u00e0 la",
+            "gpt": "employ\u00e9e \u00e0 la Ville de Paris"
+        },
+        "Nom-rue-residence-temoin-0": {
+            "reference": "de Paris",
+            "gpt": "Jean Jaur\u00e8s"
+        },
+        "Profession-temoin-1": {
+            "reference": "Ville",
+            "gpt": "commis principal aux Postes"
+        },
+        "Nom-rue-residence-temoin-1": {
+            "reference": "Jean Jaur\u00e8s",
+            "gpt": "de l'Ouest"
+        }
+    },
+    "archives_AD075EC_11M549_0094-right.png-1": {
+        "Ville-naissance-mari": {
+            "reference": "paris, XVII\u00b0 arrondissement",
+            "gpt": "Paris"
+        },
+        "Departement-naissance-mari": {
+            "reference": "",
+            "gpt": "XVII\u00b0 arrondissement"
+        },
+        "Profession-mere-mari": {
+            "reference": "son \u00e9puse, employ\u00e9e de commerce",
+            "gpt": "employ\u00e9e de commerce"
+        },
+        "Numero-rue-residence-mere-mari": {
+            "reference": "4",
+            "gpt": ""
+        },
+        "Type-rue-residence-mere-mari": {
+            "reference": "rue",
+            "gpt": ""
+        },
+        "Nom-rue-residence-mere-mari": {
+            "reference": "de capri",
+            "gpt": ""
+        },
+        "Ville-residence-mariee": {
+            "reference": "Nice",
+            "gpt": ""
+        },
+        "Departement-residence-pere-mariee": {
+            "reference": "",
+            "gpt": "Alpes Maritimes"
+        },
+        "Departement-residence-mere-mariee": {
+            "reference": "",
+            "gpt": "Alpes Maritimes"
+        }
+    },
+    "archives_AD075EC_11M549_0094-right.png-2": {
+        "Departement-residence-mari": {
+            "reference": "Gironde)",
+            "gpt": ""
+        },
+        "Profession-mere-mari": {
+            "reference": "\u00e9poux",
+            "gpt": ""
+        },
+        "Ville-residence-mariee": {
+            "reference": "La Vou\u00e2tre",
+            "gpt": ""
+        },
+        "Departement-residence-mariee": {
+            "reference": "Ni\u00e8vre",
+            "gpt": ""
+        },
+        "Nom-rue-residence-temoin-0": {
+            "reference": "des Boulets\net de",
+            "gpt": "des Boulets"
+        },
+        "Nom-rue-residence-temoin-1": {
+            "reference": "Victor",
+            "gpt": "Gonnet"
+        }
+    },
+    "archives_AD075EC_04M298B_0036-right.png-0": {
+        "Ville-residence-mari": {
+            "reference": "Silly-le-Long",
+            "gpt": ""
+        },
+        "Departement-residence-mari": {
+            "reference": "Oise",
+            "gpt": ""
+        },
+        "Numero-rue-residence-mari": {
+            "reference": "",
+            "gpt": "18"
+        },
+        "Type-rue-residence-mari": {
+            "reference": "Boule-\nvard Henri IV",
+            "gpt": "Boulevard"
+        },
+        "Nom-rue-residence-mari": {
+            "reference": "",
+            "gpt": "Henri IV"
+        },
+        "Ville-residence-pere-mari": {
+            "reference": "Silly-le-Long",
+            "gpt": ""
+        },
+        "Departement-residence-pere-mari": {
+            "reference": "Oise",
+            "gpt": ""
+        },
+        "Ville-residence-pere-mariee": {
+            "reference": "",
+            "gpt": "Boves"
+        },
+        "Departement-residence-pere-mariee": {
+            "reference": "",
+            "gpt": "Somme"
+        }
+    },
+    "archives_AD075EC_04M298B_0036-right.png-1": {
+        "Numero-rue-residence-mari": {
+            "reference": "",
+            "gpt": "4"
+        },
+        "Type-rue-residence-mari": {
+            "reference": "",
+            "gpt": "Impasse de la Cerisaie"
+        },
+        "Prenom-mere-mari": {
+            "reference": "",
+            "gpt": "Madeleine"
+        },
+        "Nom-mere-mari": {
+            "reference": "",
+            "gpt": "SUSSE"
+        },
+        "Ville-residence-mariee": {
+            "reference": "Villiers-sur-Orge",
+            "gpt": ""
+        },
+        "Departement-residence-mariee": {
+            "reference": "Seine-et-Oise",
+            "gpt": ""
+        },
+        "Numero-rue-residence-temoin-0": {
+            "reference": "11",
+            "gpt": ""
+        },
+        "Type-rue-residence-temoin-0": {
+            "reference": "rue",
+            "gpt": ""
+        },
+        "Nom-rue-residence-temoin-0": {
+            "reference": "Huwart",
+            "gpt": "au Neubourg"
+        },
+        "Ville-residence-temoin-0": {
+            "reference": "Neubourg",
+            "gpt": "Eure"
+        },
+        "Departement-residence-temoin-0": {
+            "reference": "Eure",
+            "gpt": ""
+        },
+        "Numero-rue-residence-temoin-1": {
+            "reference": "",
+            "gpt": "11"
+        },
+        "Type-rue-residence-temoin-1": {
+            "reference": "",
+            "gpt": "rue"
+        },
+        "Nom-rue-residence-temoin-1": {
+            "reference": "",
+            "gpt": "Huwart"
+        }
+    },
+    "archives_AD075EC_04M298B_0036-right.png-2": {
+        "Prenom-adjoint-maire": {
+            "reference": "Maurice Jules",
+            "gpt": ""
+        },
+        "Nom-adjoint-maire": {
+            "reference": "DEVINAT",
+            "gpt": ""
+        },
+        "Ville-mariage": {
+            "reference": "quatri\u00e8me arrondissement de Paris",
+            "gpt": ""
+        },
+        "Ville-residence-mari": {
+            "reference": "Ballan-Mir\u00e9",
+            "gpt": ""
+        },
+        "Departement-residence-mari": {
+            "reference": "Indre-et-Loire",
+            "gpt": ""
+        },
+        "Ville-residence-mariee": {
+            "reference": "Cronst",
+            "gpt": ""
+        },
+        "Departement-residence-mariee": {
+            "reference": "Sa\u00f4ne-et-Loire",
+            "gpt": ""
+        },
+        "Prenom-temoin-0": {
+            "reference": "Suzanne",
+            "gpt": ""
+        },
+        "Nom-temoin-0": {
+            "reference": "BONNION",
+            "gpt": ""
+        },
+        "Profession-temoin-0": {
+            "reference": "d\u00e9bitante",
+            "gpt": ""
+        },
+        "Numero-rue-residence-temoin-0": {
+            "reference": "130",
+            "gpt": ""
+        },
+        "Type-rue-residence-temoin-0": {
+            "reference": "rue",
+            "gpt": ""
+        },
+        "Nom-rue-residence-temoin-0": {
+            "reference": "de Tolbiac",
+            "gpt": ""
+        },
+        "Prenom-temoin-1": {
+            "reference": "Lucien",
+            "gpt": ""
+        },
+        "Nom-temoin-1": {
+            "reference": "JOUAN",
+            "gpt": ""
+        },
+        "Profession-temoin-1": {
+            "reference": "employ\u00e9 de commerce",
+            "gpt": ""
+        },
+        "Numero-rue-residence-temoin-1": {
+            "reference": "3",
+            "gpt": ""
+        },
+        "Type-rue-residence-temoin-1": {
+            "reference": "rue",
+            "gpt": ""
+        },
+        "Nom-rue-residence-temoin-1": {
+            "reference": "Blaise Desgoffe",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_11M549_0113-left.png-0": {
+        "Ville-mariage": {
+            "reference": "",
+            "gpt": "XI \u00b0 arrondissement de Paris"
+        },
+        "Ville-residence-mari": {
+            "reference": "Villeneuve-Saint-Georges",
+            "gpt": ""
+        },
+        "Ville-residence-mariee": {
+            "reference": "Ivry la bataille",
+            "gpt": ""
+        },
+        "Ville-residence-pere-mariee": {
+            "reference": "",
+            "gpt": "Ivry la bataille"
+        },
+        "Departement-residence-pere-mariee": {
+            "reference": "",
+            "gpt": "Eure"
+        },
+        "Departement-residence-mere-mariee": {
+            "reference": "",
+            "gpt": "Eure"
+        },
+        "Numero-rue-residence-temoin-0": {
+            "reference": "42",
+            "gpt": ""
+        },
+        "Type-rue-residence-temoin-0": {
+            "reference": "rue",
+            "gpt": ""
+        },
+        "Nom-rue-residence-temoin-0": {
+            "reference": "Sedaine",
+            "gpt": ""
+        },
+        "Numero-rue-residence-temoin-1": {
+            "reference": "",
+            "gpt": "42"
+        },
+        "Type-rue-residence-temoin-1": {
+            "reference": "",
+            "gpt": "rue"
+        },
+        "Nom-rue-residence-temoin-1": {
+            "reference": "",
+            "gpt": "Sedaine"
+        }
+    },
+    "archives_AD075EC_11M549_0113-left.png-1": {
+        "Ville-mariage": {
+            "reference": "",
+            "gpt": "XI \u00b0 arrondissement de Paris"
+        },
+        "Profession-mere-mariee": {
+            "reference": "employ\u00e9e",
+            "gpt": "sa veuve, employ\u00e9e"
+        },
+        "Ville-residence-mere-mariee": {
+            "reference": "",
+            "gpt": "10"
+        },
+        "Numero-rue-residence-mere-mariee": {
+            "reference": "10",
+            "gpt": "passage *"
+        },
+        "Type-rue-residence-mere-mariee": {
+            "reference": "passage",
+            "gpt": ""
+        },
+        "Numero-rue-residence-temoin-0": {
+            "reference": "10",
+            "gpt": ""
+        },
+        "Type-rue-residence-temoin-0": {
+            "reference": "passage",
+            "gpt": ""
+        },
+        "Nom-rue-residence-temoin-0": {
+            "reference": "Thi\u00e9r\u00e9",
+            "gpt": "\u00e0 vaupellon"
+        },
+        "Ville-residence-temoin-0": {
+            "reference": "vaupellon",
+            "gpt": "Eure et Loir"
+        },
+        "Departement-residence-temoin-0": {
+            "reference": "Eure et Loir)",
+            "gpt": ""
+        },
+        "Numero-rue-residence-temoin-1": {
+            "reference": "",
+            "gpt": "10"
+        },
+        "Type-rue-residence-temoin-1": {
+            "reference": "",
+            "gpt": "passage"
+        },
+        "Nom-rue-residence-temoin-1": {
+            "reference": "",
+            "gpt": "Thi\u00e9r\u00e9"
+        }
+    },
+    "archives_AD075EC_11M549_0113-left.png-2": {
+        "Ville-mariage": {
+            "reference": "",
+            "gpt": "XI \u00b0 arrondissement de Paris"
+        },
+        "Ville-residence-pere-mari": {
+            "reference": "Vittel",
+            "gpt": ""
+        },
+        "Departement-residence-pere-mari": {
+            "reference": "Vosges)",
+            "gpt": ""
+        },
+        "Ville-residence-mere-mari": {
+            "reference": "Vittel",
+            "gpt": ""
+        },
+        "Departement-residence-mere-mari": {
+            "reference": "Vosges)",
+            "gpt": ""
+        },
+        "Ville-residence-pere-mariee": {
+            "reference": "paris",
+            "gpt": ""
+        },
+        "Numero-rue-residence-pere-mariee": {
+            "reference": "40",
+            "gpt": ""
+        },
+        "Type-rue-residence-pere-mariee": {
+            "reference": "rue",
+            "gpt": ""
+        },
+        "Nom-rue-residence-pere-mariee": {
+            "reference": "faidherbe",
+            "gpt": ""
+        },
+        "Ville-residence-mere-mariee": {
+            "reference": "paris",
+            "gpt": ""
+        },
+        "Numero-rue-residence-mere-mariee": {
+            "reference": "40",
+            "gpt": ""
+        },
+        "Type-rue-residence-mere-mariee": {
+            "reference": "rue",
+            "gpt": ""
+        },
+        "Nom-rue-residence-mere-mariee": {
+            "reference": "faidherbe",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_11M549_0113-right.png-0": {
+        "Ville-mariage": {
+            "reference": "",
+            "gpt": "XI \u00b0 arrondissement de Paris"
+        },
+        "Departement-residence-mari": {
+            "reference": "Jura",
+            "gpt": ""
+        },
+        "Ville-residence-mere-mariee": {
+            "reference": "paris",
+            "gpt": ""
+        },
+        "Numero-rue-residence-mere-mariee": {
+            "reference": "11",
+            "gpt": ""
+        },
+        "Type-rue-residence-mere-mariee": {
+            "reference": "rue",
+            "gpt": ""
+        },
+        "Nom-rue-residence-mere-mariee": {
+            "reference": "P\u00e9tion",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_11M549_0113-right.png-1": {
+        "Ville-mariage": {
+            "reference": "",
+            "gpt": "XI \u00b0 arrondissement de paris"
+        },
+        "Numero-rue-residence-pere-mariee": {
+            "reference": "131",
+            "gpt": ""
+        },
+        "Type-rue-residence-pere-mariee": {
+            "reference": "rue",
+            "gpt": ""
+        },
+        "Nom-rue-residence-pere-mariee": {
+            "reference": "du Chemin vert",
+            "gpt": ""
+        },
+        "Numero-rue-residence-mere-mariee": {
+            "reference": "131",
+            "gpt": ""
+        },
+        "Type-rue-residence-mere-mariee": {
+            "reference": "rue",
+            "gpt": ""
+        },
+        "Nom-rue-residence-mere-mariee": {
+            "reference": "du Chemin vert",
+            "gpt": ""
+        },
+        "Ville-residence-temoin-0": {
+            "reference": "Montgeron",
+            "gpt": ""
+        },
+        "Departement-residence-temoin-0": {
+            "reference": "Seine et Oise",
+            "gpt": ""
+        },
+        "Ville-residence-temoin-1": {
+            "reference": "",
+            "gpt": "Montgeron"
+        },
+        "Departement-residence-temoin-1": {
+            "reference": "",
+            "gpt": "Seine et Oise"
+        }
+    },
+    "archives_AD075EC_11M549_0113-right.png-2": {
+        "Annee-mariage": {
+            "reference": "mil neuf cent trente",
+            "gpt": "mil neuf cent"
+        },
+        "Ville-naissance-mari": {
+            "reference": "Saint Ger-\nmain",
+            "gpt": "Saint Germain l'H\u00e9ron"
+        },
+        "Annee-naissance-mari": {
+            "reference": "mil huit cent quatre",
+            "gpt": "mil huit cent quatre vingt-huit"
+        },
+        "Ville-residence-mere-mari": {
+            "reference": "Paris",
+            "gpt": ""
+        },
+        "Numero-rue-residence-mere-mari": {
+            "reference": "5",
+            "gpt": ""
+        },
+        "Type-rue-residence-mere-mari": {
+            "reference": "impasse",
+            "gpt": ""
+        },
+        "Nom-rue-residence-mere-mari": {
+            "reference": "Peynet",
+            "gpt": ""
+        },
+        "Prenom-pere-mariee": {
+            "reference": "Julien",
+            "gpt": ""
+        },
+        "Nom-pere-mariee": {
+            "reference": "DERUELLE",
+            "gpt": ""
+        },
+        "Prenom-ex-epoux": {
+            "reference": "",
+            "gpt": "Julien"
+        },
+        "Nom-ex-epoux": {
+            "reference": "",
+            "gpt": "DERUELLE"
+        }
+    },
+    "archives_AD075EC_04M298B_0039-right.png-0": {
+        "Prenom-adjoint-maire": {
+            "reference": "Lucien Gustave Alphonse",
+            "gpt": ""
+        },
+        "Nom-adjoint-maire": {
+            "reference": "DESNOS",
+            "gpt": ""
+        },
+        "Ville-mariage": {
+            "reference": "IV \u00b0 arron\ndissement de Paris",
+            "gpt": ""
+        },
+        "Ville-residence-mariee": {
+            "reference": "Thiaucourt",
+            "gpt": ""
+        },
+        "Departement-residence-mariee": {
+            "reference": "Meurthe-et-Moselle",
+            "gpt": ""
+        },
+        "Prenom-temoin-0": {
+            "reference": "Lucie",
+            "gpt": ""
+        },
+        "Nom-temoin-0": {
+            "reference": "FIGARET",
+            "gpt": ""
+        },
+        "Profession-temoin-0": {
+            "reference": "\u00e9lectricien",
+            "gpt": ""
+        },
+        "Numero-rue-residence-temoin-0": {
+            "reference": "29",
+            "gpt": ""
+        },
+        "Type-rue-residence-temoin-0": {
+            "reference": "rue",
+            "gpt": ""
+        },
+        "Nom-rue-residence-temoin-0": {
+            "reference": "St\u00e9phenson",
+            "gpt": ""
+        },
+        "Prenom-temoin-1": {
+            "reference": "Marcelle",
+            "gpt": ""
+        },
+        "Nom-temoin-1": {
+            "reference": "DUMESNIL",
+            "gpt": ""
+        },
+        "Profession-temoin-1": {
+            "reference": "employ\u00e9e de commerce",
+            "gpt": ""
+        },
+        "Numero-rue-residence-temoin-1": {
+            "reference": "72",
+            "gpt": ""
+        },
+        "Type-rue-residence-temoin-1": {
+            "reference": "rue",
+            "gpt": ""
+        },
+        "Nom-rue-residence-temoin-1": {
+            "reference": "Sedaine",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_04M298B_0039-right.png-1": {
+        "Numero-rue-residence-mari": {
+            "reference": "12",
+            "gpt": ""
+        },
+        "Type-rue-residence-mari": {
+            "reference": "rue",
+            "gpt": ""
+        },
+        "Nom-rue-residence-mari": {
+            "reference": "Dauphine",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_04M298B_0039-right.png-2": {
+        "Prenom-adjoint-maire": {
+            "reference": "Lucien Gustave Al-\nphonse",
+            "gpt": ""
+        },
+        "Nom-adjoint-maire": {
+            "reference": "DESNOS",
+            "gpt": ""
+        },
+        "Ville-mariage": {
+            "reference": "quatri\u00e8me arrondissement * de Paris",
+            "gpt": ""
+        },
+        "Ville-naissance-mari": {
+            "reference": "Paris,\ndix-cepti\u00e8me arrondissement",
+            "gpt": "Paris"
+        },
+        "Departement-naissance-mari": {
+            "reference": "",
+            "gpt": "dix-cepti\u00e8me arrondissement"
+        },
+        "Ville-residence-mari": {
+            "reference": "Paris",
+            "gpt": ""
+        },
+        "Prenom-temoin-0": {
+            "reference": "Pierre",
+            "gpt": ""
+        },
+        "Nom-temoin-0": {
+            "reference": "CASSIN",
+            "gpt": ""
+        },
+        "Profession-temoin-0": {
+            "reference": "Avocat",
+            "gpt": ""
+        },
+        "Numero-rue-residence-temoin-0": {
+            "reference": "119",
+            "gpt": ""
+        },
+        "Type-rue-residence-temoin-0": {
+            "reference": "Boulevard",
+            "gpt": ""
+        },
+        "Nom-rue-residence-temoin-0": {
+            "reference": "Exelmans",
+            "gpt": ""
+        },
+        "Prenom-temoin-1": {
+            "reference": "jean-Pierre",
+            "gpt": ""
+        },
+        "Nom-temoin-1": {
+            "reference": "LIAUSU",
+            "gpt": ""
+        },
+        "Profession-temoin-1": {
+            "reference": "journaliste",
+            "gpt": ""
+        },
+        "Numero-rue-residence-temoin-1": {
+            "reference": "225",
+            "gpt": ""
+        },
+        "Type-rue-residence-temoin-1": {
+            "reference": "Boulevard",
+            "gpt": ""
+        },
+        "Nom-rue-residence-temoin-1": {
+            "reference": "Raspail",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_04M298B_0038-right.png-0": {
+        "Prenom-adjoint-maire": {
+            "reference": "Lucien Gustave Alphonse",
+            "gpt": ""
+        },
+        "Nom-adjoint-maire": {
+            "reference": "DESNOS",
+            "gpt": ""
+        },
+        "Jour-naissance-mari": {
+            "reference": "dix-sept",
+            "gpt": "quatre/dix-sept"
+        },
+        "Ville-residence-mari": {
+            "reference": "Var- -\nsovie",
+            "gpt": ""
+        },
+        "Pays-residence-mari": {
+            "reference": "Pologne",
+            "gpt": ""
+        },
+        "Jour-naissance-mariee": {
+            "reference": "quatorze",
+            "gpt": "premier/ quatorze"
+        },
+        "Prenom-temoin-0": {
+            "reference": "Hersz",
+            "gpt": ""
+        },
+        "Nom-temoin-0": {
+            "reference": "STRASFOGEL",
+            "gpt": ""
+        },
+        "Profession-temoin-0": {
+            "reference": "tricotteur",
+            "gpt": ""
+        },
+        "Numero-rue-residence-temoin-0": {
+            "reference": "117",
+            "gpt": ""
+        },
+        "Type-rue-residence-temoin-0": {
+            "reference": "Boulevard",
+            "gpt": ""
+        },
+        "Nom-rue-residence-temoin-0": {
+            "reference": "Richard Lenoir",
+            "gpt": ""
+        },
+        "Prenom-temoin-1": {
+            "reference": "Mendel",
+            "gpt": ""
+        },
+        "Nom-temoin-1": {
+            "reference": "KENIGSVEIN",
+            "gpt": ""
+        },
+        "Profession-temoin-1": {
+            "reference": "tailleur",
+            "gpt": ""
+        },
+        "Numero-rue-residence-temoin-1": {
+            "reference": "24",
+            "gpt": ""
+        },
+        "Type-rue-residence-temoin-1": {
+            "reference": "rue",
+            "gpt": ""
+        },
+        "Nom-rue-residence-temoin-1": {
+            "reference": "des Rosiers",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_04M298B_0038-right.png-1": {
+        "Ville-residence-mariee": {
+            "reference": "La Tour d'Auvergne",
+            "gpt": ""
+        },
+        "Departement-residence-mariee": {
+            "reference": "Puy-de-D\u00f4me",
+            "gpt": ""
+        },
+        "Ville-residence-temoin-0": {
+            "reference": "Plessis Robinson",
+            "gpt": ""
+        },
+        "Departement-residence-temoin-0": {
+            "reference": "Seine",
+            "gpt": ""
+        },
+        "Ville-residence-temoin-1": {
+            "reference": "",
+            "gpt": "Le Plessis Robinson"
+        },
+        "Departement-residence-temoin-1": {
+            "reference": "",
+            "gpt": "Seine"
+        }
+    }
+}
