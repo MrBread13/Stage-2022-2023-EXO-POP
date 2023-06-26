@@ -5,8 +5,8 @@ import itertools
 from time import sleep
 import os
 
-openai.organization = os.environ["OPENAI_ORG_KEY"]
-openai.api_key = os.environ["OPENAI_API_KEY"]
+openai.organization = os.environ.get("OPENAI_ORG_KEY")
+openai.api_key = os.environ.get("OPENAI_API_KEY")
 
 def read_json(filename):
     with open(filename, "r") as f:
@@ -18,15 +18,7 @@ def split_examples(examples : dict, index : int):
     return examples[str(index)], {k: v for k, v in examples.items() if k != str(index)}
 
 def get_example_prompt(examples, paragraph_index):
-    #get the prompt
-    # prompt = ""
-    # prompt += "Répondre. Utilise exact même labels même si personne non mentionnée\n"
-    # for i, example in enumerate(examples):
-    #     prompt += f"Example {i+1}:\n"
-    #     prompt += f"{examples[example]['text'][paragraph_index]}\n"
-    #     prompt += f"Labels {i+1}:\n"
-    #     prompt += f"{examples[example]['labels'][paragraph_index]}\n\n"
-    prompt = [{"role": "system", "content": "Read the French Mariage Acts input by the user, then answer using a JSON to extract named entities in the act. Always use the same JSON keys."}]
+    prompt = [{"role": "system", "content": "Read the French Mariage Acts input by the user, then answer using a JSON to extract named entities in the act. Always use the same JSON keys. Beware of plurals. Parents can have the same jobs. They can also live with their child (avec ses père et mère, avec sa mère, avec son père)"}]
     for i, example in enumerate(examples):
         prompt.append({"role": "user", "content": str(examples[example]['text'][paragraph_index])})
         print(examples[example]['labels'])

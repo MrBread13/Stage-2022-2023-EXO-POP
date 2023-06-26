@@ -3,8 +3,8 @@ import openai
 from time import sleep
 import os
 
-openai.organization = os.environ["OPENAI_ORG_KEY"]
-openai.api_key = os.environ["OPENAI_API_KEY"]
+openai.organization = os.environ.get("OPENAI_ORG_KEY")
+openai.api_key = os.environ.get("OPENAI_API_KEY")
 
 file = open("splitting_examples.json", "r")
 data = json.load(file)

@@ -1,0 +1,2141 @@
+{
+    "archives_AD075EC_01M1930_0023-left.png-0": {
+        "PER": {
+            "F1_strict": 0.8400000000000001,
+            "F1_weighted": 0,
+            "F1_ok": 0.9600000000000001
+        },
+        "LOC": {
+            "F1_strict": 0.8444444444444444,
+            "F1_weighted": 0,
+            "F1_ok": 0.888888888888889
+        },
+        "DATE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "JOB": {
+            "F1_strict": 0.8333333333333334,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARIEE": {
+            "F1_strict": 0.9333333333333333,
+            "F1_weighted": 0,
+            "F1_ok": 0.9333333333333333
+        },
+        "PERE_MARIEE": {
+            "F1_strict": 0.5454545454545454,
+            "F1_weighted": 0,
+            "F1_ok": 0.5454545454545454
+        },
+        "EX_EPOUX": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "PERE_MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARI": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 0.6666666666666666
+        },
+        "ADMIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARIEE": {
+            "F1_strict": 0.9230769230769231,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARI": {
+            "F1_strict": 0.8461538461538461,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "TEMOIN": {
+            "F1_strict": 0.9285714285714286,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "F1_ok": 0.9457364341085273,
+        "F1_strict": 0.868217054263566
+    },
+    "archives_AD075EC_01M1930_0023-left.png-1": {
+        "PER": {
+            "F1_strict": 0.9642857142857143,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "LOC": {
+            "F1_strict": 0.96,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "DATE": {
+            "F1_strict": 0.9090909090909091,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "JOB": {
+            "F1_strict": 0.75,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "PERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "EX_EPOUX": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "PERE_MARI": {
+            "F1_strict": 0.8571428571428571,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "ADMIN": {
+            "F1_strict": 0.875,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARIEE": {
+            "F1_strict": 0.9166666666666666,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARI": {
+            "F1_strict": 0.8333333333333334,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "TEMOIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "F1_ok": 1.0,
+        "F1_strict": 0.9305555555555556
+    },
+    "archives_AD075EC_01M1930_0023-left.png-2": {
+        "PER": {
+            "F1_strict": 0.8372093023255814,
+            "F1_weighted": 0,
+            "F1_ok": 0.9767441860465117
+        },
+        "LOC": {
+            "F1_strict": 0.7741935483870969,
+            "F1_weighted": 0,
+            "F1_ok": 0.9032258064516129
+        },
+        "DATE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "JOB": {
+            "F1_strict": 0.875,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARIEE": {
+            "F1_strict": 0.75,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "PERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "EX_EPOUX": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "PERE_MARI": {
+            "F1_strict": 0.8571428571428571,
+            "F1_weighted": 0,
+            "F1_ok": 0.8571428571428571
+        },
+        "MERE_MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "ADMIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARIEE": {
+            "F1_strict": 0.8695652173913044,
+            "F1_weighted": 0,
+            "F1_ok": 0.8695652173913044
+        },
+        "MARI": {
+            "F1_strict": 0.7,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "TEMOIN": {
+            "F1_strict": 0.8181818181818182,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "F1_ok": 0.9642857142857142,
+        "F1_strict": 0.8571428571428571
+    },
+    "archives_AD075EC_01M1930_0023-right.png-0": {
+        "PER": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "LOC": {
+            "F1_strict": 0.918918918918919,
+            "F1_weighted": 0,
+            "F1_ok": 0.972972972972973
+        },
+        "DATE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "JOB": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "PERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "EX_EPOUX": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "PERE_MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARI": {
+            "F1_strict": 0.923076923076923,
+            "F1_weighted": 0,
+            "F1_ok": 0.923076923076923
+        },
+        "ADMIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARI": {
+            "F1_strict": 0.9230769230769231,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "TEMOIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "F1_ok": 0.991869918699187,
+        "F1_strict": 0.975609756097561
+    },
+    "archives_AD075EC_01M1930_0023-right.png-1": {
+        "PER": {
+            "F1_strict": 0.9615384615384616,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "LOC": {
+            "F1_strict": 0.9142857142857143,
+            "F1_weighted": 0,
+            "F1_ok": 0.9714285714285714
+        },
+        "DATE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "JOB": {
+            "F1_strict": 0.8333333333333334,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "PERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "EX_EPOUX": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "PERE_MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARI": {
+            "F1_strict": 0.923076923076923,
+            "F1_weighted": 0,
+            "F1_ok": 0.923076923076923
+        },
+        "ADMIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARIEE": {
+            "F1_strict": 0.9166666666666666,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARI": {
+            "F1_strict": 0.8333333333333334,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "TEMOIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "F1_ok": 0.9915966386554621,
+        "F1_strict": 0.9411764705882353
+    },
+    "archives_AD075EC_01M1930_0023-right.png-2": {
+        "PER": {
+            "F1_strict": 0.96,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "LOC": {
+            "F1_strict": 0.9411764705882353,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "DATE": {
+            "F1_strict": 0.9090909090909091,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "JOB": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "PERE_MARIEE": {
+            "F1_strict": 0.5,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "EX_EPOUX": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "PERE_MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "ADMIN": {
+            "F1_strict": 0.875,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARIEE": {
+            "F1_strict": 0.9230769230769231,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "TEMOIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "F1_ok": 1.0,
+        "F1_strict": 0.9482758620689655
+    },
+    "archives_AD075EC_01M1940_0020-left.png-0": {
+        "PER": {
+            "F1_strict": 0.9583333333333334,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "LOC": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "DATE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "JOB": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "PERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "EX_EPOUX": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "PERE_MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "ADMIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARI": {
+            "F1_strict": 0.9230769230769231,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "TEMOIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "F1_ok": 1.0,
+        "F1_strict": 0.9824561403508771
+    },
+    "archives_AD075EC_01M1940_0020-left.png-3": {
+        "PER": {
+            "F1_strict": 0.9142857142857143,
+            "F1_weighted": 0,
+            "F1_ok": 0.9142857142857143
+        },
+        "LOC": {
+            "F1_strict": 0.8750000000000001,
+            "F1_weighted": 0,
+            "F1_ok": 0.8750000000000001
+        },
+        "DATE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "JOB": {
+            "F1_strict": 0.9090909090909091,
+            "F1_weighted": 0,
+            "F1_ok": 0.9090909090909091
+        },
+        "MERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "PERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "EX_EPOUX": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "PERE_MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "ADMIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "TEMOIN": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "F1_ok": 0.9183673469387755,
+        "F1_strict": 0.9183673469387755
+    },
+    "archives_AD075EC_01M1940_0020-right.png-0": {
+        "PER": {
+            "F1_strict": 0.875,
+            "F1_weighted": 0,
+            "F1_ok": 0.875
+        },
+        "LOC": {
+            "F1_strict": 0.8000000000000002,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "DATE": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "JOB": {
+            "F1_strict": 0.5,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARIEE": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "PERE_MARIEE": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "EX_EPOUX": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "PERE_MARI": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "MERE_MARI": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "ADMIN": {
+            "F1_strict": 0.6666666666666666,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARIEE": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "MARI": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "TEMOIN": {
+            "F1_strict": 0.8333333333333334,
+            "F1_weighted": 0,
+            "F1_ok": 0.9166666666666666
+        },
+        "F1_ok": 0.9333333333333333,
+        "F1_strict": 0.8000000000000002
+    },
+    "archives_AD075EC_01M1940_0020-right.png-1": {
+        "PER": {
+            "F1_strict": 0.9615384615384616,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "LOC": {
+            "F1_strict": 0.9545454545454546,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "DATE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "JOB": {
+            "F1_strict": 0.875,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "PERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "EX_EPOUX": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "PERE_MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "ADMIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARI": {
+            "F1_strict": 0.8333333333333334,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "TEMOIN": {
+            "F1_strict": 0.9230769230769231,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "F1_ok": 1.0,
+        "F1_strict": 0.9552238805970149
+    },
+    "archives_AD075EC_01M1940_0020-right.png-2": {
+        "PER": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "LOC": {
+            "F1_strict": 0.9142857142857143,
+            "F1_weighted": 0,
+            "F1_ok": 0.9714285714285714
+        },
+        "DATE": {
+            "F1_strict": 0.9090909090909091,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "JOB": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "PERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "EX_EPOUX": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "PERE_MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "ADMIN": {
+            "F1_strict": 0.875,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARI": {
+            "F1_strict": 0.888888888888889,
+            "F1_weighted": 0,
+            "F1_ok": 0.962962962962963
+        },
+        "TEMOIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "F1_ok": 0.9914529914529915,
+        "F1_strict": 0.9572649572649573
+    },
+    "archives_AD075EC_01M1940_0011-left.png-0": {
+        "PER": {
+            "F1_strict": 0.875,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "LOC": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "DATE": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "JOB": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARIEE": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "PERE_MARIEE": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "EX_EPOUX": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "PERE_MARI": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "MERE_MARI": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "ADMIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARIEE": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "MARI": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "TEMOIN": {
+            "F1_strict": 0.9166666666666666,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "F1_ok": 1.0,
+        "F1_strict": 0.9333333333333333
+    },
+    "archives_AD075EC_01M1940_0011-left.png-1": {
+        "PER": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "LOC": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "DATE": {
+            "F1_strict": 0.9090909090909091,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "JOB": {
+            "F1_strict": 0.8571428571428571,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "PERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "EX_EPOUX": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "PERE_MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "ADMIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARI": {
+            "F1_strict": 0.9166666666666666,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "TEMOIN": {
+            "F1_strict": 0.9166666666666666,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "F1_ok": 1.0,
+        "F1_strict": 0.96875
+    },
+    "archives_AD075EC_01M1940_0011-left.png-2": {
+        "PER": {
+            "F1_strict": 0.9230769230769231,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "LOC": {
+            "F1_strict": 0.9285714285714286,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "DATE": {
+            "F1_strict": 0.9090909090909091,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "JOB": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "PERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "EX_EPOUX": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "PERE_MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "ADMIN": {
+            "F1_strict": 0.75,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARIEE": {
+            "F1_strict": 0.8461538461538461,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "TEMOIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "F1_ok": 1.0,
+        "F1_strict": 0.9272727272727272
+    },
+    "archives_AD075EC_01M1940_0011-right.png-0": {
+        "PER": {
+            "F1_strict": 0.8399999999999999,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "LOC": {
+            "F1_strict": 0.8947368421052632,
+            "F1_weighted": 0,
+            "F1_ok": 0.8947368421052632
+        },
+        "DATE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "JOB": {
+            "F1_strict": 0.7142857142857143,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARIEE": {
+            "F1_strict": 0.25,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "PERE_MARIEE": {
+            "F1_strict": 0.3333333333333333,
+            "F1_weighted": 0,
+            "F1_ok": 0.6666666666666666
+        },
+        "EX_EPOUX": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "PERE_MARI": {
+            "F1_strict": 0.923076923076923,
+            "F1_weighted": 0,
+            "F1_ok": 0.923076923076923
+        },
+        "MERE_MARI": {
+            "F1_strict": 0.7692307692307692,
+            "F1_weighted": 0,
+            "F1_ok": 0.923076923076923
+        },
+        "ADMIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARIEE": {
+            "F1_strict": 0.9,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "TEMOIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "F1_ok": 0.967741935483871,
+        "F1_strict": 0.8709677419354839
+    },
+    "archives_AD075EC_01M1940_0011-right.png-2": {
+        "PER": {
+            "F1_strict": 0.9166666666666666,
+            "F1_weighted": 0,
+            "F1_ok": 0.9583333333333334
+        },
+        "LOC": {
+            "F1_strict": 0.9655172413793104,
+            "F1_weighted": 0,
+            "F1_ok": 0.9655172413793104
+        },
+        "DATE": {
+            "F1_strict": 0.8181818181818182,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "JOB": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "PERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "EX_EPOUX": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "PERE_MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "ADMIN": {
+            "F1_strict": 0.875,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARIEE": {
+            "F1_strict": 0.9090909090909091,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARI": {
+            "F1_strict": 0.9230769230769231,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "TEMOIN": {
+            "F1_strict": 0.888888888888889,
+            "F1_weighted": 0,
+            "F1_ok": 0.888888888888889
+        },
+        "F1_ok": 0.9719626168224299,
+        "F1_strict": 0.9158878504672898
+    },
+    "archives_AD075EC_11M549_0094-left.png-0": {
+        "PER": {
+            "F1_strict": 0.9166666666666666,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "LOC": {
+            "F1_strict": 0.8461538461538461,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "DATE": {
+            "F1_strict": 0.9090909090909091,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "JOB": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "PERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "EX_EPOUX": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "PERE_MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "ADMIN": {
+            "F1_strict": 0.875,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARIEE": {
+            "F1_strict": 0.9166666666666666,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARI": {
+            "F1_strict": 0.8333333333333334,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "TEMOIN": {
+            "F1_strict": 0.9166666666666666,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "F1_ok": 1.0,
+        "F1_strict": 0.9038461538461539
+    },
+    "archives_AD075EC_11M549_0094-left.png-1": {
+        "PER": {
+            "F1_strict": 0.8076923076923077,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "LOC": {
+            "F1_strict": 0.8888888888888888,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "DATE": {
+            "F1_strict": 0.9090909090909091,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "JOB": {
+            "F1_strict": 0.8000000000000002,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "PERE_MARIEE": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "EX_EPOUX": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "PERE_MARI": {
+            "F1_strict": 0.75,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "ADMIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARIEE": {
+            "F1_strict": 0.75,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARI": {
+            "F1_strict": 0.8461538461538461,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "TEMOIN": {
+            "F1_strict": 0.9333333333333333,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "F1_ok": 1.0,
+        "F1_strict": 0.85
+    },
+    "archives_AD075EC_11M549_0094-left.png-2": {
+        "PER": {
+            "F1_strict": 0.7692307692307693,
+            "F1_weighted": 0,
+            "F1_ok": 0.9615384615384616
+        },
+        "LOC": {
+            "F1_strict": 0.9090909090909091,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "DATE": {
+            "F1_strict": 0.9090909090909091,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "JOB": {
+            "F1_strict": 0.8000000000000002,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARIEE": {
+            "F1_strict": 0.6666666666666666,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "PERE_MARIEE": {
+            "F1_strict": 0.8333333333333334,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "EX_EPOUX": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "PERE_MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "ADMIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARIEE": {
+            "F1_strict": 0.6666666666666666,
+            "F1_weighted": 0,
+            "F1_ok": 0.9166666666666666
+        },
+        "MARI": {
+            "F1_strict": 0.8571428571428571,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "TEMOIN": {
+            "F1_strict": 0.9285714285714286,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "F1_ok": 0.984375,
+        "F1_strict": 0.84375
+    },
+    "archives_AD075EC_11M549_0094-right.png-0": {
+        "PER": {
+            "F1_strict": 0.875,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "LOC": {
+            "F1_strict": 0.6451612903225806,
+            "F1_weighted": 0,
+            "F1_ok": 0.8387096774193549
+        },
+        "DATE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "JOB": {
+            "F1_strict": 0.7142857142857143,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARIEE": {
+            "F1_strict": 0.6666666666666666,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "PERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "EX_EPOUX": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "PERE_MARI": {
+            "F1_strict": 0.5,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARI": {
+            "F1_strict": 0.6666666666666665,
+            "F1_weighted": 0,
+            "F1_ok": 0.6666666666666665
+        },
+        "ADMIN": {
+            "F1_strict": 0.875,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARI": {
+            "F1_strict": 0.7692307692307692,
+            "F1_weighted": 0,
+            "F1_ok": 0.923076923076923
+        },
+        "TEMOIN": {
+            "F1_strict": 0.7692307692307693,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "F1_ok": 0.9565217391304348,
+        "F1_strict": 0.8173913043478261
+    },
+    "archives_AD075EC_11M549_0094-right.png-1": {
+        "PER": {
+            "F1_strict": 0.9433962264150944,
+            "F1_weighted": 0,
+            "F1_ok": 0.9811320754716981
+        },
+        "LOC": {
+            "F1_strict": 0.8095238095238095,
+            "F1_weighted": 0,
+            "F1_ok": 0.9047619047619048
+        },
+        "DATE": {
+            "F1_strict": 0.9090909090909091,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "JOB": {
+            "F1_strict": 0.8571428571428571,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARIEE": {
+            "F1_strict": 0.9333333333333333,
+            "F1_weighted": 0,
+            "F1_ok": 0.9333333333333333
+        },
+        "PERE_MARIEE": {
+            "F1_strict": 0.7999999999999999,
+            "F1_weighted": 0,
+            "F1_ok": 0.9333333333333333
+        },
+        "EX_EPOUX": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "PERE_MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARI": {
+            "F1_strict": 0.6666666666666666,
+            "F1_weighted": 0,
+            "F1_ok": 0.6666666666666666
+        },
+        "ADMIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARIEE": {
+            "F1_strict": 0.6666666666666666,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "TEMOIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "F1_ok": 0.9618320610687022,
+        "F1_strict": 0.8854961832061069
+    },
+    "archives_AD075EC_11M549_0094-right.png-2": {
+        "PER": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "LOC": {
+            "F1_strict": 0.46153846153846156,
+            "F1_weighted": 0,
+            "F1_ok": 0.8717948717948718
+        },
+        "DATE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "JOB": {
+            "F1_strict": 0.8571428571428571,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARIEE": {
+            "F1_strict": 0.6666666666666665,
+            "F1_weighted": 0,
+            "F1_ok": 0.888888888888889
+        },
+        "PERE_MARIEE": {
+            "F1_strict": 0.6666666666666665,
+            "F1_weighted": 0,
+            "F1_ok": 0.888888888888889
+        },
+        "EX_EPOUX": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "PERE_MARI": {
+            "F1_strict": 0.4444444444444445,
+            "F1_weighted": 0,
+            "F1_ok": 0.888888888888889
+        },
+        "MERE_MARI": {
+            "F1_strict": 0.6666666666666666,
+            "F1_weighted": 0,
+            "F1_ok": 0.6666666666666666
+        },
+        "ADMIN": {
+            "F1_strict": 0.875,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARIEE": {
+            "F1_strict": 0.8333333333333334,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARI": {
+            "F1_strict": 0.8461538461538461,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "TEMOIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "F1_ok": 0.959349593495935,
+        "F1_strict": 0.8130081300813008
+    },
+    "archives_AD075EC_04M298B_0036-right.png-0": {
+        "PER": {
+            "F1_strict": 0.9565217391304348,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "LOC": {
+            "F1_strict": 0.742857142857143,
+            "F1_weighted": 0,
+            "F1_ok": 0.9142857142857143
+        },
+        "DATE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "JOB": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "PERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "EX_EPOUX": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "PERE_MARI": {
+            "F1_strict": 0.7499999999999999,
+            "F1_weighted": 0,
+            "F1_ok": 0.7499999999999999
+        },
+        "MERE_MARI": {
+            "F1_strict": 0.4444444444444445,
+            "F1_weighted": 0,
+            "F1_ok": 0.888888888888889
+        },
+        "ADMIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARI": {
+            "F1_strict": 0.8333333333333334,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "TEMOIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "F1_ok": 0.9743589743589743,
+        "F1_strict": 0.905982905982906
+    },
+    "archives_AD075EC_04M298B_0036-right.png-1": {
+        "PER": {
+            "F1_strict": 0.8,
+            "F1_weighted": 0,
+            "F1_ok": 0.9777777777777777
+        },
+        "LOC": {
+            "F1_strict": 0.7999999999999999,
+            "F1_weighted": 0,
+            "F1_ok": 0.9142857142857143
+        },
+        "DATE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "JOB": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "PERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "EX_EPOUX": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "PERE_MARI": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "MERE_MARI": {
+            "F1_strict": 0.5,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "ADMIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARIEE": {
+            "F1_strict": 0.8695652173913043,
+            "F1_weighted": 0,
+            "F1_ok": 0.9565217391304348
+        },
+        "MARI": {
+            "F1_strict": 0.8181818181818182,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "TEMOIN": {
+            "F1_strict": 0.7407407407407408,
+            "F1_weighted": 0,
+            "F1_ok": 0.888888888888889
+        },
+        "F1_ok": 0.9642857142857143,
+        "F1_strict": 0.8571428571428571
+    },
+    "archives_AD075EC_04M298B_0036-right.png-2": {
+        "PER": {
+            "F1_strict": 0.9615384615384616,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "LOC": {
+            "F1_strict": 0.8648648648648649,
+            "F1_weighted": 0,
+            "F1_ok": 0.918918918918919
+        },
+        "DATE": {
+            "F1_strict": 0.9090909090909091,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "JOB": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "PERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "EX_EPOUX": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "PERE_MARI": {
+            "F1_strict": 0.6666666666666665,
+            "F1_weighted": 0,
+            "F1_ok": 0.6666666666666665
+        },
+        "MERE_MARI": {
+            "F1_strict": 0.5,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "ADMIN": {
+            "F1_strict": 0.875,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARI": {
+            "F1_strict": 0.9166666666666666,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "TEMOIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "F1_ok": 0.976,
+        "F1_strict": 0.9279999999999999
+    },
+    "archives_AD075EC_11M549_0113-left.png-0": {
+        "PER": {
+            "F1_strict": 0.8461538461538461,
+            "F1_weighted": 0,
+            "F1_ok": 0.9615384615384616
+        },
+        "LOC": {
+            "F1_strict": 0.787878787878788,
+            "F1_weighted": 0,
+            "F1_ok": 0.9090909090909091
+        },
+        "DATE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "JOB": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "PERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "EX_EPOUX": {
+            "F1_strict": 0.5,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "PERE_MARI": {
+            "F1_strict": 0.75,
+            "F1_weighted": 0,
+            "F1_ok": 0.75
+        },
+        "MERE_MARI": {
+            "F1_strict": 0.5,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "ADMIN": {
+            "F1_strict": 0.75,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "TEMOIN": {
+            "F1_strict": 0.7826086956521738,
+            "F1_weighted": 0,
+            "F1_ok": 0.8695652173913043
+        },
+        "F1_ok": 0.9586776859504132,
+        "F1_strict": 0.8760330578512396
+    },
+    "archives_AD075EC_11M549_0113-left.png-1": {
+        "PER": {
+            "F1_strict": 0.830188679245283,
+            "F1_weighted": 0,
+            "F1_ok": 0.9811320754716981
+        },
+        "LOC": {
+            "F1_strict": 0.7027027027027027,
+            "F1_weighted": 0,
+            "F1_ok": 0.918918918918919
+        },
+        "DATE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "JOB": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "PERE_MARIEE": {
+            "F1_strict": 0.5,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "EX_EPOUX": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "PERE_MARI": {
+            "F1_strict": 0.6666666666666665,
+            "F1_weighted": 0,
+            "F1_ok": 0.888888888888889
+        },
+        "MERE_MARI": {
+            "F1_strict": 0.888888888888889,
+            "F1_weighted": 0,
+            "F1_ok": 0.888888888888889
+        },
+        "ADMIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARIEE": {
+            "F1_strict": 0.8333333333333334,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARI": {
+            "F1_strict": 0.8461538461538461,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "TEMOIN": {
+            "F1_strict": 0.7272727272727273,
+            "F1_weighted": 0,
+            "F1_ok": 0.9090909090909091
+        },
+        "F1_ok": 0.9682539682539683,
+        "F1_strict": 0.8412698412698412
+    },
+    "archives_AD075EC_11M549_0113-left.png-2": {
+        "PER": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "LOC": {
+            "F1_strict": 0.75,
+            "F1_weighted": 0,
+            "F1_ok": 0.8750000000000001
+        },
+        "DATE": {
+            "F1_strict": 0.9090909090909091,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "JOB": {
+            "F1_strict": 0.625,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARIEE": {
+            "F1_strict": 0.7692307692307692,
+            "F1_weighted": 0,
+            "F1_ok": 0.923076923076923
+        },
+        "PERE_MARIEE": {
+            "F1_strict": 0.923076923076923,
+            "F1_weighted": 0,
+            "F1_ok": 0.923076923076923
+        },
+        "EX_EPOUX": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "PERE_MARI": {
+            "F1_strict": 0.5,
+            "F1_weighted": 0,
+            "F1_ok": 0.7499999999999999
+        },
+        "MERE_MARI": {
+            "F1_strict": 0.7499999999999999,
+            "F1_weighted": 0,
+            "F1_ok": 0.7499999999999999
+        },
+        "ADMIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARIEE": {
+            "F1_strict": 0.9166666666666666,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARI": {
+            "F1_strict": 0.6363636363636364,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "TEMOIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "F1_ok": 0.9558823529411764,
+        "F1_strict": 0.8529411764705882
+    },
+    "archives_AD075EC_11M549_0113-right.png-0": {
+        "PER": {
+            "F1_strict": 0.92,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "LOC": {
+            "F1_strict": 0.8,
+            "F1_weighted": 0,
+            "F1_ok": 0.9500000000000001
+        },
+        "DATE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "JOB": {
+            "F1_strict": 0.7142857142857143,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARIEE": {
+            "F1_strict": 0.8571428571428571,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "PERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "EX_EPOUX": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "PERE_MARI": {
+            "F1_strict": 0.6666666666666665,
+            "F1_weighted": 0,
+            "F1_ok": 0.888888888888889
+        },
+        "MERE_MARI": {
+            "F1_strict": 0.6666666666666665,
+            "F1_weighted": 0,
+            "F1_ok": 0.888888888888889
+        },
+        "ADMIN": {
+            "F1_strict": 0.875,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARIEE": {
+            "F1_strict": 0.9166666666666666,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARI": {
+            "F1_strict": 0.8461538461538461,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "TEMOIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "F1_ok": 0.9841269841269841,
+        "F1_strict": 0.8730158730158729
+    },
+    "archives_AD075EC_11M549_0113-right.png-1": {
+        "PER": {
+            "F1_strict": 0.8799999999999999,
+            "F1_weighted": 0,
+            "F1_ok": 0.9600000000000001
+        },
+        "LOC": {
+            "F1_strict": 0.7368421052631577,
+            "F1_weighted": 0,
+            "F1_ok": 0.8947368421052632
+        },
+        "DATE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "JOB": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARIEE": {
+            "F1_strict": 0.6666666666666666,
+            "F1_weighted": 0,
+            "F1_ok": 0.6666666666666666
+        },
+        "PERE_MARIEE": {
+            "F1_strict": 0.6666666666666666,
+            "F1_weighted": 0,
+            "F1_ok": 0.6666666666666666
+        },
+        "EX_EPOUX": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "PERE_MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "ADMIN": {
+            "F1_strict": 0.875,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARIEE": {
+            "F1_strict": 0.9090909090909091,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARI": {
+            "F1_strict": 0.7857142857142857,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "TEMOIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "F1_ok": 0.9516129032258065,
+        "F1_strict": 0.870967741935484
+    },
+    "archives_AD075EC_11M549_0113-right.png-2": {
+        "PER": {
+            "F1_strict": 0.92,
+            "F1_weighted": 0,
+            "F1_ok": 0.96
+        },
+        "LOC": {
+            "F1_strict": 0.7272727272727272,
+            "F1_weighted": 0,
+            "F1_ok": 0.9090909090909091
+        },
+        "DATE": {
+            "F1_strict": 0.9090909090909091,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "JOB": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARIEE": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "PERE_MARIEE": {
+            "F1_strict": 2,
+            "F1_weighted": 0,
+            "F1_ok": 2
+        },
+        "EX_EPOUX": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "PERE_MARI": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MERE_MARI": {
+            "F1_strict": 0.6,
+            "F1_weighted": 0,
+            "F1_ok": 0.6
+        },
+        "ADMIN": {
+            "F1_strict": 1.0,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARIEE": {
+            "F1_strict": 0.8181818181818182,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "MARI": {
+            "F1_strict": 0.8461538461538461,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "TEMOIN": {
+            "F1_strict": 0.9285714285714286,
+            "F1_weighted": 0,
+            "F1_ok": 1.0
+        },
+        "F1_ok": 0.9565217391304348,
+        "F1_strict": 0.8695652173913044
+    }
+}

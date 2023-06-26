@@ -12,6 +12,8 @@ file = open("donnees-test.json", "r")
 data = json.load(file)
 file.close()
 
+import os
+
 # first we need to split the text in paragraphs
 
 

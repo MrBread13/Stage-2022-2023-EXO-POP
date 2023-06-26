@@ -1,0 +1,376 @@
+{
+    "archives_AD075EC_01M1930_0023-left.png-0": {
+        "Prenom-mere-mari": {
+            "reference": "Fanny",
+            "gpt": ""
+        },
+        "Nom-mere-mari": {
+            "reference": "LEWINSON",
+            "gpt": "Fanny LEWINSON"
+        },
+        "Ville-residence-pere-mariee": {
+            "reference": "Choisy-le-Roi",
+            "gpt": ""
+        },
+        "Departement-residence-pere-mariee": {
+            "reference": "Seine",
+            "gpt": ""
+        },
+        "Numero-rue-residence-pere-mariee": {
+            "reference": "15",
+            "gpt": ""
+        },
+        "Type-rue-residence-pere-mariee": {
+            "reference": "rue",
+            "gpt": ""
+        },
+        "Nom-rue-residence-pere-mariee": {
+            "reference": "Passereau",
+            "gpt": ""
+        },
+        "Departement-residence-mere-mariee": {
+            "reference": "Seine",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_01M1930_0023-left.png-1": {},
+    "archives_AD075EC_01M1930_0023-left.png-2": {
+        "Ville-residence-pere-mari": {
+            "reference": "Saint Leu, commune de Cesson",
+            "gpt": ""
+        },
+        "Numero-rue-residence-mariee": {
+            "reference": "",
+            "gpt": "4"
+        },
+        "Type-rue-residence-mariee": {
+            "reference": "",
+            "gpt": "rue"
+        },
+        "Nom-rue-residence-mariee": {
+            "reference": "",
+            "gpt": "Montmartre"
+        }
+    },
+    "archives_AD075EC_01M1930_0023-right.png-0": {
+        "Ville-residence-mere-mari": {
+            "reference": "",
+            "gpt": "Paris"
+        }
+    },
+    "archives_AD075EC_01M1930_0023-right.png-1": {
+        "Ville-residence-mere-mari": {
+            "reference": "",
+            "gpt": "Paris"
+        }
+    },
+    "archives_AD075EC_01M1930_0023-right.png-2": {},
+    "archives_AD075EC_01M1940_0020-left.png-0": {},
+    "archives_AD075EC_01M1940_0020-left.png-3": {},
+    "archives_AD075EC_01M1940_0020-right.png-0": {},
+    "archives_AD075EC_01M1940_0020-right.png-1": {},
+    "archives_AD075EC_01M1940_0020-right.png-2": {
+        "Departement-naissance-mari": {
+            "reference": "",
+            "gpt": "Commune de Trente"
+        }
+    },
+    "archives_AD075EC_01M1940_0011-left.png-0": {},
+    "archives_AD075EC_01M1940_0011-left.png-1": {},
+    "archives_AD075EC_01M1940_0011-left.png-2": {},
+    "archives_AD075EC_01M1940_0011-right.png-0": {
+        "Ville-residence-pere-mari": {
+            "reference": "Paris",
+            "gpt": ""
+        },
+        "Ville-residence-mere-mari": {
+            "reference": "Paris",
+            "gpt": ""
+        },
+        "Ville-residence-pere-mariee": {
+            "reference": "",
+            "gpt": "Recloses"
+        },
+        "Departement-residence-pere-mariee": {
+            "reference": "",
+            "gpt": "Seine et Marne"
+        },
+        "Profession-mere-mariee": {
+            "reference": "sans\nprofession",
+            "gpt": "sa veuve"
+        }
+    },
+    "archives_AD075EC_01M1940_0011-right.png-2": {
+        "Ville-residence-temoin-2": {
+            "reference": "\nEnghien les Bains",
+            "gpt": ""
+        },
+        "Nom-rue-residence-temoin-2": {
+            "reference": "Gounod",
+            "gpt": "Gounod Enghien les Bains"
+        }
+    },
+    "archives_AD075EC_11M549_0094-left.png-0": {},
+    "archives_AD075EC_11M549_0094-left.png-1": {},
+    "archives_AD075EC_11M549_0094-left.png-2": {},
+    "archives_AD075EC_11M549_0094-right.png-0": {
+        "Ville-residence-mari": {
+            "reference": "Saint Aubin",
+            "gpt": ""
+        },
+        "Departement-residence-mari": {
+            "reference": "Eure et Loir)",
+            "gpt": ""
+        },
+        "Ville-residence-mere-mari": {
+            "reference": "Saint Aubin",
+            "gpt": "Saint Aubin (Eure et Loir)"
+        },
+        "Departement-residence-mere-mari": {
+            "reference": "Eure et Loir)",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_11M549_0094-right.png-1": {
+        "Numero-rue-residence-mere-mari": {
+            "reference": "4",
+            "gpt": ""
+        },
+        "Type-rue-residence-mere-mari": {
+            "reference": "rue",
+            "gpt": ""
+        },
+        "Nom-rue-residence-mere-mari": {
+            "reference": "de capri",
+            "gpt": ""
+        },
+        "Departement-residence-pere-mariee": {
+            "reference": "",
+            "gpt": "Alpes Maritimes"
+        },
+        "Departement-residence-mere-mariee": {
+            "reference": "",
+            "gpt": "Alpes Maritimes"
+        }
+    },
+    "archives_AD075EC_11M549_0094-right.png-2": {
+        "Profession-pere-mari": {
+            "reference": "cultivateurs",
+            "gpt": "\u00e9poux cultivateurs"
+        },
+        "Ville-residence-pere-mari": {
+            "reference": "Saint Philipe d'Eguille",
+            "gpt": "Saint Philipe d'Eguille (Gironde)"
+        },
+        "Departement-residence-pere-mari": {
+            "reference": "Gironde)",
+            "gpt": ""
+        },
+        "Ville-residence-mere-mari": {
+            "reference": "Saint Philipe d'Eguille",
+            "gpt": ""
+        },
+        "Departement-residence-mere-mari": {
+            "reference": "Gironde)",
+            "gpt": ""
+        },
+        "Ville-residence-pere-mariee": {
+            "reference": "La Vou\u00e2tre",
+            "gpt": "La Vou\u00e2tre (Ni\u00e8vre)"
+        },
+        "Departement-residence-pere-mariee": {
+            "reference": "Ni\u00e8vre",
+            "gpt": ""
+        },
+        "Ville-residence-mere-mariee": {
+            "reference": "La Vou\u00e2tre",
+            "gpt": "La Vou\u00e2tre (Ni\u00e8vre)"
+        },
+        "Departement-residence-mere-mariee": {
+            "reference": "Ni\u00e8vre",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_04M298B_0036-right.png-0": {
+        "Ville-residence-pere-mari": {
+            "reference": "Silly-le-Long",
+            "gpt": ""
+        },
+        "Departement-residence-pere-mari": {
+            "reference": "Oise",
+            "gpt": ""
+        },
+        "Ville-residence-mere-mari": {
+            "reference": "Silly-le-Long",
+            "gpt": "Silly-le-Long (Oise)"
+        },
+        "Departement-residence-mere-mari": {
+            "reference": "Oise",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_04M298B_0036-right.png-1": {
+        "Numero-rue-residence-mariee": {
+            "reference": "9",
+            "gpt": ""
+        },
+        "Type-rue-residence-temoin-1": {
+            "reference": "",
+            "gpt": "au"
+        },
+        "Nom-rue-residence-temoin-1": {
+            "reference": "",
+            "gpt": "Neubourg"
+        },
+        "Ville-residence-temoin-1": {
+            "reference": "Neubourg",
+            "gpt": "Eure"
+        },
+        "Departement-residence-temoin-1": {
+            "reference": "Eure",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_04M298B_0036-right.png-2": {
+        "Ville-residence-pere-mari": {
+            "reference": "Ballan-Mir\u00e9",
+            "gpt": "Ballan-Mir\u00e9 (Indre-et-Loire)"
+        },
+        "Departement-residence-pere-mari": {
+            "reference": "Indre-et-Loire",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_11M549_0113-left.png-0": {
+        "Ville-residence-pere-mari": {
+            "reference": "Villeneuve-Saint-Georges",
+            "gpt": ""
+        },
+        "Departement-residence-pere-mari": {
+            "reference": "",
+            "gpt": "Villeneuve-Saint-Georges"
+        },
+        "Nom-rue-residence-temoin-1": {
+            "reference": "Sedaine",
+            "gpt": "Ivry la Bataille"
+        },
+        "Ville-residence-temoin-1": {
+            "reference": "Ivry la Bataille",
+            "gpt": "Eure"
+        },
+        "Departement-residence-temoin-1": {
+            "reference": "Eure",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_11M549_0113-left.png-1": {
+        "Departement-residence-pere-mari": {
+            "reference": "",
+            "gpt": "Eure et loir"
+        },
+        "Departement-residence-mere-mari": {
+            "reference": "",
+            "gpt": "Eure et loir"
+        },
+        "Nom-rue-residence-temoin-1": {
+            "reference": "",
+            "gpt": "vaupellon"
+        },
+        "Ville-residence-temoin-1": {
+            "reference": "vaupellon",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_11M549_0113-left.png-2": {
+        "Ville-residence-pere-mari": {
+            "reference": "Vittel",
+            "gpt": ""
+        },
+        "Departement-residence-pere-mari": {
+            "reference": "Vosges)",
+            "gpt": ""
+        },
+        "Ville-residence-mere-mari": {
+            "reference": "Vittel",
+            "gpt": ""
+        },
+        "Departement-residence-mere-mari": {
+            "reference": "Vosges)",
+            "gpt": ""
+        },
+        "Ville-residence-pere-mariee": {
+            "reference": "paris",
+            "gpt": ""
+        },
+        "Ville-residence-mere-mariee": {
+            "reference": "paris",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_11M549_0113-right.png-0": {
+        "Ville-residence-pere-mari": {
+            "reference": "Falettans",
+            "gpt": "Falettans (Jura)"
+        },
+        "Departement-residence-pere-mari": {
+            "reference": "Jura",
+            "gpt": ""
+        },
+        "Ville-residence-mere-mari": {
+            "reference": "Falettans",
+            "gpt": "Falettans (Jura)"
+        },
+        "Departement-residence-mere-mari": {
+            "reference": "Jura",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_11M549_0113-right.png-1": {
+        "Numero-rue-residence-pere-mariee": {
+            "reference": "131",
+            "gpt": ""
+        },
+        "Type-rue-residence-pere-mariee": {
+            "reference": "rue",
+            "gpt": ""
+        },
+        "Nom-rue-residence-pere-mariee": {
+            "reference": "du Chemin vert",
+            "gpt": ""
+        },
+        "Numero-rue-residence-mere-mariee": {
+            "reference": "131",
+            "gpt": ""
+        },
+        "Type-rue-residence-mere-mariee": {
+            "reference": "rue",
+            "gpt": ""
+        },
+        "Nom-rue-residence-mere-mariee": {
+            "reference": "du Chemin vert",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_11M549_0113-right.png-2": {
+        "Ville-residence-mere-mari": {
+            "reference": "Paris",
+            "gpt": ""
+        },
+        "Numero-rue-residence-mere-mari": {
+            "reference": "5",
+            "gpt": ""
+        },
+        "Type-rue-residence-mere-mari": {
+            "reference": "impasse",
+            "gpt": ""
+        },
+        "Nom-rue-residence-mere-mari": {
+            "reference": "Peynet",
+            "gpt": ""
+        },
+        "Nom-pere-mariee": {
+            "reference": "",
+            "gpt": "KAIBACE"
+        }
+    }
+}

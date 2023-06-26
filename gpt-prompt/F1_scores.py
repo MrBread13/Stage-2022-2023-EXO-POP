@@ -294,7 +294,7 @@ def test():
     with open('donnees-test.json', 'r') as file:
         golden_set = json.load(file)
 
-    with open('donnees-test-labels-gpt35.json', 'r') as file:
+    with open('donnees-test-labels-gpt35-paragraph-16k.json', 'r') as file:
         labels_set = json.load(file)
 
     results = {}
@@ -472,7 +472,7 @@ def test2():
     with open('donnees-test.json', 'r') as file:
         golden_set = json.load(file)
 
-    with open('donnees-test-labels-gpt35.json', 'r') as file:
+    with open('donnees-test-labels-gpt35-paragraph-16k.json', 'r') as file:
         labels_set = json.load(file)
 
     results = {}
