@@ -96,3 +96,5 @@ def sanitize_labels(labels : dict) -> dict :
     labels = check_minutes(labels)
 
     return labels
+
+
