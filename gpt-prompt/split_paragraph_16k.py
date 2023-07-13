@@ -3,11 +3,11 @@ import openai
 from time import sleep
 import os
 
-openai.organization = os.getenv("OPENAI_ORG_KEY")
-openai.api_key = os.getenv("OPENAI_API_KEY")
+# openai.organization = os.environ.get("OPENAI_ORG_KEY")
+# openai.api_key = os.environ.get("OPENAI_API_KEY")
 
-print(openai.api_key)
-print(openai.organization)
+openai.organization = "org-2wXrLf4fLEfdyawavmkAqi8z"
+openai.api_key = "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"
 
 file = open("splitting_examples.json", "r")
 data = json.load(file)
@@ -39,7 +39,6 @@ def split_text(text_to_split):
     for i in range(3):
         for i in range(3):
             try:
-
                 completion = openai.ChatCompletion.create(
                 model="gpt-3.5-turbo-16k",
                 temperature=0.4,
@@ -92,7 +91,7 @@ def split_text(text_to_split):
         answer = answer[answer.index('{'):]
         #print(f'answer : {answer}')
         answer = json.loads(answer)
-        print(answer)
+        #print(answer)
 
         #check if keys are p1, p2, p3, p4, p5 and if values are not empty or '' :
         if 'p1' not in answer.keys() or 'p2' not in answer.keys() or 'p3' not in answer.keys() or 'p4' not in answer.keys() or 'p5' not in answer.keys():

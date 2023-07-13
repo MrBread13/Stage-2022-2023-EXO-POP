@@ -1,0 +1,407 @@
+{
+    "archives_AD075EC_01M1930_0023-left.png-0": {
+        "Departement-residence-pere-mariee": {
+            "reference": "Seine",
+            "gpt": ""
+        },
+        "Departement-residence-mere-mariee": {
+            "reference": "Seine",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_01M1930_0023-left.png-1": {},
+    "archives_AD075EC_01M1930_0023-left.png-2": {
+        "Ville-residence-pere-mari": {
+            "reference": "Saint Leu, commune de Cesson",
+            "gpt": ""
+        },
+        "Departement-residence-mere-mari": {
+            "reference": "",
+            "gpt": "Seine-et-Marne"
+        },
+        "Ville-residence-mariee": {
+            "reference": "Paris",
+            "gpt": "Saint Leu, commune de Cesson"
+        },
+        "Departement-residence-mariee": {
+            "reference": "",
+            "gpt": "Seine-et-Marne"
+        },
+        "Departement-residence-pere-mariee": {
+            "reference": "",
+            "gpt": "Seine-et-Marne"
+        },
+        "Departement-residence-mere-mariee": {
+            "reference": "",
+            "gpt": "Seine-et-Marne"
+        }
+    },
+    "archives_AD075EC_01M1930_0023-right.png-0": {
+        "Ville-residence-mere-mariee": {
+            "reference": "",
+            "gpt": "Paris"
+        }
+    },
+    "archives_AD075EC_01M1930_0023-right.png-1": {
+        "Ville-residence-mere-mari": {
+            "reference": "",
+            "gpt": "Paris"
+        },
+        "Ville-residence-pere-mariee": {
+            "reference": "",
+            "gpt": "Paris"
+        }
+    },
+    "archives_AD075EC_01M1930_0023-right.png-2": {},
+    "archives_AD075EC_01M1940_0020-left.png-0": {
+        "Numero-rue-residence-mariee": {
+            "reference": "13",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_01M1940_0020-left.png-3": {},
+    "archives_AD075EC_01M1940_0020-right.png-0": {},
+    "archives_AD075EC_01M1940_0020-right.png-1": {},
+    "archives_AD075EC_01M1940_0020-right.png-2": {},
+    "archives_AD075EC_01M1940_0011-left.png-0": {},
+    "archives_AD075EC_01M1940_0011-left.png-1": {},
+    "archives_AD075EC_01M1940_0011-left.png-2": {},
+    "archives_AD075EC_01M1940_0011-right.png-0": {
+        "Ville-residence-pere-mariee": {
+            "reference": "",
+            "gpt": "Recloses"
+        },
+        "Departement-residence-pere-mariee": {
+            "reference": "",
+            "gpt": "Seine et Marne"
+        }
+    },
+    "archives_AD075EC_01M1940_0011-right.png-2": {},
+    "archives_AD075EC_11M549_0094-left.png-0": {},
+    "archives_AD075EC_11M549_0094-left.png-1": {},
+    "archives_AD075EC_11M549_0094-left.png-2": {
+        "Profession-mere-mariee": {
+            "reference": "m\u00e9nagre",
+            "gpt": "\u00e9pouse m\u00e9nagre"
+        }
+    },
+    "archives_AD075EC_11M549_0094-right.png-0": {
+        "Numero-rue-residence-pere-mariee": {
+            "reference": "151 bis",
+            "gpt": ""
+        },
+        "Type-rue-residence-pere-mariee": {
+            "reference": "rue",
+            "gpt": ""
+        },
+        "Nom-rue-residence-pere-mariee": {
+            "reference": "de la roquette",
+            "gpt": ""
+        },
+        "Numero-rue-residence-mere-mariee": {
+            "reference": "151 bis",
+            "gpt": ""
+        },
+        "Type-rue-residence-mere-mariee": {
+            "reference": "rue",
+            "gpt": ""
+        },
+        "Nom-rue-residence-mere-mariee": {
+            "reference": "de la roquette",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_11M549_0094-right.png-1": {
+        "Ville-residence-mere-mari": {
+            "reference": "",
+            "gpt": "Paris"
+        },
+        "Departement-residence-pere-mariee": {
+            "reference": "",
+            "gpt": "Alpes Maritimes"
+        },
+        "Departement-residence-mere-mariee": {
+            "reference": "",
+            "gpt": "Alpes Maritimes"
+        }
+    },
+    "archives_AD075EC_11M549_0094-right.png-2": {
+        "Ville-residence-pere-mari": {
+            "reference": "Saint Philipe d'Eguille",
+            "gpt": ""
+        },
+        "Departement-residence-pere-mari": {
+            "reference": "Gironde)",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_04M298B_0036-right.png-0": {
+        "Ville-residence-pere-mari": {
+            "reference": "Silly-le-Long",
+            "gpt": ""
+        },
+        "Departement-residence-pere-mari": {
+            "reference": "Oise",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_04M298B_0036-right.png-1": {
+        "Nom-rue-residence-temoin-1": {
+            "reference": "",
+            "gpt": "au Neubourg"
+        },
+        "Ville-residence-temoin-1": {
+            "reference": "Neubourg",
+            "gpt": "Eure"
+        },
+        "Departement-residence-temoin-1": {
+            "reference": "Eure",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_04M298B_0036-right.png-2": {},
+    "archives_AD075EC_11M549_0113-left.png-0": {
+        "Departement-residence-pere-mariee": {
+            "reference": "Eure",
+            "gpt": ""
+        },
+        "Departement-residence-mere-mariee": {
+            "reference": "Eure",
+            "gpt": ""
+        },
+        "Nom-rue-residence-temoin-1": {
+            "reference": "Sedaine",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_11M549_0113-left.png-1": {},
+    "archives_AD075EC_11M549_0113-left.png-2": {
+        "Ville-residence-pere-mari": {
+            "reference": "Vittel",
+            "gpt": ""
+        },
+        "Departement-residence-pere-mari": {
+            "reference": "Vosges)",
+            "gpt": ""
+        },
+        "Profession-mere-mari": {
+            "reference": "sAns profession",
+            "gpt": ""
+        },
+        "Ville-residence-mere-mari": {
+            "reference": "Vittel",
+            "gpt": ""
+        },
+        "Departement-residence-mere-mari": {
+            "reference": "Vosges)",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_11M549_0113-right.png-0": {
+        "Ville-residence-mere-mariee": {
+            "reference": "paris",
+            "gpt": ""
+        },
+        "Numero-rue-residence-mere-mariee": {
+            "reference": "11",
+            "gpt": ""
+        },
+        "Type-rue-residence-mere-mariee": {
+            "reference": "rue",
+            "gpt": ""
+        },
+        "Nom-rue-residence-mere-mariee": {
+            "reference": "P\u00e9tion",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_11M549_0113-right.png-1": {
+        "Ville-residence-mariee": {
+            "reference": "",
+            "gpt": "Paris"
+        },
+        "Numero-rue-residence-pere-mariee": {
+            "reference": "131",
+            "gpt": ""
+        },
+        "Type-rue-residence-pere-mariee": {
+            "reference": "rue",
+            "gpt": ""
+        },
+        "Nom-rue-residence-pere-mariee": {
+            "reference": "du Chemin vert",
+            "gpt": ""
+        },
+        "Numero-rue-residence-mere-mariee": {
+            "reference": "131",
+            "gpt": ""
+        },
+        "Type-rue-residence-mere-mariee": {
+            "reference": "rue",
+            "gpt": ""
+        },
+        "Nom-rue-residence-mere-mariee": {
+            "reference": "du Chemin vert",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_11M549_0113-right.png-2": {
+        "Prenom-adjoint-maire": {
+            "reference": "Eug\u00e8ne",
+            "gpt": ""
+        },
+        "Nom-adjoint-maire": {
+            "reference": "KIRSCH-",
+            "gpt": ""
+        },
+        "Ville-mariage": {
+            "reference": "XI \u00b0 arrondissement de Paris",
+            "gpt": ""
+        },
+        "Ville-residence-mere-mari": {
+            "reference": "Paris",
+            "gpt": ""
+        },
+        "Numero-rue-residence-mere-mari": {
+            "reference": "5",
+            "gpt": ""
+        },
+        "Type-rue-residence-mere-mari": {
+            "reference": "impasse",
+            "gpt": ""
+        },
+        "Nom-rue-residence-mere-mari": {
+            "reference": "Peynet",
+            "gpt": ""
+        },
+        "Prenom-temoin-1": {
+            "reference": "Jean",
+            "gpt": ""
+        },
+        "Nom-temoin-1": {
+            "reference": "VERNET",
+            "gpt": ""
+        },
+        "Profession-temoin-1": {
+            "reference": "employ\u00e9",
+            "gpt": ""
+        },
+        "Numero-rue-residence-temoin-1": {
+            "reference": "5",
+            "gpt": ""
+        },
+        "Type-rue-residence-temoin-1": {
+            "reference": "rue",
+            "gpt": ""
+        },
+        "Nom-rue-residence-temoin-1": {
+            "reference": "d'Aulnay",
+            "gpt": ""
+        },
+        "Ville-residence-temoin-1": {
+            "reference": "Livry",
+            "gpt": ""
+        },
+        "Departement-residence-temoin-1": {
+            "reference": "Seine et Oise)",
+            "gpt": ""
+        },
+        "Prenom-temoin-2": {
+            "reference": "Maurice",
+            "gpt": ""
+        },
+        "Nom-temoin-2": {
+            "reference": "Aaron",
+            "gpt": ""
+        },
+        "Profession-temoin-2": {
+            "reference": "vendeur",
+            "gpt": ""
+        },
+        "Numero-rue-residence-temoin-2": {
+            "reference": "98",
+            "gpt": ""
+        },
+        "Type-rue-residence-temoin-2": {
+            "reference": "rue",
+            "gpt": ""
+        },
+        "Nom-rue-residence-temoin-2": {
+            "reference": "du temple",
+            "gpt": ""
+        }
+    },
+    "archives_AD075EC_04M298B_0039-right.png-0": {},
+    "archives_AD075EC_04M298B_0039-right.png-1": {
+        "Ville-residence-mariee": {
+            "reference": "",
+            "gpt": "Paris"
+        },
+        "Ville-residence-pere-mariee": {
+            "reference": "",
+            "gpt": "Paris"
+        },
+        "Ville-residence-mere-mariee": {
+            "reference": "",
+            "gpt": "Paris"
+        }
+    },
+    "archives_AD075EC_04M298B_0039-right.png-2": {
+        "Nom-pere-mariee": {
+            "reference": "",
+            "gpt": "JOYEUX"
+        },
+        "Numero-rue-residence-pere-mariee": {
+            "reference": "",
+            "gpt": "26"
+        },
+        "Type-rue-residence-pere-mariee": {
+            "reference": "",
+            "gpt": "quai"
+        },
+        "Nom-rue-residence-pere-mariee": {
+            "reference": "",
+            "gpt": "d'Orl\u00e9ans"
+        }
+    },
+    "archives_AD075EC_04M298B_0038-right.png-0": {
+        "Ville-mariage": {
+            "reference": "",
+            "gpt": "quatri\u00e8me arrondissement de Paris"
+        },
+        "Jour-naissance-mari": {
+            "reference": "dix-sept",
+            "gpt": "quatre"
+        },
+        "Mois-naissance-mari": {
+            "reference": "janvier",
+            "gpt": "dix-sept janvier"
+        },
+        "Ville-residence-mari": {
+            "reference": "Var- -\nsovie",
+            "gpt": ""
+        },
+        "Pays-residence-mari": {
+            "reference": "Pologne",
+            "gpt": ""
+        },
+        "Ville-naissance-mariee": {
+            "reference": "",
+            "gpt": "Varsovie"
+        },
+        "Pays-naissance-mariee": {
+            "reference": "",
+            "gpt": "Pologne"
+        },
+        "Jour-naissance-mariee": {
+            "reference": "quatorze",
+            "gpt": "premier/ quatorze"
+        }
+    },
+    "archives_AD075EC_04M298B_0038-right.png-1": {
+        "Ville-residence-mari": {
+            "reference": "",
+            "gpt": "Paris"
+        }
+    }
+}

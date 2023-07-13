@@ -5,8 +5,12 @@ import itertools
 from time import sleep
 import os
 
-openai.organization = os.environ.get("OPENAI_ORG_KEY")
-openai.api_key = os.environ.get("OPENAI_API_KEY")
+# openai.organization = os.environ.get("OPENAI_ORG_KEY")
+# openai.api_key = os.environ.get("OPENAI_API_KEY")
+
+
+openai.organization = "org-2wXrLf4fLEfdyawavmkAqi8z"
+openai.api_key = "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"
 
 def read_json(filename):
     with open(filename, "r") as f:
@@ -18,10 +22,10 @@ def split_examples(examples : dict, index : int):
     return examples[str(index)], {k: v for k, v in examples.items() if k != str(index)}
 
 def get_example_prompt(examples, paragraph_index):
-    prompt = [{"role": "system", "content": "Read the French Mariage Acts input by the user, then answer using a JSON to extract named entities in the act. Always use the same JSON keys. Beware of plurals. Parents can have the same jobs. They can also live with their child (avec ses père et mère, avec sa mère, avec son père)"}]
+    prompt = [{"role": "system", "content": "Read the French Mariage Acts input by the user, then answer using a JSON to extract named entities in the act. Always use the same JSON keys. Beware of plurals. Parents can have the same job. They can also live with their child ('avec ses père et mère', 'avec sa mère', 'avec son père'). Do not answer with anything else that what is in the text. Pay attention to cities, departments and countries."}]
     for i, example in enumerate(examples):
         prompt.append({"role": "user", "content": str(examples[example]['text'][paragraph_index])})
-        print(examples[example]['labels'])
+        #print(examples[example]['labels'])
         prompt.append({"role": "assistant", "content": str(examples[example]['labels'][paragraph_index])})
 
     return prompt
@@ -60,7 +64,7 @@ def get_answer(prompt):
         print("Error while getting answer. Returning...")
         return {}
     answer = completion.choices[0].message['content']
-    print("Raw answer : ", answer)
+    #print("Raw answer : ", answer)
     answer = answer.replace('\n', '').replace('.','')
     #remove quote around comma
     answer = answer.replace('\',', '",')
@@ -87,7 +91,7 @@ def get_answer(prompt):
     answer = answer[answer.index('{'):]
     #print(f'answer : {answer}')
     answer = json.loads(answer)
-    print("Answer : ", answer)
+    #print("Answer : ", answer)
 
     return answer
 
@@ -101,7 +105,7 @@ def get_labels(text):
         else :
             prompt.append({"role": "user", "content": f"{text[paragraph_index]}"})
             print(f"==========================Paragraph {paragraph_index}==========================")
-            print("Prompt : ", prompt)
+            #print("Prompt : ", prompt)
             labels = get_answer(prompt)
         #print(labels)
 

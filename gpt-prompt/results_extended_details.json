@@ -1,0 +1,344 @@
+{
+    "MERE_MARI": {
+        "DATE": {
+            "FN": 0,
+            "TP": 0,
+            "FP": 0,
+            "TN": 0,
+            "PARTIAL": 0,
+            "TOTAL": 0,
+            "MISS": 0
+        },
+        "PER": {
+            "FN": 1,
+            "TP": 73,
+            "FP": 0,
+            "TN": 30,
+            "PARTIAL": 4,
+            "TOTAL": 108,
+            "MISS": 0
+        },
+        "LOC": {
+            "FN": 5,
+            "TP": 32,
+            "FP": 3,
+            "TN": 137,
+            "PARTIAL": 3,
+            "TOTAL": 180,
+            "MISS": 0
+        },
+        "JOB": {
+            "FN": 1,
+            "TP": 17,
+            "FP": 0,
+            "TN": 17,
+            "PARTIAL": 1,
+            "TOTAL": 36,
+            "MISS": 0
+        }
+    },
+    "MARIEE": {
+        "DATE": {
+            "FN": 0,
+            "TP": 92,
+            "FP": 0,
+            "TN": 6,
+            "PARTIAL": 9,
+            "TOTAL": 108,
+            "MISS": 1
+        },
+        "PER": {
+            "FN": 0,
+            "TP": 122,
+            "FP": 0,
+            "TN": 10,
+            "PARTIAL": 11,
+            "TOTAL": 144,
+            "MISS": 1
+        },
+        "LOC": {
+            "FN": 1,
+            "TP": 122,
+            "FP": 5,
+            "TN": 148,
+            "PARTIAL": 11,
+            "TOTAL": 288,
+            "MISS": 1
+        },
+        "JOB": {
+            "FN": 0,
+            "TP": 33,
+            "FP": 0,
+            "TN": 2,
+            "PARTIAL": 1,
+            "TOTAL": 36,
+            "MISS": 0
+        }
+    },
+    "TEMOIN": {
+        "DATE": {
+            "FN": 0,
+            "TP": 0,
+            "FP": 0,
+            "TN": 0,
+            "PARTIAL": 0,
+            "TOTAL": 0,
+            "MISS": 0
+        },
+        "PER": {
+            "FN": 7,
+            "TP": 192,
+            "FP": 1,
+            "TN": 5,
+            "PARTIAL": 8,
+            "TOTAL": 213,
+            "MISS": 0
+        },
+        "LOC": {
+            "FN": 7,
+            "TP": 152,
+            "FP": 0,
+            "TN": 75,
+            "PARTIAL": 7,
+            "TOTAL": 241,
+            "MISS": 0
+        },
+        "JOB": {
+            "FN": 2,
+            "TP": 64,
+            "FP": 0,
+            "TN": 2,
+            "PARTIAL": 3,
+            "TOTAL": 71,
+            "MISS": 0
+        }
+    },
+    "ADMIN": {
+        "DATE": {
+            "FN": 0,
+            "TP": 164,
+            "FP": 0,
+            "TN": 13,
+            "PARTIAL": 3,
+            "TOTAL": 180,
+            "MISS": 0
+        },
+        "PER": {
+            "FN": 2,
+            "TP": 63,
+            "FP": 0,
+            "TN": 2,
+            "PARTIAL": 5,
+            "TOTAL": 72,
+            "MISS": 0
+        },
+        "LOC": {
+            "FN": 1,
+            "TP": 22,
+            "FP": 1,
+            "TN": 1,
+            "PARTIAL": 11,
+            "TOTAL": 36,
+            "MISS": 0
+        },
+        "JOB": {
+            "FN": 0,
+            "TP": 0,
+            "FP": 0,
+            "TN": 0,
+            "PARTIAL": 0,
+            "TOTAL": 0,
+            "MISS": 0
+        }
+    },
+    "MERE_MARIEE": {
+        "DATE": {
+            "FN": 0,
+            "TP": 0,
+            "FP": 0,
+            "TN": 0,
+            "PARTIAL": 0,
+            "TOTAL": 0,
+            "MISS": 0
+        },
+        "PER": {
+            "FN": 3,
+            "TP": 74,
+            "FP": 0,
+            "TN": 26,
+            "PARTIAL": 5,
+            "TOTAL": 108,
+            "MISS": 0
+        },
+        "LOC": {
+            "FN": 9,
+            "TP": 42,
+            "FP": 4,
+            "TN": 124,
+            "PARTIAL": 1,
+            "TOTAL": 180,
+            "MISS": 0
+        },
+        "JOB": {
+            "FN": 0,
+            "TP": 20,
+            "FP": 0,
+            "TN": 12,
+            "PARTIAL": 3,
+            "TOTAL": 36,
+            "MISS": 1
+        }
+    },
+    "PERE_MARI": {
+        "DATE": {
+            "FN": 0,
+            "TP": 0,
+            "FP": 0,
+            "TN": 0,
+            "PARTIAL": 0,
+            "TOTAL": 0,
+            "MISS": 0
+        },
+        "PER": {
+            "FN": 0,
+            "TP": 68,
+            "FP": 0,
+            "TN": 38,
+            "PARTIAL": 2,
+            "TOTAL": 108,
+            "MISS": 0
+        },
+        "LOC": {
+            "FN": 7,
+            "TP": 18,
+            "FP": 0,
+            "TN": 117,
+            "PARTIAL": 2,
+            "TOTAL": 144,
+            "MISS": 0
+        },
+        "JOB": {
+            "FN": 0,
+            "TP": 11,
+            "FP": 0,
+            "TN": 21,
+            "PARTIAL": 4,
+            "TOTAL": 36,
+            "MISS": 0
+        }
+    },
+    "MARI": {
+        "DATE": {
+            "FN": 0,
+            "TP": 95,
+            "FP": 0,
+            "TN": 6,
+            "PARTIAL": 6,
+            "TOTAL": 108,
+            "MISS": 1
+        },
+        "PER": {
+            "FN": 0,
+            "TP": 121,
+            "FP": 0,
+            "TN": 10,
+            "PARTIAL": 13,
+            "TOTAL": 144,
+            "MISS": 0
+        },
+        "LOC": {
+            "FN": 2,
+            "TP": 128,
+            "FP": 1,
+            "TN": 137,
+            "PARTIAL": 19,
+            "TOTAL": 288,
+            "MISS": 1
+        },
+        "JOB": {
+            "FN": 0,
+            "TP": 25,
+            "FP": 0,
+            "TN": 2,
+            "PARTIAL": 9,
+            "TOTAL": 36,
+            "MISS": 0
+        }
+    },
+    "PERE_MARIEE": {
+        "DATE": {
+            "FN": 0,
+            "TP": 0,
+            "FP": 0,
+            "TN": 0,
+            "PARTIAL": 0,
+            "TOTAL": 0,
+            "MISS": 0
+        },
+        "PER": {
+            "FN": 2,
+            "TP": 69,
+            "FP": 2,
+            "TN": 30,
+            "PARTIAL": 5,
+            "TOTAL": 108,
+            "MISS": 0
+        },
+        "LOC": {
+            "FN": 6,
+            "TP": 37,
+            "FP": 8,
+            "TN": 92,
+            "PARTIAL": 1,
+            "TOTAL": 144,
+            "MISS": 0
+        },
+        "JOB": {
+            "FN": 0,
+            "TP": 18,
+            "FP": 0,
+            "TN": 17,
+            "PARTIAL": 1,
+            "TOTAL": 36,
+            "MISS": 0
+        }
+    },
+    "EX_EPOUX": {
+        "DATE": {
+            "FN": 0,
+            "TP": 0,
+            "FP": 0,
+            "TN": 0,
+            "PARTIAL": 0,
+            "TOTAL": 0,
+            "MISS": 0
+        },
+        "PER": {
+            "FN": 0,
+            "TP": 13,
+            "FP": 0,
+            "TN": 58,
+            "PARTIAL": 1,
+            "TOTAL": 72,
+            "MISS": 0
+        },
+        "LOC": {
+            "FN": 0,
+            "TP": 0,
+            "FP": 0,
+            "TN": 0,
+            "PARTIAL": 0,
+            "TOTAL": 0,
+            "MISS": 0
+        },
+        "JOB": {
+            "FN": 0,
+            "TP": 0,
+            "FP": 0,
+            "TN": 0,
+            "PARTIAL": 0,
+            "TOTAL": 0,
+            "MISS": 0
+        }
+    }
+}

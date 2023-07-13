@@ -55,6 +55,7 @@ def check_dep_country(labels : dict) -> dict :
         for per in ['pere-mari', 'mere-mari', 'pere-mariee', 'mere-mariee']:
             dep = labels[''.join(['Departement','-',event,'-',per])]
             country = labels[''.join(['Pays','-',event,'-',per])]
+            city = labels[''.join(['Ville','-',event,'-',per])]
 
             if dep != '' and (dep in countries) :
                 labels[''.join(['Pays','-',event,'-',per])] = dep
@@ -63,6 +64,38 @@ def check_dep_country(labels : dict) -> dict :
             if country != '' and (country not in countries) : 
                 labels[''.join(['Departement','-',event,'-',per])] = country
                 labels[''.join(['Pays','-',event,'-',per])] = ''
+
+            #use a regex to check if city contains a country between () or **
+            if city != '' :
+                regex = re.compile(r'\((.*?)\)')
+                match = regex.search(city)
+                if match :
+                    potential_country = match.group(1)
+                    if potential_country in countries :
+                        labels[''.join(['Pays','-',event,'-',per])] = potential_country
+                        labels[''.join(['Ville','-',event,'-',per])] = city.replace(match.group(0),'')
+                        labels[''.join(['Departement','-',event,'-',per])] = ''
+
+                    else :
+                        labels[''.join(['Pays','-',event,'-',per])] = ''
+                        labels[''.join(['Ville','-',event,'-',per])] = city.replace(match.group(0),'')
+                        labels[''.join(['Departement','-',event,'-',per])] = potential_country
+
+                regex = re.compile(r'\*\*(.*?)\*\*')
+                match = regex.search(city)
+                if match :
+                    potential_country = match.group(1)
+                    if potential_country in countries :
+                        labels[''.join(['Pays','-',event,'-',per])] = potential_country
+                        labels[''.join(['Ville','-',event,'-',per])] = city.replace(match.group(0),'')
+                        labels[''.join(['Departement','-',event,'-',per])] = ''
+
+                    else :
+                        labels[''.join(['Pays','-',event,'-',per])] = ''
+                        labels[''.join(['Ville','-',event,'-',per])] = city.replace(match.group(0),'')
+                        labels[''.join(['Departement','-',event,'-',per])] = potential_country
+
+
 
     return labels
 
