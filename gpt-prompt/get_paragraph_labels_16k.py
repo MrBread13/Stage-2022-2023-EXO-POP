@@ -10,7 +10,7 @@ import os
 
 
 openai.organization = "org-2wXrLf4fLEfdyawavmkAqi8z"
-openai.api_key = "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"
+openai.api_key = "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"
 
 def read_json(filename):
     with open(filename, "r") as f:
@@ -66,21 +66,47 @@ def get_answer(prompt):
     answer = completion.choices[0].message['content']
     #print("Raw answer : ", answer)
     answer = answer.replace('\n', '').replace('.','')
-    #remove quote around comma
-    answer = answer.replace('\',', '",')
-    answer = answer.replace(',\'', ',"')
-    #remove quote around space
-    answer = answer.replace(' \'', ' "')
-    answer = answer.replace('\' ', '" ')
-    #remove quote around colon
-    answer = answer.replace('\':', '":')
-    answer = answer.replace(':\'', ':"')
-    #remove quote around {}
-    answer = answer.replace('{\'', '{"')
-    answer = answer.replace('\'}', '"}')
+
+
+    # #remove quote around comma
+    # answer = answer.replace('\',', '",')
+    # answer = answer.replace(',\'', ',"')
+    # #remove quote around space
+    # answer = answer.replace(' \'', ' "')
+    # #answer = answer.replace('\' ', '" ')
+    # #remove quote around colon
+    # answer = answer.replace('\':', '":')
+    # answer = answer.replace(':\'', ':"')
+    # #remove quote around {}
+    # answer = answer.replace('{\'', '{"')
+    # answer = answer.replace('\'}', '"}')
     #remove \n and -\n
+
+
     answer = answer.replace('-\\n', '')
     answer = answer.replace('\\n', ' ')
+
+    answer = answer.replace('"', '\'')
+
+    answer = answer.replace('{\'', '{"')
+    answer = answer.replace('{ \'', '{ "')
+
+    answer = answer.replace('\'}', '"}')
+    answer = answer.replace('\' }', '" }')
+
+    answer = answer.replace('\':', '":')
+    answer = answer.replace('\' :', '" :')
+
+    answer = answer.replace(':\'', ':"')
+    answer = answer.replace(': \'', ': "')
+
+    answer = answer.replace('\',', '",')
+    answer = answer.replace('\' ,', '" ,')
+
+    answer = answer.replace(',\'', ',"')
+    answer = answer.replace(', \'', ', "')
+
+
     #replace Prenom-du-maire with Prenom-adjoint-maire
     answer = answer.replace('Prenom-maire', 'Prenom-adjoint-maire')
     #replace Nom-du-maire with Nom-adjoint-maire
@@ -89,7 +115,7 @@ def get_answer(prompt):
     answer = answer.replace("\\'", "\'")
     #print(answer)
     answer = answer[answer.index('{'):]
-    #print(f'answer : {answer}')
+    print(f'answer : {answer}')
     answer = json.loads(answer)
     #print("Answer : ", answer)
 
@@ -99,6 +125,7 @@ def get_labels(text):
     examples = read_json("paragraphs_labels_examples.json")
     labels_dict = {}
     for _ , paragraph_index in enumerate(text):
+        print(text[paragraph_index])
         prompt = get_example_prompt(examples, paragraph_index)
         if text[paragraph_index] == '':
             labels = {}

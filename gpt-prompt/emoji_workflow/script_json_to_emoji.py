@@ -299,7 +299,7 @@ questions_bool = {
 }
 
 
-def emojize(json_acts_dictionnary):
+def emojize(json_acts_dictionnary, raw_text):
     '''
     @param json_acts_dictionnary: a dictionnary of acts in json format. format to follow : 
 
@@ -378,7 +378,9 @@ def emojize(json_acts_dictionnary):
             # insert emojis around occ in text
             # return the text with emojis around occ
             # if occ is not found, return None
-
+            if label not in questions_dict.keys():
+                print("Label not in questions_dict.keys() : ", label)
+                return text
             emojis = questions_dict[label]
             occ = labels_act[paragraph][label]
             print("Occurence :", occ)
@@ -388,14 +390,16 @@ def emojize(json_acts_dictionnary):
             print("Final occurences list before best_position :", occurences)
             if len(occurences) == 0:
                 print("No occurence found for ", label)
-                return
+                return text
             else:
                 # the position of the occurence in the text is occurences[0][1]
 
                 def search_best_position(occurences, positions=positions, label=label, oc=occ):
 
+                    
+
                     if 'Prenom' in label:
-                        print("I was here !")
+                        #print("I was here !")
                         # check the list and remove the worst matching occurence if there are 2 or more
                         if len(occurences) > 1:
                             lev = []
@@ -416,9 +420,43 @@ def emojize(json_acts_dictionnary):
                                     end = positions[key] + label_length[key]
                                     if occurence[1] >= begin and occurence[1] <= end:
                                         print('Key :', key, 'Begin :', begin, 'End :', end)
-                                        print('I was here too !')
+                                        #print('I was here too !')
                                         #print("Occurence :", occurence[0], "Position :", occurence[1], "Key :", key, "Begin :", begin, "End :", end)
                                         occurences.remove(occurence)
+
+                    if 'Ville-naissance-mari' in label :
+                        for occurence in occurences:
+                            if 'Ville-naissance-mari' in positions.keys():
+                                begin = positions['Ville-naissance-mari']
+                                end = positions['Ville-naissance-mari'] + label_length['Ville-naissance-mari']
+                                if occurence[1] >= begin and occurence[1] <= end:
+                                    occurences.remove(occurence)
+
+                    if 'Ville-naissance-mariee' in label :
+                        for occurence in occurences:
+                            if 'Ville-naissance-mariee' in positions.keys():
+                                begin = positions['Ville-naissance-mariee']
+                                end = positions['Ville-naissance-mariee'] + label_length['Ville-naissance-mariee']
+                                if occurence[1] >= begin and occurence[1] <= end:
+                                    occurences.remove(occurence)
+
+                    if 'Pays-naissance-mari' in label :
+                        for occurence in occurences:
+                            if 'Pays-naissance-mari' in positions.keys():
+                                begin = positions['Pays-naissance-mari']
+                                end = positions['Pays-naissance-mari'] + label_length['Pays-naissance-mari']
+                                if occurence[1] >= begin and occurence[1] <= end:
+                                    occurences.remove(occurence)
+
+                    if 'Pays-naissance-mariee' in label :
+                        for occurence in occurences:
+                            if 'Pays-naissance-mariee' in positions.keys():
+                                begin = positions['Pays-naissance-mariee']
+                                end = positions['Pays-naissance-mariee'] + label_length['Pays-naissance-mariee']
+                                if occurence[1] >= begin and occurence[1] <= end:
+                                    occurences.remove(occurence)
+
+
 
                     if 'mere-mariee' in label:
                         if label == 'Prenom-mere-mariee':
@@ -525,10 +563,15 @@ def emojize(json_acts_dictionnary):
                         positions[label] = occurences[-1][1]
                         return occurences[-1]
 
+                    if len(occurences) == 0:
+                        return None, None
+                    
                     positions[label] = occurences[0][1]
                     return occurences[0]
 
                 good_occ, pos = search_best_position(occurences)
+                if good_occ is None:
+                    return text
                 #print(positions)
                 def update_positions(pos, len_after, len_before, positions = positions):
                     for label, position in positions.items():
@@ -539,7 +582,7 @@ def emojize(json_acts_dictionnary):
 
                 # I want to insert emojis around the occurence, I want this to be done only for good_occ
                 text = text[:pos] + emojis['begin'] + good_occ + \
-                    emojis['end'] + text[pos+len(good_occ):]
+                    emojis['end'][::-1] + text[pos+len(good_occ):]
                 
                 # update positions
                 label_length[label] = len(good_occ) + len(emojis['begin']) + len(emojis['end'])
@@ -552,130 +595,293 @@ def emojize(json_acts_dictionnary):
             for paragraph, txt in text.items():
 
                 #Mariee + 2 parents
-                txt = txt.replace('👰🏠🌇👰👴🏠🌇👰👵🏠🌇', pluriels['Ville-residence-parents-mariee']['begin'])
-                txt = txt.replace('👧👒🏡🌉👧🎩🏡🌉👧🏡🌉', pluriels['Ville-residence-parents-mariee']['end'])
-                txt = txt.replace('👰🏠🗺👰👴🏠🗺👰👵🏠🗺', pluriels['Departement-residence-parents-mariee']['begin'])
-                txt = txt.replace('👧👒🏡📌👧🎩🏡📌👧🏡📌', pluriels['Departement-residence-parents-mariee']['end'])
-                txt = txt.replace('👰🏠🏳👰👴🏠🏳👰👵🏠🏳', pluriels['Pays-residence-parents-mariee']['begin'])
-                txt = txt.replace('👧👒🏡🌍👧🎩🏡🌍👧🏡🌍', pluriels['Pays-residence-parents-mariee']['end'])
-                txt = txt.replace('👰🏠🔟👰👴🏠🔟👰👵🏠🔟', pluriels['Numero-rue-residence-parents-mariee']['begin'])
-                txt = txt.replace('👧👒🏡🔢👧🎩🏡🔢👧🏡🔢', pluriels['Numero-rue-residence-parents-mariee']['end'])
-                txt = txt.replace('👰🏠🛣👰👴🏠🛣👰👵🏠🛣', pluriels['Type-rue-residence-parents-mariee']['begin'])
-                txt = txt.replace('👧👒🏡🛤👧🎩🏡🛤👧🏡🛤', pluriels['Type-rue-residence-parents-mariee']['end'])
-                txt = txt.replace('👰🏠🔠👰👴🏠🔠👰👵🏠🔠', pluriels['Nom-rue-residence-parents-mariee']['begin'])
-                txt = txt.replace('👧👒🏡🔡👧🎩🏡🔡👧🏡🔡', pluriels['Nom-rue-residence-parents-mariee']['end'])
+                # txt = txt.replace('👰🏠🌇👰👴🏠🌇👰👵🏠🌇', pluriels['Ville-residence-parents-mariee']['begin'])
+                # txt = txt.replace('👧👒🏡🌉👧🎩🏡🌉👧🏡🌉', pluriels['Ville-residence-parents-mariee']['end'])
+                # txt = txt.replace('👰🏠🗺👰👴🏠🗺👰👵🏠🗺', pluriels['Departement-residence-parents-mariee']['begin'])
+                # txt = txt.replace('👧👒🏡📌👧🎩🏡📌👧🏡📌', pluriels['Departement-residence-parents-mariee']['end'])
+                # txt = txt.replace('👰🏠🏳👰👴🏠🏳👰👵🏠🏳', pluriels['Pays-residence-parents-mariee']['begin'])
+                # txt = txt.replace('👧👒🏡🌍👧🎩🏡🌍👧🏡🌍', pluriels['Pays-residence-parents-mariee']['end'])
+                # txt = txt.replace('👰🏠🔟👰👴🏠🔟👰👵🏠🔟', pluriels['Numero-rue-residence-parents-mariee']['begin'])
+                # txt = txt.replace('👧👒🏡🔢👧🎩🏡🔢👧🏡🔢', pluriels['Numero-rue-residence-parents-mariee']['end'])
+                # txt = txt.replace('👰🏠🛣👰👴🏠🛣👰👵🏠🛣', pluriels['Type-rue-residence-parents-mariee']['begin'])
+                # txt = txt.replace('👧👒🏡🛤👧🎩🏡🛤👧🏡🛤', pluriels['Type-rue-residence-parents-mariee']['end'])
+                # txt = txt.replace('👰🏠🔠👰👴🏠🔠👰👵🏠🔠', pluriels['Nom-rue-residence-parents-mariee']['begin'])
+                # txt = txt.replace('👧👒🏡🔡👧🎩🏡🔡👧🏡🔡', pluriels['Nom-rue-residence-parents-mariee']['end'])
+
+                txt = txt.replace(questions_dict['Ville-residence-mariee']['begin']+questions_dict['Ville-residence-pere-mariee']['begin']+questions_dict['Ville-residence-mere-mariee']['begin'], pluriels['Ville-residence-parents-mariee']['begin'])
+                txt = txt.replace(questions_dict['Ville-residence-mere-mariee']['end'][::-1]+questions_dict['Ville-residence-pere-mariee']['end'][::-1]+questions_dict['Ville-residence-mariee']['end'][::-1], pluriels['Ville-residence-parents-mariee']['end'])
+
+                txt = txt.replace(questions_dict['Departement-residence-mariee']['begin']+questions_dict['Departement-residence-pere-mariee']['begin']+questions_dict['Departement-residence-mere-mariee']['begin'], pluriels['Departement-residence-parents-mariee']['begin'])
+                txt = txt.replace(questions_dict['Departement-residence-mere-mariee']['end'][::-1]+questions_dict['Departement-residence-pere-mariee']['end'][::-1]+questions_dict['Departement-residence-mariee']['end'][::-1], pluriels['Departement-residence-parents-mariee']['end'])
+
+                txt = txt.replace(questions_dict['Pays-residence-mariee']['begin']+questions_dict['Pays-residence-pere-mariee']['begin']+questions_dict['Pays-residence-mere-mariee']['begin'], pluriels['Pays-residence-parents-mariee']['begin'])
+                txt = txt.replace(questions_dict['Pays-residence-mere-mariee']['end'][::-1]+questions_dict['Pays-residence-pere-mariee']['end'][::-1]+questions_dict['Pays-residence-mariee']['end'][::-1], pluriels['Pays-residence-parents-mariee']['end'])
+
+                txt = txt.replace(questions_dict['Numero-rue-residence-mariee']['begin']+questions_dict['Numero-rue-residence-pere-mariee']['begin']+questions_dict['Numero-rue-residence-mere-mariee']['begin'], pluriels['Numero-rue-residence-parents-mariee']['begin'])
+                txt = txt.replace(questions_dict['Numero-rue-residence-mere-mariee']['end'][::-1]+questions_dict['Numero-rue-residence-pere-mariee']['end'][::-1]+questions_dict['Numero-rue-residence-mariee']['end'][::-1], pluriels['Numero-rue-residence-parents-mariee']['end'])
+
+                txt = txt.replace(questions_dict['Type-rue-residence-mariee']['begin']+questions_dict['Type-rue-residence-pere-mariee']['begin']+questions_dict['Type-rue-residence-mere-mariee']['begin'], pluriels['Type-rue-residence-parents-mariee']['begin'])
+                txt = txt.replace(questions_dict['Type-rue-residence-mere-mariee']['end'][::-1]+questions_dict['Type-rue-residence-pere-mariee']['end'][::-1]+questions_dict['Type-rue-residence-mariee']['end'][::-1], pluriels['Type-rue-residence-parents-mariee']['end'])
+
+                txt = txt.replace(questions_dict['Nom-rue-residence-mariee']['begin']+questions_dict['Nom-rue-residence-pere-mariee']['begin']+questions_dict['Nom-rue-residence-mere-mariee']['begin'], pluriels['Nom-rue-residence-parents-mariee']['begin'])
+                txt = txt.replace(questions_dict['Nom-rue-residence-mere-mariee']['end'][::-1]+questions_dict['Nom-rue-residence-pere-mariee']['end'][::-1]+questions_dict['Nom-rue-residence-mariee']['end'][::-1], pluriels['Nom-rue-residence-parents-mariee']['end'])
+
+
 
                 #Mariee + mere
-                txt = txt.replace('👰🏠🌇👰👵🏠🌇', pluriels['Ville-residence-mere-mariee']['begin'])
-                txt = txt.replace('👧👒🏡🌉👧🏡🌉', pluriels['Ville-residence-mere-mariee']['end'])
-                txt = txt.replace('👰🏠🗺👰👵🏠🗺', pluriels['Departement-residence-mere-mariee']['begin'])
-                txt = txt.replace('👧👒🏡📌👧🏡📌', pluriels['Departement-residence-mere-mariee']['end'])
-                txt = txt.replace('👰🏠🏳👰👵🏠🏳', pluriels['Pays-residence-mere-mariee']['begin'])
-                txt = txt.replace('👧👒🏡🌍👧🏡🌍', pluriels['Pays-residence-mere-mariee']['end'])
-                txt = txt.replace('👰🏠🔟👰👵🏠🔟', pluriels['Numero-rue-residence-mere-mariee']['begin'])
-                txt = txt.replace('👧👒🏡🔢👧🏡🔢', pluriels['Numero-rue-residence-mere-mariee']['end'])
-                txt = txt.replace('👰🏠🛣👰👵🏠🛣', pluriels['Type-rue-residence-mere-mariee']['begin'])
-                txt = txt.replace('👧👒🏡🛤👧🏡🛤', pluriels['Type-rue-residence-mere-mariee']['end'])
-                txt = txt.replace('👰🏠🔠👰👵🏠🔠', pluriels['Nom-rue-residence-mere-mariee']['begin'])
-                txt = txt.replace('👧👒🏡🔡👧🏡🔡', pluriels['Nom-rue-residence-mere-mariee']['end'])
+                # txt = txt.replace('👰🏠🌇👰👵🏠🌇', pluriels['Ville-residence-mere-mariee']['begin'])
+                # txt = txt.replace('👧👒🏡🌉👧🏡🌉', pluriels['Ville-residence-mere-mariee']['end'])
+                # txt = txt.replace('👰🏠🗺👰👵🏠🗺', pluriels['Departement-residence-mere-mariee']['begin'])
+                # txt = txt.replace('👧👒🏡📌👧🏡📌', pluriels['Departement-residence-mere-mariee']['end'])
+                # txt = txt.replace('👰🏠🏳👰👵🏠🏳', pluriels['Pays-residence-mere-mariee']['begin'])
+                # txt = txt.replace('👧👒🏡🌍👧🏡🌍', pluriels['Pays-residence-mere-mariee']['end'])
+                # txt = txt.replace('👰🏠🔟👰👵🏠🔟', pluriels['Numero-rue-residence-mere-mariee']['begin'])
+                # txt = txt.replace('👧👒🏡🔢👧🏡🔢', pluriels['Numero-rue-residence-mere-mariee']['end'])
+                # txt = txt.replace('👰🏠🛣👰👵🏠🛣', pluriels['Type-rue-residence-mere-mariee']['begin'])
+                # txt = txt.replace('👧👒🏡🛤👧🏡🛤', pluriels['Type-rue-residence-mere-mariee']['end'])
+                # txt = txt.replace('👰🏠🔠👰👵🏠🔠', pluriels['Nom-rue-residence-mere-mariee']['begin'])
+                # txt = txt.replace('👧👒🏡🔡👧🏡🔡', pluriels['Nom-rue-residence-mere-mariee']['end'])
+
+                txt = txt.replace(questions_dict['Ville-residence-mariee']['begin']+questions_dict['Ville-residence-mere-mariee']['begin'], pluriels['Ville-residence-mere-mariee']['begin'])
+                txt = txt.replace(questions_dict['Ville-residence-mere-mariee']['end'][::-1]+questions_dict['Ville-residence-mariee']['end'][::-1], pluriels['Ville-residence-mere-mariee']['end'])
+
+                txt = txt.replace(questions_dict['Departement-residence-mariee']['begin']+questions_dict['Departement-residence-mere-mariee']['begin'], pluriels['Departement-residence-mere-mariee']['begin'])
+                txt = txt.replace(questions_dict['Departement-residence-mere-mariee']['end'][::-1]+questions_dict['Departement-residence-mariee']['end'][::-1], pluriels['Departement-residence-mere-mariee']['end'])
+
+                txt = txt.replace(questions_dict['Pays-residence-mariee']['begin']+questions_dict['Pays-residence-mere-mariee']['begin'], pluriels['Pays-residence-mere-mariee']['begin'])
+                txt = txt.replace(questions_dict['Pays-residence-mere-mariee']['end'][::-1]+questions_dict['Pays-residence-mariee']['end'][::-1], pluriels['Pays-residence-mere-mariee']['end'])
+
+                txt = txt.replace(questions_dict['Numero-rue-residence-mariee']['begin']+questions_dict['Numero-rue-residence-mere-mariee']['begin'], pluriels['Numero-rue-residence-mere-mariee']['begin'])
+                txt = txt.replace(questions_dict['Numero-rue-residence-mere-mariee']['end'][::-1]+questions_dict['Numero-rue-residence-mariee']['end'][::-1], pluriels['Numero-rue-residence-mere-mariee']['end'])
+
+                txt = txt.replace(questions_dict['Type-rue-residence-mariee']['begin']+questions_dict['Type-rue-residence-mere-mariee']['begin'], pluriels['Type-rue-residence-mere-mariee']['begin'])
+                txt = txt.replace(questions_dict['Type-rue-residence-mere-mariee']['end'][::-1]+questions_dict['Type-rue-residence-mariee']['end'][::-1], pluriels['Type-rue-residence-mere-mariee']['end'])
+
+                txt = txt.replace(questions_dict['Nom-rue-residence-mariee']['begin']+questions_dict['Nom-rue-residence-mere-mariee']['begin'], pluriels['Nom-rue-residence-mere-mariee']['begin'])
+                txt = txt.replace(questions_dict['Nom-rue-residence-mere-mariee']['end'][::-1]+questions_dict['Nom-rue-residence-mariee']['end'][::-1], pluriels['Nom-rue-residence-mere-mariee']['end'])
+
+
 
                 #Mariee + pere
-                txt = txt.replace('👰🏠🌇👰👴🏠🌇', pluriels['Ville-residence-pere-mariee']['begin'])
-                txt = txt.replace('👧🎩🏡🌉👧🏡🌉', pluriels['Ville-residence-pere-mariee']['end'])
-                txt = txt.replace('👰🏠🗺👰👴🏠🗺', pluriels['Departement-residence-pere-mariee']['begin'])
-                txt = txt.replace('👧🎩🏡📌👧🏡📌', pluriels['Departement-residence-pere-mariee']['end'])
-                txt = txt.replace('👰🏠🏳👰👴🏠🏳', pluriels['Pays-residence-pere-mariee']['begin'])
-                txt = txt.replace('👧🎩🏡🌍👧🏡🌍', pluriels['Pays-residence-pere-mariee']['end'])
-                txt = txt.replace('👰🏠🔟👰👴🏠🔟', pluriels['Numero-rue-residence-pere-mariee']['begin'])
-                txt = txt.replace('👧🎩🏡🔢👧🏡🔢', pluriels['Numero-rue-residence-pere-mariee']['end'])
-                txt = txt.replace('👰🏠🛣👰👴🏠🛣', pluriels['Type-rue-residence-pere-mariee']['begin'])
-                txt = txt.replace('👧🎩🏡🛤👧🏡🛤', pluriels['Type-rue-residence-pere-mariee']['end'])
-                txt = txt.replace('👰🏠🔠👰👴🏠🔠', pluriels['Nom-rue-residence-pere-mariee']['begin'])
-                txt = txt.replace('👧🎩🏡🔡👧🏡🔡', pluriels['Nom-rue-residence-pere-mariee']['end'])
+                # txt = txt.replace('👰🏠🌇👰👴🏠🌇', pluriels['Ville-residence-pere-mariee']['begin'])
+                # txt = txt.replace('👧🎩🏡🌉👧🏡🌉', pluriels['Ville-residence-pere-mariee']['end'])
+                # txt = txt.replace('👰🏠🗺👰👴🏠🗺', pluriels['Departement-residence-pere-mariee']['begin'])
+                # txt = txt.replace('👧🎩🏡📌👧🏡📌', pluriels['Departement-residence-pere-mariee']['end'])
+                # txt = txt.replace('👰🏠🏳👰👴🏠🏳', pluriels['Pays-residence-pere-mariee']['begin'])
+                # txt = txt.replace('👧🎩🏡🌍👧🏡🌍', pluriels['Pays-residence-pere-mariee']['end'])
+                # txt = txt.replace('👰🏠🔟👰👴🏠🔟', pluriels['Numero-rue-residence-pere-mariee']['begin'])
+                # txt = txt.replace('👧🎩🏡🔢👧🏡🔢', pluriels['Numero-rue-residence-pere-mariee']['end'])
+                # txt = txt.replace('👰🏠🛣👰👴🏠🛣', pluriels['Type-rue-residence-pere-mariee']['begin'])
+                # txt = txt.replace('👧🎩🏡🛤👧🏡🛤', pluriels['Type-rue-residence-pere-mariee']['end'])
+                # txt = txt.replace('👰🏠🔠👰👴🏠🔠', pluriels['Nom-rue-residence-pere-mariee']['begin'])
+                # txt = txt.replace('👧🎩🏡🔡👧🏡🔡', pluriels['Nom-rue-residence-pere-mariee']['end'])
+
+                txt = txt.replace(questions_dict['Ville-residence-mariee']['begin']+questions_dict['Ville-residence-pere-mariee']['begin'], pluriels['Ville-residence-pere-mariee']['begin'])
+                txt = txt.replace(questions_dict['Ville-residence-pere-mariee']['end'][::-1]+questions_dict['Ville-residence-mariee']['end'][::-1], pluriels['Ville-residence-pere-mariee']['end'])
+
+                txt = txt.replace(questions_dict['Departement-residence-mariee']['begin']+questions_dict['Departement-residence-pere-mariee']['begin'], pluriels['Departement-residence-pere-mariee']['begin'])
+                txt = txt.replace(questions_dict['Departement-residence-pere-mariee']['end'][::-1]+questions_dict['Departement-residence-mariee']['end'][::-1], pluriels['Departement-residence-pere-mariee']['end'])
+
+                txt = txt.replace(questions_dict['Pays-residence-mariee']['begin']+questions_dict['Pays-residence-pere-mariee']['begin'], pluriels['Pays-residence-pere-mariee']['begin'])
+                txt = txt.replace(questions_dict['Pays-residence-pere-mariee']['end'][::-1]+questions_dict['Pays-residence-mariee']['end'][::-1], pluriels['Pays-residence-pere-mariee']['end'])
+
+                txt = txt.replace(questions_dict['Numero-rue-residence-mariee']['begin']+questions_dict['Numero-rue-residence-pere-mariee']['begin'], pluriels['Numero-rue-residence-pere-mariee']['begin'])
+                txt = txt.replace(questions_dict['Numero-rue-residence-pere-mariee']['end'][::-1]+questions_dict['Numero-rue-residence-mariee']['end'][::-1], pluriels['Numero-rue-residence-pere-mariee']['end'])
+
+                txt = txt.replace(questions_dict['Type-rue-residence-mariee']['begin']+questions_dict['Type-rue-residence-pere-mariee']['begin'], pluriels['Type-rue-residence-pere-mariee']['begin'])
+                txt = txt.replace(questions_dict['Type-rue-residence-pere-mariee']['end'][::-1]+questions_dict['Type-rue-residence-mariee']['end'][::-1], pluriels['Type-rue-residence-pere-mariee']['end'])
+
+                txt = txt.replace(questions_dict['Nom-rue-residence-mariee']['begin']+questions_dict['Nom-rue-residence-pere-mariee']['begin'], pluriels['Nom-rue-residence-pere-mariee']['begin'])
+                txt = txt.replace(questions_dict['Nom-rue-residence-pere-mariee']['end'][::-1]+questions_dict['Nom-rue-residence-mariee']['end'][::-1], pluriels['Nom-rue-residence-pere-mariee']['end'])
+
+
 
                 #Parents mariee seuls
-                txt = txt.replace('👰👴🏠🌇👰👵🏠🌇', pluriels['Ville-residence-parents-mariee']['begin'])
-                txt = txt.replace('👧👒🏡🌉👧🎩🏡🌉', pluriels['Ville-residence-parents-mariee']['end'])
-                txt = txt.replace('👰👴🏠🗺👰👵🏠🗺', pluriels['Departement-residence-parents-mariee']['begin'])
-                txt = txt.replace('👧👒🏡📌👧🎩🏡📌', pluriels['Departement-residence-parents-mariee']['end'])
-                txt = txt.replace('👰👴🏠🏳👰👵🏠🏳', pluriels['Pays-residence-parents-mariee']['begin'])
-                txt = txt.replace('👧👒🏡🌍👧🎩🏡🌍', pluriels['Pays-residence-parents-mariee']['end'])
-                txt = txt.replace('👰👴🏠🔟👰👵🏠🔟', pluriels['Numero-rue-residence-parents-mariee']['begin'])
-                txt = txt.replace('👧👒🏡🔢👧🎩🏡🔢', pluriels['Numero-rue-residence-parents-mariee']['end'])
-                txt = txt.replace('👰👴🏠🛣👰👵🏠🛣', pluriels['Type-rue-residence-parents-mariee']['begin'])
-                txt = txt.replace('👧👒🏡🛤👧🎩🏡🛤', pluriels['Type-rue-residence-parents-mariee']['end'])
-                txt = txt.replace('👰👴🏠🔠👰👵🏠🔠', pluriels['Nom-rue-residence-parents-mariee']['begin'])
-                txt = txt.replace('👧👒🏡🔡👧🎩🏡🔡', pluriels['Nom-rue-residence-parents-mariee']['end'])
+                # txt = txt.replace('👰👴🏠🌇👰👵🏠🌇', pluriels['Ville-residence-parents-mariee']['begin'])
+                # txt = txt.replace('👧👒🏡🌉👧🎩🏡🌉', pluriels['Ville-residence-parents-mariee']['end'])
+                # txt = txt.replace('👰👴🏠🗺👰👵🏠🗺', pluriels['Departement-residence-parents-mariee']['begin'])
+                # txt = txt.replace('👧👒🏡📌👧🎩🏡📌', pluriels['Departement-residence-parents-mariee']['end'])
+                # txt = txt.replace('👰👴🏠🏳👰👵🏠🏳', pluriels['Pays-residence-parents-mariee']['begin'])
+                # txt = txt.replace('👧👒🏡🌍👧🎩🏡🌍', pluriels['Pays-residence-parents-mariee']['end'])
+                # txt = txt.replace('👰👴🏠🔟👰👵🏠🔟', pluriels['Numero-rue-residence-parents-mariee']['begin'])
+                # txt = txt.replace('👧👒🏡🔢👧🎩🏡🔢', pluriels['Numero-rue-residence-parents-mariee']['end'])
+                # txt = txt.replace('👰👴🏠🛣👰👵🏠🛣', pluriels['Type-rue-residence-parents-mariee']['begin'])
+                # txt = txt.replace('👧👒🏡🛤👧🎩🏡🛤', pluriels['Type-rue-residence-parents-mariee']['end'])
+                # txt = txt.replace('👰👴🏠🔠👰👵🏠🔠', pluriels['Nom-rue-residence-parents-mariee']['begin'])
+                # txt = txt.replace('👧👒🏡🔡👧🎩🏡🔡', pluriels['Nom-rue-residence-parents-mariee']['end'])
+                # txt = txt.replace('👰👴🔧👰👵🔧', pluriels['Profession-parents-mariee']['begin'])
+                # txt = txt.replace('👧👒🪛👧🎩🪛', pluriels['Profession-parents-mariee']['end'])
 
-                txt = txt.replace('👰👴🔧👰👵🔧', pluriels['Profession-parents-mariee']['begin'])
-                txt = txt.replace('👧👒🪛👧🎩🪛', pluriels['Profession-parents-mariee']['end'])
+                txt = txt.replace(questions_dict['Ville-residence-pere-mariee']['begin']+questions_dict['Ville-residence-mere-mariee']['begin'], pluriels['Ville-residence-parents-mariee']['begin'])
+                txt = txt.replace(questions_dict['Ville-residence-mere-mariee']['end'][::-1]+questions_dict['Ville-residence-pere-mariee']['end'][::-1], pluriels['Ville-residence-parents-mariee']['end'])
+
+                txt = txt.replace(questions_dict['Departement-residence-pere-mariee']['begin']+questions_dict['Departement-residence-mere-mariee']['begin'], pluriels['Departement-residence-parents-mariee']['begin'])
+                txt = txt.replace(questions_dict['Departement-residence-mere-mariee']['end'][::-1]+questions_dict['Departement-residence-pere-mariee']['end'][::-1], pluriels['Departement-residence-parents-mariee']['end'])
+
+                txt = txt.replace(questions_dict['Pays-residence-pere-mariee']['begin']+questions_dict['Pays-residence-mere-mariee']['begin'], pluriels['Pays-residence-parents-mariee']['begin'])
+                txt = txt.replace(questions_dict['Pays-residence-mere-mariee']['end'][::-1]+questions_dict['Pays-residence-pere-mariee']['end'][::-1], pluriels['Pays-residence-parents-mariee']['end'])
+
+                txt = txt.replace(questions_dict['Numero-rue-residence-pere-mariee']['begin']+questions_dict['Numero-rue-residence-mere-mariee']['begin'], pluriels['Numero-rue-residence-parents-mariee']['begin'])
+                txt = txt.replace(questions_dict['Numero-rue-residence-mere-mariee']['end'][::-1]+questions_dict['Numero-rue-residence-pere-mariee']['end'][::-1], pluriels['Numero-rue-residence-parents-mariee']['end'])
+
+                txt = txt.replace(questions_dict['Type-rue-residence-pere-mariee']['begin']+questions_dict['Type-rue-residence-mere-mariee']['begin'], pluriels['Type-rue-residence-parents-mariee']['begin'])
+                txt = txt.replace(questions_dict['Type-rue-residence-mere-mariee']['end'][::-1]+questions_dict['Type-rue-residence-pere-mariee']['end'][::-1], pluriels['Type-rue-residence-parents-mariee']['end'])
+
+                txt = txt.replace(questions_dict['Nom-rue-residence-pere-mariee']['begin']+questions_dict['Nom-rue-residence-mere-mariee']['begin'], pluriels['Nom-rue-residence-parents-mariee']['begin'])
+                txt = txt.replace(questions_dict['Nom-rue-residence-mere-mariee']['end'][::-1]+questions_dict['Nom-rue-residence-pere-mariee']['end'][::-1], pluriels['Nom-rue-residence-parents-mariee']['end'])
+
+                txt = txt.replace(questions_dict['Profession-pere-mariee']['begin']+questions_dict['Profession-mere-mariee']['begin'], pluriels['Profession-parents-mariee']['begin'])
+                txt = txt.replace(questions_dict['Profession-mere-mariee']['end'][::-1]+questions_dict['Profession-pere-mariee']['end'][::-1], pluriels['Profession-parents-mariee']['end'])
+
 
                 #mari + 2 parents
-                txt = txt.replace('👨🏠🌇👨👴🏠🌇👨👵🏠🌇', pluriels['Ville-residence-parents-mari']['begin'])
-                txt = txt.replace('👦👒🏡🌉👦🎩🏡🌉👦🏡🌉', pluriels['Ville-residence-parents-mari']['end'])
-                txt = txt.replace('👨🏠🗺👨👴🏠🗺👨👵🏠🗺', pluriels['Departement-residence-parents-mari']['begin'])
-                txt = txt.replace('👦👒🏡📌👦🎩🏡📌👦🏡📌', pluriels['Departement-residence-parents-mari']['end'])
-                txt = txt.replace('👨🏠🏳👨👴🏠🏳👨👵🏠🏳', pluriels['Pays-residence-parents-mari']['begin'])
-                txt = txt.replace('👦👒🏡🌍👦🎩🏡🌍👦🏡🌍', pluriels['Pays-residence-parents-mari']['end'])
-                txt = txt.replace('👨🏠🔟👨👴🏠🔟👨👵🏠🔟', pluriels['Numero-rue-residence-parents-mari']['begin'])
-                txt = txt.replace('👦👒🏡🔢👦🎩🏡🔢👦🏡🔢', pluriels['Numero-rue-residence-parents-mari']['end'])
-                txt = txt.replace('👨🏠🛣👨👴🏠🛣👨👵🏠🛣', pluriels['Type-rue-residence-parents-mari']['begin'])
-                txt = txt.replace('👦👒🏡🛤👦🎩🏡🛤👦🏡🛤', pluriels['Type-rue-residence-parents-mari']['end'])
-                txt = txt.replace('👨🏠🔠👨👴🏠🔠👨👵🏠🔠', pluriels['Nom-rue-residence-parents-mari']['begin'])
-                txt = txt.replace('👦👒🏡🔡👦🎩🏡🔡👦🏡🔡', pluriels['Nom-rue-residence-parents-mari']['end'])
+                # txt = txt.replace('👨🏠🌇👨👴🏠🌇👨👵🏠🌇', pluriels['Ville-residence-parents-mari']['begin'])
+                # txt = txt.replace('👦👒🏡🌉👦🎩🏡🌉👦🏡🌉', pluriels['Ville-residence-parents-mari']['end'])
+                # txt = txt.replace('👨🏠🗺👨👴🏠🗺👨👵🏠🗺', pluriels['Departement-residence-parents-mari']['begin'])
+                # txt = txt.replace('👦👒🏡📌👦🎩🏡📌👦🏡📌', pluriels['Departement-residence-parents-mari']['end'])
+                # txt = txt.replace('👨🏠🏳👨👴🏠🏳👨👵🏠🏳', pluriels['Pays-residence-parents-mari']['begin'])
+                # txt = txt.replace('👦👒🏡🌍👦🎩🏡🌍👦🏡🌍', pluriels['Pays-residence-parents-mari']['end'])
+                # txt = txt.replace('👨🏠🔟👨👴🏠🔟👨👵🏠🔟', pluriels['Numero-rue-residence-parents-mari']['begin'])
+                # txt = txt.replace('👦👒🏡🔢👦🎩🏡🔢👦🏡🔢', pluriels['Numero-rue-residence-parents-mari']['end'])
+                # txt = txt.replace('👨🏠🛣👨👴🏠🛣👨👵🏠🛣', pluriels['Type-rue-residence-parents-mari']['begin'])
+                # txt = txt.replace('👦👒🏡🛤👦🎩🏡🛤👦🏡🛤', pluriels['Type-rue-residence-parents-mari']['end'])
+                # txt = txt.replace('👨🏠🔠👨👴🏠🔠👨👵🏠🔠', pluriels['Nom-rue-residence-parents-mari']['begin'])
+                # txt = txt.replace('👦👒🏡🔡👦🎩🏡🔡👦🏡🔡', pluriels['Nom-rue-residence-parents-mari']['end'])
+
+                txt = txt.replace(questions_dict['Ville-residence-mari']['begin']+questions_dict['Ville-residence-pere-mari']['begin']+questions_dict['Ville-residence-mere-mari']['begin'], pluriels['Ville-residence-parents-mari']['begin'])
+                txt = txt.replace(questions_dict['Ville-residence-mere-mari']['end'][::-1]+questions_dict['Ville-residence-pere-mari']['end'][::-1]+questions_dict['Ville-residence-mari']['end'][::-1], pluriels['Ville-residence-parents-mari']['end'])
+
+                txt = txt.replace(questions_dict['Departement-residence-mari']['begin']+questions_dict['Departement-residence-pere-mari']['begin']+questions_dict['Departement-residence-mere-mari']['begin'], pluriels['Departement-residence-parents-mari']['begin'])
+                txt = txt.replace(questions_dict['Departement-residence-mere-mari']['end'][::-1]+questions_dict['Departement-residence-pere-mari']['end'][::-1]+questions_dict['Departement-residence-mari']['end'][::-1], pluriels['Departement-residence-parents-mari']['end'])
+
+                txt = txt.replace(questions_dict['Pays-residence-mari']['begin']+questions_dict['Pays-residence-pere-mari']['begin']+questions_dict['Pays-residence-mere-mari']['begin'], pluriels['Pays-residence-parents-mari']['begin'])
+                txt = txt.replace(questions_dict['Pays-residence-mere-mari']['end'][::-1]+questions_dict['Pays-residence-pere-mari']['end'][::-1]+questions_dict['Pays-residence-mari']['end'][::-1], pluriels['Pays-residence-parents-mari']['end'])
+
+                txt = txt.replace(questions_dict['Numero-rue-residence-mari']['begin']+questions_dict['Numero-rue-residence-pere-mari']['begin']+questions_dict['Numero-rue-residence-mere-mari']['begin'], pluriels['Numero-rue-residence-parents-mari']['begin'])
+                txt = txt.replace(questions_dict['Numero-rue-residence-mere-mari']['end'][::-1]+questions_dict['Numero-rue-residence-pere-mari']['end'][::-1]+questions_dict['Numero-rue-residence-mari']['end'][::-1], pluriels['Numero-rue-residence-parents-mari']['end'])
+
+                txt = txt.replace(questions_dict['Type-rue-residence-mari']['begin']+questions_dict['Type-rue-residence-pere-mari']['begin']+questions_dict['Type-rue-residence-mere-mari']['begin'], pluriels['Type-rue-residence-parents-mari']['begin'])
+                txt = txt.replace(questions_dict['Type-rue-residence-mere-mari']['end'][::-1]+questions_dict['Type-rue-residence-pere-mari']['end'][::-1]+questions_dict['Type-rue-residence-mari']['end'][::-1], pluriels['Type-rue-residence-parents-mari']['end'])
+
+                txt = txt.replace(questions_dict['Nom-rue-residence-mari']['begin']+questions_dict['Nom-rue-residence-pere-mari']['begin']+questions_dict['Nom-rue-residence-mere-mari']['begin'], pluriels['Nom-rue-residence-parents-mari']['begin'])
+                txt = txt.replace(questions_dict['Nom-rue-residence-mere-mari']['end'][::-1]+questions_dict['Nom-rue-residence-pere-mari']['end'][::-1]+questions_dict['Nom-rue-residence-mari']['end'][::-1], pluriels['Nom-rue-residence-parents-mari']['end'])
 
                 #mari + mere
-                txt = txt.replace('👨🏠🌇👨👵🏠🌇', pluriels['Ville-residence-mere-mari']['begin'])
-                txt = txt.replace('👦👒🏡🌉👦🏡🌉', pluriels['Ville-residence-mere-mari']['end'])
-                txt = txt.replace('👨🏠🗺👨👵🏠🗺', pluriels['Departement-residence-mere-mari']['begin'])
-                txt = txt.replace('👦👒🏡📌👦🏡📌', pluriels['Departement-residence-mere-mari']['end'])
-                txt = txt.replace('👨🏠🏳👨👵🏠🏳', pluriels['Pays-residence-mere-mari']['begin'])
-                txt = txt.replace('👦👒🏡🌍👦🏡🌍', pluriels['Pays-residence-mere-mari']['end'])
-                txt = txt.replace('👨🏠🔟👨👵🏠🔟', pluriels['Numero-rue-residence-mere-mari']['begin'])
-                txt = txt.replace('👦👒🏡🔢👦🏡🔢', pluriels['Numero-rue-residence-mere-mari']['end'])
-                txt = txt.replace('👨🏠🛣👨👵🏠🛣', pluriels['Type-rue-residence-mere-mari']['begin'])
-                txt = txt.replace('👦👒🏡🛤👦🏡🛤', pluriels['Type-rue-residence-mere-mari']['end'])
-                txt = txt.replace('👨🏠🔠👨👵🏠🔠', pluriels['Nom-rue-residence-mere-mari']['begin'])
-                txt = txt.replace('👦👒🏡🔡👦🏡🔡', pluriels['Nom-rue-residence-mere-mari']['end'])
+                # txt = txt.replace('👨🏠🌇👨👵🏠🌇', pluriels['Ville-residence-mere-mari']['begin'])
+                # txt = txt.replace('👦👒🏡🌉👦🏡🌉', pluriels['Ville-residence-mere-mari']['end'])
+                # txt = txt.replace('👨🏠🗺👨👵🏠🗺', pluriels['Departement-residence-mere-mari']['begin'])
+                # txt = txt.replace('👦👒🏡📌👦🏡📌', pluriels['Departement-residence-mere-mari']['end'])
+                # txt = txt.replace('👨🏠🏳👨👵🏠🏳', pluriels['Pays-residence-mere-mari']['begin'])
+                # txt = txt.replace('👦👒🏡🌍👦🏡🌍', pluriels['Pays-residence-mere-mari']['end'])
+                # txt = txt.replace('👨🏠🔟👨👵🏠🔟', pluriels['Numero-rue-residence-mere-mari']['begin'])
+                # txt = txt.replace('👦👒🏡🔢👦🏡🔢', pluriels['Numero-rue-residence-mere-mari']['end'])
+                # txt = txt.replace('👨🏠🛣👨👵🏠🛣', pluriels['Type-rue-residence-mere-mari']['begin'])
+                # txt = txt.replace('👦👒🏡🛤👦🏡🛤', pluriels['Type-rue-residence-mere-mari']['end'])
+                # txt = txt.replace('👨🏠🔠👨👵🏠🔠', pluriels['Nom-rue-residence-mere-mari']['begin'])
+                # txt = txt.replace('👦👒🏡🔡👦🏡🔡', pluriels['Nom-rue-residence-mere-mari']['end'])
+
+                txt = txt.replace(questions_dict['Ville-residence-mari']['begin']+questions_dict['Ville-residence-mere-mari']['begin'], pluriels['Ville-residence-parents-mari']['begin'])
+                txt = txt.replace(questions_dict['Ville-residence-mere-mari']['end'][::-1]+questions_dict['Ville-residence-mari']['end'][::-1], pluriels['Ville-residence-parents-mari']['end'])
+
+                txt = txt.replace(questions_dict['Departement-residence-mari']['begin']+questions_dict['Departement-residence-mere-mari']['begin'], pluriels['Departement-residence-parents-mari']['begin'])
+                txt = txt.replace(questions_dict['Departement-residence-mere-mari']['end'][::-1]+questions_dict['Departement-residence-mari']['end'][::-1], pluriels['Departement-residence-parents-mari']['end'])
+
+                txt = txt.replace(questions_dict['Pays-residence-mari']['begin']+questions_dict['Pays-residence-mere-mari']['begin'], pluriels['Pays-residence-parents-mari']['begin'])
+                txt = txt.replace(questions_dict['Pays-residence-mere-mari']['end'][::-1]+questions_dict['Pays-residence-mari']['end'][::-1], pluriels['Pays-residence-parents-mari']['end'])
+
+                txt = txt.replace(questions_dict['Numero-rue-residence-mari']['begin']+questions_dict['Numero-rue-residence-mere-mari']['begin'], pluriels['Numero-rue-residence-parents-mari']['begin'])
+                txt = txt.replace(questions_dict['Numero-rue-residence-mere-mari']['end'][::-1]+questions_dict['Numero-rue-residence-mari']['end'][::-1], pluriels['Numero-rue-residence-parents-mari']['end'])
+
+                txt = txt.replace(questions_dict['Type-rue-residence-mari']['begin']+questions_dict['Type-rue-residence-mere-mari']['begin'], pluriels['Type-rue-residence-parents-mari']['begin'])
+                txt = txt.replace(questions_dict['Type-rue-residence-mere-mari']['end'][::-1]+questions_dict['Type-rue-residence-mari']['end'][::-1], pluriels['Type-rue-residence-parents-mari']['end'])
+
+                txt = txt.replace(questions_dict['Nom-rue-residence-mari']['begin']+questions_dict['Nom-rue-residence-mere-mari']['begin'], pluriels['Nom-rue-residence-parents-mari']['begin'])
+                txt = txt.replace(questions_dict['Nom-rue-residence-mere-mari']['end'][::-1]+questions_dict['Nom-rue-residence-mari']['end'][::-1], pluriels['Nom-rue-residence-parents-mari']['end'])
+
 
                 #mari + pere
-                txt = txt.replace('👨🏠🌇👨👴🏠🌇', pluriels['Ville-residence-pere-mari']['begin'])
-                txt = txt.replace('👦🎩🏡🌉👦🏡🌉', pluriels['Ville-residence-pere-mari']['end'])
-                txt = txt.replace('👨🏠🗺👨👴🏠🗺', pluriels['Departement-residence-pere-mari']['begin'])
-                txt = txt.replace('👦🎩🏡📌👦🏡📌', pluriels['Departement-residence-pere-mari']['end'])
-                txt = txt.replace('👨🏠🏳👨👴🏠🏳', pluriels['Pays-residence-pere-mari']['begin'])
-                txt = txt.replace('👦🎩🏡🌍👦🏡🌍', pluriels['Pays-residence-pere-mari']['end'])
-                txt = txt.replace('👨🏠🔟👨👴🏠🔟', pluriels['Numero-rue-residence-pere-mari']['begin'])
-                txt = txt.replace('👦🎩🏡🔢👦🏡🔢', pluriels['Numero-rue-residence-pere-mari']['end'])
-                txt = txt.replace('👨🏠🛣👨👴🏠🛣', pluriels['Type-rue-residence-pere-mari']['begin'])
-                txt = txt.replace('👦🎩🏡🛤👦🏡🛤', pluriels['Type-rue-residence-pere-mari']['end'])
-                txt = txt.replace('👨🏠🔠👨👴🏠🔠', pluriels['Nom-rue-residence-pere-mari']['begin'])
-                txt = txt.replace('👦🎩🏡🔡👦🏡🔡', pluriels['Nom-rue-residence-pere-mari']['end'])
+                # txt = txt.replace('👨🏠🌇👨👴🏠🌇', pluriels['Ville-residence-pere-mari']['begin'])
+                # txt = txt.replace('👦🎩🏡🌉👦🏡🌉', pluriels['Ville-residence-pere-mari']['end'])
+                # txt = txt.replace('👨🏠🗺👨👴🏠🗺', pluriels['Departement-residence-pere-mari']['begin'])
+                # txt = txt.replace('👦🎩🏡📌👦🏡📌', pluriels['Departement-residence-pere-mari']['end'])
+                # txt = txt.replace('👨🏠🏳👨👴🏠🏳', pluriels['Pays-residence-pere-mari']['begin'])
+                # txt = txt.replace('👦🎩🏡🌍👦🏡🌍', pluriels['Pays-residence-pere-mari']['end'])
+                # txt = txt.replace('👨🏠🔟👨👴🏠🔟', pluriels['Numero-rue-residence-pere-mari']['begin'])
+                # txt = txt.replace('👦🎩🏡🔢👦🏡🔢', pluriels['Numero-rue-residence-pere-mari']['end'])
+                # txt = txt.replace('👨🏠🛣👨👴🏠🛣', pluriels['Type-rue-residence-pere-mari']['begin'])
+                # txt = txt.replace('👦🎩🏡🛤👦🏡🛤', pluriels['Type-rue-residence-pere-mari']['end'])
+                # txt = txt.replace('👨🏠🔠👨👴🏠🔠', pluriels['Nom-rue-residence-pere-mari']['begin'])
+                # txt = txt.replace('👦🎩🏡🔡👦🏡🔡', pluriels['Nom-rue-residence-pere-mari']['end'])
+
+                txt = txt.replace(questions_dict['Ville-residence-mari']['begin']+questions_dict['Ville-residence-pere-mari']['begin'], pluriels['Ville-residence-pere-mari']['begin'])
+                txt = txt.replace(questions_dict['Ville-residence-pere-mari']['end'][::-1]+questions_dict['Ville-residence-mari']['end'][::-1], pluriels['Ville-residence-pere-mari']['end'])
+
+                txt = txt.replace(questions_dict['Departement-residence-mari']['begin']+questions_dict['Departement-residence-pere-mari']['begin'], pluriels['Departement-residence-pere-mari']['begin'])
+                txt = txt.replace(questions_dict['Departement-residence-pere-mari']['end'][::-1]+questions_dict['Departement-residence-mari']['end'][::-1], pluriels['Departement-residence-pere-mari']['end'])
+
+                txt = txt.replace(questions_dict['Pays-residence-mari']['begin']+questions_dict['Pays-residence-pere-mari']['begin'], pluriels['Pays-residence-pere-mari']['begin'])
+                txt = txt.replace(questions_dict['Pays-residence-pere-mari']['end'][::-1]+questions_dict['Pays-residence-mari']['end'][::-1], pluriels['Pays-residence-pere-mari']['end'])
+
+                txt = txt.replace(questions_dict['Numero-rue-residence-mari']['begin']+questions_dict['Numero-rue-residence-pere-mari']['begin'], pluriels['Numero-rue-residence-pere-mari']['begin'])
+                txt = txt.replace(questions_dict['Numero-rue-residence-pere-mari']['end'][::-1]+questions_dict['Numero-rue-residence-mari']['end'][::-1], pluriels['Numero-rue-residence-pere-mari']['end'])
+
+                txt = txt.replace(questions_dict['Type-rue-residence-mari']['begin']+questions_dict['Type-rue-residence-pere-mari']['begin'], pluriels['Type-rue-residence-pere-mari']['begin'])
+                txt = txt.replace(questions_dict['Type-rue-residence-pere-mari']['end'][::-1]+questions_dict['Type-rue-residence-mari']['end'][::-1], pluriels['Type-rue-residence-pere-mari']['end'])
+
+                txt = txt.replace(questions_dict['Nom-rue-residence-mari']['begin']+questions_dict['Nom-rue-residence-pere-mari']['begin'], pluriels['Nom-rue-residence-pere-mari']['begin'])
+                txt = txt.replace(questions_dict['Nom-rue-residence-pere-mari']['end'][::-1]+questions_dict['Nom-rue-residence-mari']['end'][::-1], pluriels['Nom-rue-residence-pere-mari']['end'])
+
 
                 #Parents mari seuls
-                txt = txt.replace('👨👴🏠🌇👨👵🏠🌇', pluriels['Ville-residence-parents-mari']['begin'])
-                txt = txt.replace('👦👒🏡🌉👦🎩🏡🌉', pluriels['Ville-residence-parents-mari']['end'])
-                txt = txt.replace('👨👴🏠🗺👨👵🏠🗺', pluriels['Departement-residence-parents-mari']['begin'])
-                txt = txt.replace('👦👒🏡📌👦🎩🏡📌', pluriels['Departement-residence-parents-mari']['end'])
-                txt = txt.replace('👨👴🏠🏳👨👵🏠🏳', pluriels['Pays-residence-parents-mari']['begin'])
-                txt = txt.replace('👦👒🏡🌍👦🎩🏡🌍', pluriels['Pays-residence-parents-mari']['end'])
-                txt = txt.replace('👨👴🏠🔟👨👵🏠🔟', pluriels['Numero-rue-residence-parents-mari']['begin'])
-                txt = txt.replace('👦👒🏡🔢👦🎩🏡🔢', pluriels['Numero-rue-residence-parents-mari']['end'])
-                txt = txt.replace('👨👴🏠🛣👨👵🏠🛣', pluriels['Type-rue-residence-parents-mari']['begin'])
-                txt = txt.replace('👦👒🏡🛤👦🎩🏡🛤', pluriels['Type-rue-residence-parents-mari']['end'])
-                txt = txt.replace('👨👴🏠🔠👨👵🏠🔠', pluriels['Nom-rue-residence-parents-mari']['begin'])
-                txt = txt.replace('👦👒🏡🔡👦🎩🏡🔡', pluriels['Nom-rue-residence-parents-mari']['end'])
+                # txt = txt.replace('👨👴🏠🌇👨👵🏠🌇', pluriels['Ville-residence-parents-mari']['begin'])
+                # txt = txt.replace('👦👒🏡🌉👦🎩🏡🌉', pluriels['Ville-residence-parents-mari']['end'])
+                # txt = txt.replace('👨👴🏠🗺👨👵🏠🗺', pluriels['Departement-residence-parents-mari']['begin'])
+                # txt = txt.replace('👦👒🏡📌👦🎩🏡📌', pluriels['Departement-residence-parents-mari']['end'])
+                # txt = txt.replace('👨👴🏠🏳👨👵🏠🏳', pluriels['Pays-residence-parents-mari']['begin'])
+                # txt = txt.replace('👦👒🏡🌍👦🎩🏡🌍', pluriels['Pays-residence-parents-mari']['end'])
+                # txt = txt.replace('👨👴🏠🔟👨👵🏠🔟', pluriels['Numero-rue-residence-parents-mari']['begin'])
+                # txt = txt.replace('👦👒🏡🔢👦🎩🏡🔢', pluriels['Numero-rue-residence-parents-mari']['end'])
+                # txt = txt.replace('👨👴🏠🛣👨👵🏠🛣', pluriels['Type-rue-residence-parents-mari']['begin'])
+                # txt = txt.replace('👦👒🏡🛤👦🎩🏡🛤', pluriels['Type-rue-residence-parents-mari']['end'])
+                # txt = txt.replace('👨👴🏠🔠👨👵🏠🔠', pluriels['Nom-rue-residence-parents-mari']['begin'])
+                # txt = txt.replace('👦👒🏡🔡👦🎩🏡🔡', pluriels['Nom-rue-residence-parents-mari']['end'])
 
-                txt = txt.replace('👨👴🔧👨👵🔧', pluriels['Profession-parents-mari']['begin'])
-                txt = txt.replace('👦👒🪛👦🎩🪛', pluriels['Profession-parents-mari']['end'])
-                #print(txt)
+                # txt = txt.replace('👨👴🔧👨👵🔧', pluriels['Profession-parents-mari']['begin'])
+                # txt = txt.replace('👦👒🪛👦🎩🪛', pluriels['Profession-parents-mari']['end'])
+
+
+                txt = txt.replace(questions_dict['Ville-residence-pere-mari']['begin']+questions_dict['Ville-residence-mere-mari']['begin'], pluriels['Ville-residence-parents-mari']['begin'])
+                txt = txt.replace(questions_dict['Ville-residence-mere-mari']['end'][::-1]+questions_dict['Ville-residence-pere-mari']['end'][::-1], pluriels['Ville-residence-parents-mari']['end'])
+
+                txt = txt.replace(questions_dict['Departement-residence-pere-mari']['begin']+questions_dict['Departement-residence-mere-mari']['begin'], pluriels['Departement-residence-parents-mari']['begin'])
+                txt = txt.replace(questions_dict['Departement-residence-mere-mari']['end'][::-1]+questions_dict['Departement-residence-pere-mari']['end'][::-1], pluriels['Departement-residence-parents-mari']['end'])
+
+                txt = txt.replace(questions_dict['Pays-residence-pere-mari']['begin']+questions_dict['Pays-residence-mere-mari']['begin'], pluriels['Pays-residence-parents-mari']['begin'])
+                txt = txt.replace(questions_dict['Pays-residence-mere-mari']['end'][::-1]+questions_dict['Pays-residence-pere-mari']['end'][::-1], pluriels['Pays-residence-parents-mari']['end'])
+
+                txt = txt.replace(questions_dict['Numero-rue-residence-pere-mari']['begin']+questions_dict['Numero-rue-residence-mere-mari']['begin'], pluriels['Numero-rue-residence-parents-mari']['begin'])
+                txt = txt.replace(questions_dict['Numero-rue-residence-mere-mari']['end'][::-1]+questions_dict['Numero-rue-residence-pere-mari']['end'][::-1], pluriels['Numero-rue-residence-parents-mari']['end'])
+
+                txt = txt.replace(questions_dict['Type-rue-residence-pere-mari']['begin']+questions_dict['Type-rue-residence-mere-mari']['begin'], pluriels['Type-rue-residence-parents-mari']['begin'])
+                txt = txt.replace(questions_dict['Type-rue-residence-mere-mari']['end'][::-1]+questions_dict['Type-rue-residence-pere-mari']['end'][::-1], pluriels['Type-rue-residence-parents-mari']['end'])
+
+                txt = txt.replace(questions_dict['Nom-rue-residence-pere-mari']['begin']+questions_dict['Nom-rue-residence-mere-mari']['begin'], pluriels['Nom-rue-residence-parents-mari']['begin'])
+                txt = txt.replace(questions_dict['Nom-rue-residence-mere-mari']['end'][::-1]+questions_dict['Nom-rue-residence-pere-mari']['end'][::-1], pluriels['Nom-rue-residence-parents-mari']['end'])
+
+                txt = txt.replace(questions_dict['Profession-pere-mari']['begin']+questions_dict['Profession-mere-mari']['begin'], pluriels['Profession-parents-mari']['begin'])
+                txt = txt.replace(questions_dict['Profession-mere-mari']['end'][::-1]+questions_dict['Profession-pere-mari']['end'][::-1], pluriels['Profession-parents-mari']['end'])
+
+                
             
                 text[paragraph] = txt
 
             return text
-        full_text = ""
-        for paragraph, labels in labels_act.items():
-            full_text += text[paragraph]
+        # full_text = ""
+        # for paragraph, labels in labels_act.items():
+        #     full_text += text[paragraph]
+
+        full_text = raw_text[act_name]
+        print("full_text : ", full_text)
         for paragraph, labels  in labels_act.items():
             text[paragraph] = text[paragraph].replace("-\n", "").replace("\n", " ")
             print('aled')
@@ -699,30 +905,13 @@ def emojize(json_acts_dictionnary):
         for paragraph, txt in final.items():
             full_text_with_emojis += txt
 
-        #browse full_text char by char. Browse full_text_with_emojis char by char. If \n or -\n is detected in full_text, add it to full_text_with_emojis. Don't add it to full_text_with_emojis if it's already there. Don't forget to 'skip' the emojis while browsing full_text_with_emojis
-        final_full = ""
-        i = 0
-        j = 0
-        while i < len(full_text):
-            if full_text[i] == full_text_with_emojis[j]:
-                final_full += full_text[i]
-                i += 1
-                j += 1
-            elif ((full_text[i] == "-") and (full_text[i+1] == "\n")):
-                final_full += full_text[i]
-                final_full += full_text[i+1]
-                i += 2
-            elif full_text[i] == "\n":
-                final_full += full_text[i]
-                i += 1
-            elif full_text_with_emojis[j] in emoji_charset:
-                final_full += full_text_with_emojis[j]
-                j += 1
-            
+        #Merge full_text and full_text_with_emojis. The goal is to keep emojis, and to add \n, -\n and missing words from full_text_with_emojis to full_text
+        #We assume that full_text_with_emojis is a superset of full_text
+        #We also assume that full_text_with_emojis is a subset of full_text
 
 
         
-        emogised_acts[act_name] = {'paragraphs' : final, 'full_text' : final_full}
+        emogised_acts[act_name] = {'paragraphs' : final, 'full_text' : full_text_with_emojis}
 
     return emogised_acts
 
@@ -741,9 +930,14 @@ if __name__ == "__main__":
                         help='the input json file')
     parser.add_argument('output', metavar='output', type=str,
                         help='the output json file')
+    parser.add_argument('raw_text', metavar='raw_text', type=str,
+                        help='the raw text with special characters')
     args = parser.parse_args()
     with open(args.input) as json_file:
         data = json.load(json_file)
+
+    with open(args.raw_text) as json_file:
+        raw_text = json.load(json_file)
     
     for name in data.keys():
         tmp = {
@@ -759,7 +953,7 @@ if __name__ == "__main__":
         data[name]['labels']['p4'] = tmp
 
         
-    emojized = emojize(data)
+    emojized = emojize(data, raw_text)
 
 
     with open(args.output, 'w') as outfile:

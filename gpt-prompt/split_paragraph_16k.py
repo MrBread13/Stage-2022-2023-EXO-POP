@@ -7,7 +7,7 @@ import os
 # openai.api_key = os.environ.get("OPENAI_API_KEY")
 
 openai.organization = "org-2wXrLf4fLEfdyawavmkAqi8z"
-openai.api_key = "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"
+openai.api_key = "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"
 
 file = open("splitting_examples.json", "r")
 data = json.load(file)
@@ -43,7 +43,7 @@ def split_text(text_to_split):
                 model="gpt-3.5-turbo-16k",
                 temperature=0.4,
                 messages=[
-                    {"role": "system", "content": "The user will provide you with French Mariage acts. You must always split these acts into 5 paragraphs. If a paragraphs seems to be missing, answer with an empty paragraph. The parapgrahs are : p1 = Date et heure maison commune\n p2 = Le mari et son entourage\n p3 = La mariée et son entourage\n p4 = Présence d'un acte de mariage, baiser et union des partenaires\n p5 = Les informations concernant les témoins et l'adjoint au maire.\n\n"},
+                    {"role": "system", "content": "The user will provide you with French Mariage acts. You must always split these acts into 5 paragraphs. If a paragraphs seems to be missing, answer with an empty paragraph. The parapgrahs are : p1 = Date et heure maison commune\n p2 = Le mari et son entourage\n p3 = La mariée et son entourage\n p4 = Présence d'un acte de mariage, baiser et union des partenaires\n p5 = 'En présence de ...', Les informations concernant les témoins et l'adjoint au maire.\n\n"},
                     {"role": "user", "content" : data["0"]["base"]},
                     {"role": "assistant", "content": json.dumps(data["0"]["text"], indent=4)},
                     {"role": "user", "content" : data["1"]["base"]},
@@ -69,27 +69,44 @@ def split_text(text_to_split):
 
         #check if keys are p1, p2, p3, p4, p5 and if values are not empty or ''
         answer = completion.choices[0].message['content']
+        
         answer = answer.replace('\n', '').replace('.','')
-        #remove quote around comma
-        answer = answer.replace('\',', '",')
-        answer = answer.replace(',\'', ',"')
-        #remove quote around space
-        answer = answer.replace(' \'', ' "')
-        answer = answer.replace('\' ', '" ')
-        #remove quote around colon
-        answer = answer.replace('\':', '":')
-        answer = answer.replace(':\'', ':"')
-        #remove quote around {}
-        answer = answer.replace('{\'', '{"')
-        answer = answer.replace('\'}', '"}')
-        #remove \n and -\n
+
+
         answer = answer.replace('-\\n', '')
         answer = answer.replace('\\n', ' ')
+
+        answer = answer.replace('"', '\'')
+
+        answer = answer.replace("'p1'", '"p1"')
+        answer = answer.replace("'p2'", '"p2"')
+        answer = answer.replace("'p3'", '"p3"')
+        answer = answer.replace("'p4'", '"p4"')
+        answer = answer.replace("'p5'", '"p5"')
+
+        answer = answer.replace('{\'', '{"')
+        answer = answer.replace('{ \'', '{ "')
+
+        answer = answer.replace('\'}', '"}')
+        answer = answer.replace('\' }', '" }')
+
+        answer = answer.replace('\':', '":')
+        answer = answer.replace('\' :', '" :')
+
+        answer = answer.replace(':\'', ':"')
+        answer = answer.replace(': \'', ': "')
+
+        answer = answer.replace('\',', '",')
+        answer = answer.replace('\' ,', '" ,')
+
+        answer = answer.replace(',\'', ',"')
+        answer = answer.replace(', \'', ', "')
+
         #remplacer les apostrophes par des guillemets
         answer = answer.replace("\\'", "\'")
         #print(answer)
         answer = answer[answer.index('{'):]
-        #print(f'answer : {answer}')
+        print(f'answer : {answer}')
         answer = json.loads(answer)
         #print(answer)
 

@@ -8,7 +8,7 @@ import split_paragraph_16k as sp
 # import get_complete_act_labels as gett
 from fix_labels import sanitize_labels
 
-file = open("test_manuscrit.json", "r")
+file = open("test-grande-echelle-raw.json", "r")
 data = json.load(file)
 file.close()
 
@@ -39,7 +39,7 @@ iter = 0
 
 already_done = []
 labels_history = {}
-with open('test_manuscrit_result.json', 'r') as f:
+with open('test-grande-echelle-text_result.json', 'r') as f:
     labels_history = json.load(f)
 for i in labels_history.keys():
     already_done.append(i)
@@ -54,7 +54,7 @@ for i, name in enumerate(data):
     print('Now testing : ', name)
     print('==================================')
 
-    text = data[name]['texte']
+    text = data[name]#['texte']
     if 'divorce' in text:
         continue
     #reference = data[name]['questions']
@@ -66,10 +66,24 @@ for i, name in enumerate(data):
     #print('labels : ', labels)
 
 
-    if 'Pays-residence-pere-mari' not in labels['p2'].keys():
-        labels['p2']['Pays-residence-pere-mari'] = ''
-    if 'Pays-residence-pere-mariee' not in labels['p3'].keys():
-        labels['p3']['Pays-residence-pere-mariee'] = ''
+    # if 'Pays-residence-pere-mari' not in labels['p2'].keys():
+    #     labels['p2']['Pays-residence-pere-mari'] = ''
+    # if 'Pays-residence-pere-mariee' not in labels['p3'].keys():
+    #     labels['p3']['Pays-residence-pere-mariee'] = ''
+
+    reference = {}
+    with open('labels-reference.json', 'r') as f:
+        reference = json.load(f)
+
+
+    for paragraph in reference.keys():
+        if paragraph not in labels.keys():
+                labels[paragraph] = {}
+        for label in reference[paragraph].keys():
+            if label not in labels[paragraph].keys():
+                labels[paragraph][label] = ""
+
+
 
     labels_keys_old = labels
 
@@ -109,5 +123,5 @@ for i, name in enumerate(data):
 
     labels_history[name] = {'labels': labels, 'text': splitted}
     # store labels_history in json file
-    with open('test_manuscrit_result.json', 'w') as outfile:
+    with open('test-grande-echelle-text_result.json', 'w') as outfile:
         json.dump(labels_history, outfile, indent=4)

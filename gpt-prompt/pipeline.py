@@ -9,7 +9,7 @@ import split_paragraph_16k as sp
 from fix_labels import sanitize_labels
 
 # file = open("donnees-test.json", "r")
-file = open("test_manuscrit.json", "r")
+file = open("test-grande-echelle-raw.json", "r")
 
 data = json.load(file)
 file.close()
@@ -41,7 +41,7 @@ iter = 0
 
 already_done = []
 labels_history = {}
-with open('test_manuscrit_result.json', 'r') as f:
+with open('test-grande-echelle-text_result.json', 'r') as f:
     labels_history = json.load(f)
 for i in labels_history.keys():
     already_done.append(i)
@@ -97,6 +97,6 @@ for i, name in enumerate(data):
 
     labels_history[name] = labels
     # store labels_history in json file
-    with open('test_manuscrit_result.json', 'w') as outfile:
+    with open('test-grande-echelle-text_result.json', 'w') as outfile:
         json.dump(labels_history, outfile, indent=4)
 
